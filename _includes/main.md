@@ -38,7 +38,7 @@ Starting with the User Agent is probably a good idea. First create a fork of the
 
 ### LEAP service
 
-Developing with a fake service is fun it isn't the goal for pixelated. The 'service' folder in the User Agent is where the real service lives, the one that will talk to the LEAP provider to send and receive encrypted mails. To use it, you'll need an account in a LEAP provider and will also need to download the LEAP provider certificates and put them inside the **'service/leap'** folder. You also must configure the application to use your account credentials - you can do that by changing the **'service/adapter/mail\_service.rb'** file.
+Developing with a fake service is fun but it isn't enough. The 'service' folder in the User Agent is where the real service lives, the one that will talk to the LEAP provider to send and receive encrypted mails. To use it, you'll need an account in a LEAP provider and will also need to download the LEAP provider certificates and put them inside the **'service/leap'** folder. You also must configure the application to use your account credentials - you can do that by changing the **'service/adapter/mail\_service.rb'** file.
 
 Once that is done you must install the dependencies. We use python's **virtualenv** when developing to keep things clean. Once you ready to install the dependencies, run:
 
