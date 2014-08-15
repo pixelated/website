@@ -31,7 +31,7 @@
 
 <h3 id="developing">Developing</h3>
 
-<h4 id="web-ui">Web-Ui</h4>
+<h4 id="web-ui">Pixelated User Agent Web-Ui</h4>
 <p>Starting with the User Agent is probably a good idea. First create a fork of the <a href="http://github.com/pixelated-project/pixelated-user-agent">github repo</a>. Now that you have the code, let’s talk architecture a bit:</p>
 
 <ul>
@@ -67,7 +67,7 @@ curl -d '' http://localhost:4567/control/mailset/mediumtagged/load # to load a s
 <pre><code>./go test
 </code></pre>
 
-<h3 id="leap-service">LEAP service</h3>
+<h3 id="leap-service">Pixelated User Agent Service</h3>
 
 <p>Developing with a fake service is fun but it isn’t enough. The ‘service’ folder in the User Agent is where the real service lives, the one that will talk to the LEAP provider to send and receive encrypted mails. To use it, you’ll need an account in a LEAP provider and will also need to download the LEAP provider certificates and put them inside the <strong>‘service/leap’</strong> folder. You also must configure the application to use your account credentials - you can do that by changing the <strong>‘service/adapter/mail_service.rb’</strong> file.</p>
 
