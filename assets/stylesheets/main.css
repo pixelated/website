@@ -53,10 +53,18 @@ footer {
 }
 
 pre {
-  display: inline-block;
-  background-color: #ddd;
-  margin: 10px 0 10px 50px;
-  padding: 10px;
+  margin: .5em 0;
+  padding: .5em .7em;
+  background-color: #FAFAFA;
+  border: 1px solid #CCC;
+  border-radius: 3px 3px 3px 3px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "Menlo", monospace;
+  line-height: 1.4em;
+  color: #444;
 }
 
 footer ul li {
