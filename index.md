@@ -5,10 +5,11 @@ layout: default
 # Pixelated is a secure* Open Source email solution
 <sup>* We want to build a solution for the masses, not to make communication secure against all known and unknown adversaries.</sup>
 
-There are a few exciting things you can do with Pixelated:
+**Pixelated is in early development stage! Things may not work to their full extend, yet**
+
+There are a few exciting things you will be able do with Pixelated in the future:
 
 * Setup your own secure mail provider using the <a href="http://github.com/pixelated-project/pixelated-platform">Pixelated Platform</a>
-
 * Connect to a secure mail provider through a self-hosted web client - the <a href="http://github.com/pixelated-project/pixelated-user-agent">Pixelated User Agent</a>
 * Setup an enterprise secure mail solution by combining the Pixelated Platform and User Agent with the <a href="http://github.com/pixelated-project/pixelated-dispatcher">Pixelated Dispatcher</a>
 
