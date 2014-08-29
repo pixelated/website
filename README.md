@@ -1,7 +1,7 @@
 pixelated-project.github.io
 ===========================
 
-You can run the Jekyll site locallly with the `run_site.sh` script. This requires Jekyll.
+You can run the Jekyll site locally with the `run_site.sh` script. This requires Jekyll.
 
     gem install jekyll
     ./run_site.sh
