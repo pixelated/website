@@ -3,6 +3,7 @@ layout: default
 --- 
 
 # Developing
+**Pixelated is in early development state! Things may not work to their full extend, yet**
 
 ## Pixelated User Agent 
 **Starting with the User Agent is probably a good idea.**
