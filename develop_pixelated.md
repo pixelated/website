@@ -34,20 +34,29 @@ layout: default
 
 ## Pixelated User Agent Service
 
-* Developing with a fake service is fun but it isn’t enough. The ‘service’ folder in the User Agent is where the real service lives, the one that will talk to the LEAP provider to send and receive encrypted mails. To use it, you’ll need an account in a LEAP provider and will also need to download the LEAP provider certificates and put them inside the <strong>‘service/leap’</strong> folder. You also must configure the application to use your account credentials - you can do that by changing the <strong>‘service/adapter/mail_service.rb’</strong> file.
+* Developing with a fake service is fun but it isn’t enough. The ‘service’
+ folder in the User Agent is where the real service lives, the one that will
+ talk to the LEAP provider to send and receive encrypted mails. To use it,
+ you’ll need an account in a LEAP provider and will also need to download the
+ LEAP provider certificates and put them inside the
+ <strong>‘service/leap’</strong> folder. Then you must configure the
+ application to use your account credentials - you can do that by copying
+ <strong>‘service/pixelated.example’</strong> file to
+ <strong>$HOME/.pixelated</strong> and changing your provider and account
+ information.
 
 * Once that is done you must install the dependencies. We use python’s <strong>virtualenv</strong> when developing to keep things clean. Once you are ready to install the dependencies, run:
 
         cd service
-        pip install -r requirements.txt
+        ./go develop --always-unzip
 
 * To run the server you can run:
 
-       ./go
+       pixelated-user-agent
 
 * To run the tests run:
 
-       ./runtests
+       ./go test
 
 ## Pixelated Dispatcher
 
