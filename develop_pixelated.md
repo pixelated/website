@@ -86,7 +86,7 @@ Getting started
 >**To set up your full-fledged dispatcher development environment visit <a href="https://github.com/pixelated-project/pixelated-dispatcher">Github: pixelated-dispatcher.</a>** 
 
 
-### 3. Pixelated Platform
+>### 3. Pixelated Platform
 
 * It is the objective of the Pixelated Platform to provide a simple to install and maintain mail server based on the LEAP Platform.
 
