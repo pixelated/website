@@ -2,60 +2,73 @@
 layout: default
 --- 
 
-# Developing
-**Pixelated is in early development state! Things may not work to their full extend, yet**
+Developing
+==========
 
-## Pixelated User Agent 
-**Starting with the User Agent is probably a good idea.**
+**Pixelated is in early development state! Things may not work to their full extend, yet.** 
 
-* First create a fork of the <a href="http://github.com/pixelated-project/pixelated-user-agent">github repo</a>. Now that you have the code, let’s talk architecture a bit:
+General Architecture
+--------------------
+**Pixelated consists of the following three core elements**
 
-* There are two main components - the ‘web-ui’ and a ‘service’. They talk REST to each other. The way to develop this is to start both components. To start the web-ui you must have node.js, npm and ruby 2.1.2 installed. Then run:
+>### 1. Pixelated User Agent 
+>The User Agent is composed of a web UI (JavaScript single page app) and a service that provides a REST-ful interface that the UI can use for all User Agent actions. 
 
-        cd web-ui
-        npm install # to install grunt and all the build dependencies
-        node_modules/bower/bin/bower install # to install the js libraries
-        bundle install # to install compass and sass
-        ./go watch # to start serving the javascript
+>### 2. Pixelated Dispatcher
+The Dispatcher allows to run multiple User Agent instances (agents) on a server. Aside from managing the different instances it also provides a login form to restrict access to the individual agents.
 
-
-* The ‘service’ part is where the REST api is implemented. The web-ui was first developed using a fake-service that can still be used to develop new features. It is also used as the service for running functional (selenium) tests. To start it do:
-
-        cd fake-service
-        bundle install # install the fake service dependencies
-        ./go server:start # to start the server
-        curl -d '' http://localhost:4567/control/mailset/mediumtagged/load # to load a set of mails
-
-* Now if you hit http://localhost:4567/ you should see the user agent up and running
-* To run the tests run:
-
-        ./go test
+>### 3. Pixelated Platform 
+>The Plattform holds the installation scripts for the Pixelated components. It is the objective of the Pixelated Platform to provide a simple to install and maintain mail server based on the LEAP Platform.
 
 
-## Pixelated User Agent Service
+Getting started
+---------------
 
-* Developing with a fake service is fun but it isn’t enough. The ‘service’ folder in the User Agent is where the real service lives, the one that will talk to the LEAP provider to send and receive encrypted mails. To use it, you’ll need an account in a LEAP provider and will also need to download the LEAP provider certificates and put them inside the <strong>‘service/leap’</strong> folder. You also must configure the application to use your account credentials - you can do that by changing the <strong>‘service/adapter/mail_service.rb’</strong> file.
+>### 1. Pixelated User Agent
+ 
+>**Starting with the User Agent is probably a good idea.**
 
-* Once that is done you must install the dependencies. We use python’s <strong>virtualenv</strong> when developing to keep things clean. Once you are ready to install the dependencies, run:
+* First create a fork of the <a href="https://github.com/pixelated-project/pixelated-user-agent">Pixelated User Agent repo</a>.
 
-        cd service
-        pip install -r requirements.txt
+* For a Quickstart, dependencies are: node, npm, ruby, bundle, virtualenv, git. Once you have that, run:
 
-* To run the server you can run:
+        curl https://raw.githubusercontent.com/pixelated-project/pixelated-user-agent/master/install-pixelated.sh | /bin/bash
 
-       ./go
+>**Now that you have the code, let’s talk architecture a bit:**
 
-* To run the tests run:
+>There are two main components that talk REST to each other. The way to develop this is to start both components.
 
-       ./runtests
+>  1. __The pixelated-user-agent web-ui__
 
-## Pixelated Dispatcher
+>  * The Web UI is the the HTML, CSS and JS files served to the browser.
+  
+>  2. __A pixelated-user-agent service__
 
-**Or how to run multiple single user agents on a server**
+>  * The Service component, which is the web service that serves the Web Ui to the browser, provides the REST API which the the Web Ui uses, and integrates with the LEAP or Pixelated provider.
+  
+>**Hooked? For more detail on setting things up visit <a href= "https://github.com/pixelated-project/pixelated-user-agent">Github: Pixelated User Agent</a>**
+
+
+>### 2. Pixelated Dispatcher
+
+>**Or how to run multiple user agents on a server**
+
+* Here is where you can create a fork of the <a href="https://github.com/pixelated-project/pixelated-dispatcher">Pixelated-Dispatcher repo</a>.
 
 * The pixelated-dispatcher allows you to run multiple instances of an application that had been designed for a single user, hence the name pixelated-dispatcher. Aside from managing the different instances it also provides a login form to restrict access to individual agents.
 
-The pixelated-dispatcher is based on a combination of two deamons to provide the service.
+* For a Quickstart, the repository contains a Vagrantfile that sets up a running pixelated-dispatcher installation within a virtual machine. Just run:
+ 
+         vagrant up
+         vagrant ssh
+ 
+         # It takes some time to initialize the docker containers so wait until there is no docker job running for
+         # a few minutes:
+         docker ps  # list running docker processes
+ 
+         cd /vagrant
+         
+>**The pixelated-dispatcher is based on a combination of two deamons to provide the service.**
 
 * __pixelated-dispatcher proxy__
 
@@ -64,30 +77,22 @@ The pixelated-dispatcher is based on a combination of two deamons to provide the
     all unnecessary privileges as soon as possible.
 
 
-The entire user agent management is delegated to:
+>The entire user agent management is delegated to:
 
-* __pixelated-dispatcher server__
+* __pixelated-dispatcher manager__
 
-    The server is not accessible from the web and is responsible for managing the lifecycle of the instances.
+    The manager is not accessible from the web and is responsible for managing the lifecycle of the instances.
     It provides a RESTful API to create/start/stop/delete/... agents. It uses [docker](https://github.com/dotcloud/docker)
     to isolate the agents from each other and to provide the necessary runtime environment.
 
+        
+**To set up your full-fledged dispatcher development environment visit <a href="https://github.com/pixelated-project/pixelated-dispatcher">Github: pixelated-dispatcher.</a>** 
 
-__Setting up the Development Environment__
 
-* As the default provider is based on docker you need a running docker daemon somewhere. So you have to set
-DOCKER_HOST to the according value, e.g.
+### 3. Pixelated Platform
 
-        export DOCKER_HOST=tcp://192.168.59.103:2375
-    
-* If you are working on OS X, we recommend [boot2docker](http://boot2docker.io/) as there is no native docker support.
+* It is the objective of the Pixelated Platform to provide a simple to install and maintain mail server based on the LEAP Platform.
 
-* To setup a dev environment, call:
+* Bare with us: we are not quite there, yet, with our Images. Stay tuned, there's more to come on <a href="https://github.com/pixelated-project/pixelated-platform">Github: pixelated-platform.</a>
 
-        git clone git@github.com:pixelated-project/pixelated-dispatcher.git
-        virtualenv pixelated_dispatcher_venv   # or created elsewhere
-        source pixelated_dispatcher_venv/bin/activate
-        cd pixelated-dispatcher
-        pip install -r requirements.txt
-    
-        python setup.py test
+**In the meantime we recommend checking out <a href="https://leap.se/en">the LEAP project</a>!**
