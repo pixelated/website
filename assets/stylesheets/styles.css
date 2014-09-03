@@ -1,0 +1,94 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.page-content {
+  margin: 25px 10px 15px 15px;
+  vertical-align: top;
+}
+
+.page-content hr {
+  margin: 15px 0px 0px 15px;
+}
+
+a,
+a:visited {
+  color: #000;
+}
+
+.github-icon-svg,
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+ul {
+  margin: 0 0 0 40px;
+}
+
+footer {
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+
+pre {
+  margin: .5em 0;
+  padding: .5em .7em;
+  background-color: #FAFAFA;
+  border: 1px solid #CCC;
+  border-radius: 3px 3px 3px 3px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "Menlo", monospace;
+  line-height: 1.4em;
+  color: #444;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    display: block;
+    margin: 8px 22px 8px 22px;
+    overflow: hidden;
+    width: 90%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+
+    background-color: #178CA6;
+}
+
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
