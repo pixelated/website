@@ -2,8 +2,7 @@
 layout: default
 --- 
       
-# Pixelated is a secure* Open Source email solution
-<sup>* We want to build a solution for the masses, not to make communication secure against all known and unknown adversaries.</sup>
+# Pixelated is a secure Open Source email solution
 
 **Pixelated is in early development state! Things may not work to their full extend, yet**
 
