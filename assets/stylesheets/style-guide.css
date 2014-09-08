@@ -1549,7 +1549,7 @@ img.screenshot {
 nav {
   position: fixed;
   z-index: 10;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   background-color: #3e3a37;
   color: white;
