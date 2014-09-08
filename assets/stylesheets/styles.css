@@ -3,20 +3,6 @@ html {
   line-height: 1.5;
 }
 
-.page-content {
-  margin: 25px 10px 15px 15px;
-  vertical-align: top;
-}
-
-.page-content hr {
-  margin: 15px 0px 0px 15px;
-}
-
-a,
-a:visited {
-  color: #000;
-}
-
 .github-icon-svg,
 .twitter-icon-svg {
   display: inline-block;
@@ -60,35 +46,7 @@ footer ul li {
   margin-right: 20px;
 }
 
-nav {
-    background-color: #fff;
-    border: 1px solid #dedede;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-    color: #888;
-    display: block;
-    margin: 8px 22px 8px 22px;
-    overflow: hidden;
-    width: 90%;
+.project-logo {
+  color: #FF9C00;
+  font-size: larger;
 }
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-
-    background-color: #178CA6;
-}
-
-nav > ul > li > a {
-    color: #aaa;
-    display: block;
-    line-height: 56px;
-    padding: 0 24px;
-    text-decoration: none;
-}
-

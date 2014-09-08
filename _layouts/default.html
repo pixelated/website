@@ -11,25 +11,24 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/styles.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/pygmentize.css">
-
-      <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/develop_pixelated/">Develop Pixelated</a></li>
-            <li><a href="/style-guide.html">Style Guide</a></li>
-          </ul>
-      </nav>
-
+    <link href="{{ site.baseurl }}/assets/stylesheets/style-guide.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/main.css">
   </head>
 
 <body>
 
-  <div class="page-content">
-    
-    {{ content }}
-
-    <hr/>
-    
+  <div id="style-guide-wrap" data-offcanvas>
+      <nav>
+        <ul class="left">
+            <li class="project-logo">Pixelated Project</li>
+        </ul>
+        <ul class="right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/develop_pixelated/">Develop Pixelated</a></li>
+          <li><a href="/style-guide.html">Style Guide</a></li>
+        </ul>
+      </nav>
+    <section class="guide-section">{{ content }}</section>
     <footer class="site-footer">
 
       <ul>
@@ -74,6 +73,5 @@
 
     </footer>
   </div>
-
 </body>
 </html>
