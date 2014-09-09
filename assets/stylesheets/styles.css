@@ -50,3 +50,28 @@ footer ul li {
   color: #FF9C00;
   font-size: larger;
 }
+
+.top-bar {
+  top: 50px;
+  background-color: #F2F3ED;
+}
+
+.top-bar a {
+  color: #FF7900;
+}
+
+.top-bar a:hover {
+  color: #FF9D00;
+}
+
+section.guide-section {
+  padding: 116px 32px;
+}
+
+nav a {
+  color: #2BA6CB;
+}
+
+nav a:hover {
+  color: #52bbda;
+}
