@@ -23,9 +23,9 @@
             <li class="project-logo">Pixelated Project</li>
         </ul>
         <ul class="right">
-          <li><a href="/">Home</a></li>
-          <li><a href="/develop_pixelated/">Develop Pixelated</a></li>
-          <li><a href="/style-guide.html">Style Guide</a></li>
+          <li><a href="/" {%if page.url == "/" %}class="active-page"{% endif %}>Home</a></li>
+          <li><a href="/develop_pixelated/" {%if page.url == "/develop_pixelated/" %}class="active-page"{% endif %}>Develop Pixelated</a></li>
+          <li><a href="/style-guide.html" {%if page.url == "style-guide.html" %}class="active-page"{% endif %}>Style Guide</a></li>
         </ul>
       </nav>
     <section class="guide-section">{{ content }}</section>
