@@ -77,6 +77,7 @@ nav a:hover {
 }
 
 .active-page {
+  color: #52bbda;
   border-bottom: 3px solid #52bbda;
   padding-bottom: 3px;
 }
