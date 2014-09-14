@@ -39,9 +39,9 @@ Getting started
 >There are two main components that talk REST to each other. The way to develop this is to start both components.
 
 >  1. __The pixelated-user-agent web-ui__
-* The Web UI is the the HTML, CSS and JS files served to the browser.
+* The Web UI is the HTML, CSS and JS files served to the browser.
   2. __A pixelated-user-agent service__
-* The Service component, which is the web service that serves the Web Ui to the browser, provides the REST API which the the Web Ui uses, and integrates with the LEAP or Pixelated provider.
+* The Service component, which is the web service that serves the Web Ui to the browser, provides the REST API which the Web Ui uses, and integrates with the LEAP or Pixelated provider.
   
 >**Hooked? For more detail on setting things up visit <a href= "https://github.com/pixelated-project/pixelated-user-agent">Github: Pixelated User Agent</a>**
 
