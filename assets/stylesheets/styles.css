@@ -81,3 +81,7 @@ nav a:hover {
   border-bottom: 3px solid #52bbda;
   padding-bottom: 3px;
 }
+
+blockquote {
+  border: none !important;
+}
