@@ -31,11 +31,10 @@
           <li><a href="/style-guide/" {%if page.url == "/style-guide/" %}class="active-page"{% endif %}>Style Guide</a></li>
         </ul>
       </nav>
-    <section {%if page.url != "/style-guide/" %}class="content"{% endif %}>{{ content }}</section>
+    <section {%if page.url == "/style-guide/" %}class="content-guide" {%else %} class="content"{% endif %}>{{ content }}</section>
     
     <footer class="site-footer">
       <ul>
-       <!--  <li><a href="mailto:yet@to.be.created">yet@to.be.created</a></li> -->
         <li>
           <a href="https://github.com/pixelated-project">
             <span class="icon github">
