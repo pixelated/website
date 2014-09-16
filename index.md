@@ -32,7 +32,3 @@ In the current context, there is a high degree of concentration with regards to 
 ## Try it
 
 **Demo coming soon**
-  
-    
-
-

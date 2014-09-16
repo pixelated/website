@@ -1603,7 +1603,7 @@ section.guide-section {
   padding: 66px 32px;
 }
 /* line 75, ../scss/style-guide.scss */
-section.guide-section:nth-child(odd) {
+section.guide-section:nth-child(even) {
   background-color: #eaeaea;
 }
 /* line 79, ../scss/style-guide.scss */

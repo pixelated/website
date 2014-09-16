@@ -52,7 +52,8 @@ footer ul li {
 }
 
 .top-bar {
-  top: 50px;
+  top: 51px;
+  left: 0;
   background-color: #F2F3ED;
 }
 
@@ -64,8 +65,16 @@ footer ul li {
   color: #FF9D00;
 }
 
+section.content {
+  overflow-y: visible;
+  padding: 62px 32px;
+  height: 100%;
+}
+
 section.guide-section {
-  padding: 116px 32px;
+  padding:112px 32px;
+  height: 100vh;
+  overflow: visible;
 }
 
 nav a {
