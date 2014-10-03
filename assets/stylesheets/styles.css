@@ -46,9 +46,10 @@ footer ul li {
   margin-right: 20px;
 }
 
-.project-logo {
+li.project-logo {
   color: #FF9C00;
   font-size: larger;
+  margin: 5px 0 0 0;
 }
 
 .top-bar {
@@ -65,6 +66,12 @@ footer ul li {
   color: #FF9D00;
 }
 
+section.guide-section {
+  padding:112px 32px;
+  height: 100%;
+  overflow: visible;
+}
+
 section.content {
   overflow: visible;
   padding: 62px 32px;
@@ -75,12 +82,6 @@ section.content-guide {
   overflow: visible;
   padding: 0 !important;
   height: 100%;
-}
-
-section.guide-section {
-  padding:112px 32px;
-  height: 100%;
-  overflow: visible;
 }
 
 nav a {
@@ -99,4 +100,22 @@ nav a:hover {
 
 blockquote {
   border: none !important;
+}
+
+ul.left, ul.right {
+  padding: 12px;
+  margin: -5px 25px;
+  font-weight: bold;
+  list-style: none;
+}
+
+ul.right li, ul.left li {
+  display: inline-block;
+  list-style: none;
+} 
+
+ul li {
+  display: list-item;
+  list-style: inherit;
+  margin-left: 30px;
 }

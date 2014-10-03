@@ -2384,11 +2384,6 @@ ul.bullets li {
   margin-bottom: 0;
   list-style: circle;
 }
-/* line 1451, ../scss/foundation.scss */
-ul li {
-  margin-bottom: 0;
-  list-style: none;
-}
 
 /* Abbreviations */
 /* line 1459, ../scss/foundation.scss */
