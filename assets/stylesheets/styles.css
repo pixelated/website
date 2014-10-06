@@ -79,6 +79,7 @@ section.content {
 }
 
 section.content-guide {
+  display: block;
   overflow: visible;
   padding: 0 !important;
   height: 100%;
