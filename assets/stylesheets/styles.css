@@ -119,3 +119,7 @@ ul li {
   list-style: inherit;
   margin-left: 30px;
 }
+
+.gray {
+  color: #C0B9B9;
+}
