@@ -2,4 +2,4 @@ pygments: true
 exclude: [bin, Gemfile, Gemfile.lock, Makefile]
 permalink: pretty
 date_format: "%d %B %Y"
-baseurl: "http://pixelated-project.github.io"
+baseurl: "http://pixelated-project.org"
