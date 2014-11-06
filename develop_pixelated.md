@@ -15,7 +15,7 @@ General Architecture
 >The User Agent is composed of a web UI (JavaScript single page app) and a service that provides a REST-ful interface that the UI can use for all User Agent actions. 
 
 >### 2. Pixelated Dispatcher
-The Dispatcher allows to run multiple User Agent instances (agents) on a server. Aside from managing the different instances it also provides a login form to restrict access to the individual agents.
+>The Dispatcher allows to run multiple User Agent instances (agents) on a server. Aside from managing the different instances it also provides a login form to restrict access to the individual agents.
 
 >### 3. Pixelated Platform 
 >The Plattform holds the installation scripts for the Pixelated components. It is the objective of the Pixelated Platform to provide a simple to install and maintain mail server based on the LEAP Platform.
