@@ -12,9 +12,9 @@ html {
   top: 3px;
 }
 
-p {
-  margin-bottom: 5px;
-}
+nav {
+  height: 51px;
+} 
 
 ul {
   margin: 0 0 0 40px;
