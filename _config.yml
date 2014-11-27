@@ -1,4 +1,4 @@
-pygments: true
+highlight: null
 exclude: [bin, Gemfile, Gemfile.lock, Makefile]
 permalink: pretty
 date_format: "%d %B %Y"
