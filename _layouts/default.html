@@ -23,12 +23,12 @@
             <li class="project-logo">Pixelated Project</li>
         </ul>
         <ul class="right">
-          <li><a href="/" {%if page.url == "/" or page.url == "pixelated-project.org" %}class="active-page"{% endif %}>Home</a></li>
-          <li><a href="/develop_pixelated/" {%if page.url == "/develop_pixelated/" %}class="active-page"{% endif %}>Develop Pixelated</a></li>
-          <li><a href="/style-guide/" {%if page.url == "/style-guide/" %}class="active-page"{% endif %}>Style Guide</a></li>
+          <li><a href="/" {%if page.path == "index.md" %}class="active-page"{% endif %}>Home</a></li>
+          <li><a href="/develop_pixelated/" {%if page.path == "develop_pixelated.md" %}class="active-page"{% endif %}>Develop Pixelated</a></li>
+          <li><a href="/style-guide/" {%if page.path == "style-guide.html" %}class="active-page"{% endif %}>Style Guide</a></li>
         </ul>
       </nav>
-    <section {%if page.url == "/style-guide/" %}class="content-guide" {%else %} class="content"{% endif %}>{{ content }}</section>
+    <section {%if page.url == "/style-guide/" %}class="content-guide" {%else %} class="content"{% endif %}> {{ content }}</section>
     
     <footer class="site-footer">
       <ul>
