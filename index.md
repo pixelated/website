@@ -4,7 +4,7 @@ layout: default
       
 # Pixelated is a secure Open Source email solution
 
-**Pixelated is in early development state! Things may not work to their full extend, yet**
+**Pixelated is in early development state! Things may not work to their full extend yet**
 
 There are a few exciting things you will be able do with Pixelated in the future:
 
@@ -21,12 +21,12 @@ There are a few exciting things you will be able do with Pixelated in the future
 * Built on the <a href="https://leap.se">LEAP Platform</a>
 * Source code available on Github under AGPL license
 
-## Why Pixelated
+## Why Pixelated - the problems we are trying to solve
 * Mass surveillance
-Email communication in particular can be subject to dragnet surveillance. If we can achieve widespread use of secure communication, it will be too costly to routinely intercept the majority of communication on the internet. This does not mean that a motivated adversary will not be able to intercept specifically targeted communication, but it should end mass surveillance on the scale we have to endure today.
+Email communication can be subject to dragnet surveillance. If we can achieve widespread use of secure communication, it will be too costly to routinely intercept the majority of communication on the internet. This does not mean that a motivated adversary will not be able to intercept specifically targeted communication, but it should end mass surveillance on the scale we have to endure today.
 
 * Centralisation
-In the current context, there is a high degree of concentration with regards to where this information officially sits. If we can make it easy (as it was in the early days of the public Internet) for organisations to host communication infrastructure, there will be less dependency on the major service providers, making it harder to obtain or compromise individual’s communication.
+In the current context, there is a high degree of concentration with regards to where the information that circulates through email is actually stored. If we can make it easy for organisations to host communication infrastructure, there will be less dependency on the major service providers, making it harder to obtain or compromise individual’s communication.
 
 
 ## Try it
