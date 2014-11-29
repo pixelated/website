@@ -1,6 +1,11 @@
 ---
 ---
 
+body {
+  display: block;
+  overflow: scroll !important; 
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.5;
