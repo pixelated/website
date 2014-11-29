@@ -35,11 +35,12 @@ footer {
 
 pre {
   margin: .5em 0;
-  padding: .5em .7em;
+  padding: .5em 2.5em .7em .5em;
   background-color: #FAFAFA;
   border: 1px solid #CCC;
   border-radius: 3px 3px 3px 3px;
   overflow-x: auto;
+  display: inline-block;
 }
 
 code {
