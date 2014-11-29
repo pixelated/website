@@ -21,7 +21,27 @@ html {
 }
 
 nav {
+  position: fixed;    
+  z-index: 10;
+  height: 50px;
+  width: 100%;
+  background-color: #3e3a37;
+  color: white;
+  opacity: 0.95;
   height: 51px;
+  
+  a {
+    color: #2BA6CB; 
+    &:hover {
+      color: #52bbda;
+    }
+  }
+
+  ul li .active-page {
+    color: #52bbda;
+    border-bottom: 3px solid #52bbda;
+    padding-bottom: 3px;
+  }
 } 
 
 ul {
@@ -31,6 +51,14 @@ ul {
 footer {
   margin: 15px 0 15px 0;
   text-align: center;
+  padding-bottom: 30px;
+
+  ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    vertical-align: top;
+  }
 }
 
 pre {
@@ -49,13 +77,6 @@ code {
   color: #f57300;
 }
 
-footer ul li {
-  display: inline-block;
-  list-style: none;
-  margin-right: 20px;
-  vertical-align: top;
-}
-
 li.project-logo {
   color: #FF9C00;
   font-size: larger;
@@ -66,51 +87,44 @@ li.project-logo {
   top: 51px;
   left: 0;
   background-color: #F2F3ED;
+
+  a {
+    color: #FF7900; 
+    &:hover {
+      color: #FF9D00;
+    }
+  }
 }
 
-.top-bar a {
-  color: #FF7900;
-}
-
-.top-bar a:hover {
-  color: #FF9D00;
-}
-
-section.guide-section {
-  padding:112px 32px;
-  height: 100%;
-  overflow: visible;
-}
-
-section.content {
-  overflow: visible;
-  padding: 62px 32px;
-  height: 100%;
-}
-
-section.content-guide {
-  display: block;
-  overflow: visible;
-  padding: 0 !important;
-  height: 100%;
-}
-
-nav a {
-  color: #2BA6CB;
-}
-
-nav a:hover {
-  color: #52bbda;
-}
-
-.active-page {
-  color: #52bbda;
-  border-bottom: 3px solid #52bbda;
-  padding-bottom: 3px;
+section {
+  &.guide-section {
+    padding:112px 32px;
+    height: 100%;
+    overflow: visible;
+  }
+  
+  &.content {
+    overflow: visible;
+    padding: 62px 32px;
+    height: 100%;
+  }
+  
+  &.content-guide {
+    display: block;
+    overflow: visible;
+    padding: 0;
+    height: 100%;
+  }
 }
 
 blockquote {
-  border: none !important;
+  border: none;
+}
+
+ul li {
+  display: list-item;
+  list-style: inherit;
+  margin-left: 30px;
 }
 
 ul.left, ul.right {
@@ -118,18 +132,12 @@ ul.left, ul.right {
   margin: -5px 25px;
   font-weight: bold;
   list-style: none;
-}
 
-ul.right li, ul.left li {
-  display: inline-block;
-  list-style: none;
+  li {
+    display: inline-block;
+    list-style: none;
+  }
 } 
-
-ul li {
-  display: list-item;
-  list-style: inherit;
-  margin-left: 30px;
-}
 
 .gray {
   color: #C0B9B9;

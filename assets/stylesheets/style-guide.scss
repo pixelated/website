@@ -19,28 +19,18 @@ $action_buttons: #2ba6cb;
 
 $secondary_callout: #FF7902;
 
-div#style-guide-wrap {
+#style-guide-wrap {
   font-size: 1rem;
-}
 
-div#style-guide-wrap p {
-  font-size: 1rem;
+  p {
+    font-size: 1rem;
+  }
 }
 
 img.screenshot {
   max-width: 60%;
   margin: 0 auto;   
   display: block;
-}
-
-nav {
-  position: fixed;    
-  z-index: 10;
-  height: 50px;
-  width: 100%;
-  background-color: #3e3a37;
-  color: white;
-  opacity: 0.95;
 }
 
 a.logo-anchor {
@@ -51,20 +41,22 @@ a.logo-anchor {
   }
 }
 
-ul li {
-  display: inline;
-}
+ul {
+  li {
+    display: inline;
+  }
 
-ul.typography li {
-  display: inline-block;
-  text-align: center;
-  margin: 20px 10px 0 0;
-  padding: 30px;
-  min-height: 125px;
-  min-width: 130px;
-  border: 1px solid #EEE;
-  background-color: white;  
-  border-radius: 5px;
+  &.typography li {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 10px 0 0;
+    padding: 30px;
+    min-height: 125px;
+    min-width: 130px;
+    border: 1px solid #EEE;
+    background-color: white;  
+    border-radius: 5px;
+  }
 }
 
 ul.left, ul.right {
@@ -137,6 +129,7 @@ section.guide-section {
   #search-highlight-card { background-color: $search_highlight; }
   #count-background-card { background-color: $total_count_bg; }
 }
+
 /* Typeface cards definition*/
 ul.typography li h2 {
   &.bold-header { font-weight: bold; }
