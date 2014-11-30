@@ -78,9 +78,15 @@ code {
 }
 
 li.project-logo {
-  color: #FF9C00;
   font-size: larger;
   margin: 5px 0 0 0;
+
+  a {
+    color: #FF7900; 
+    &:hover {
+      color: #FF9D00;
+    }
+  }
 }
 
 .top-bar {
