@@ -6,21 +6,17 @@ $highlight: #FF9C00;
 $highlight-dark: #FF7902;
 $action: #2BA6CB;
 $action-dark: #178CA6;
-
 $background-dark: #3E3A37;
 $background-gray: #EEE;
 $background-light: #FFF;
 
 $warning: #F7E8AF;
 $search-highlight: #FFEF29;
-
 $total_count_bg: #C0B9B9;
-
 $error: #D72A25;
 $attention: #F6A40A;
 $success: #2DAB49;
 $top_pane: #EAEAEA;
-
 $secondary_callout: #FF7902;
 
 #style-guide-wrap {
@@ -118,7 +114,6 @@ section.guide-section {
 }
 
 /* Color Cards definition */
-
 .color-grid {
   margin-bottom: 25px;
   #highlight-card { background-color: $highlight; }
@@ -148,13 +143,13 @@ ul.headers-and-sizes {
   display: inline-block;
 }
 
-section#icons i {
-  font-size: xx-large;
-  margin-right: 20px;
-}
-
 ul.typography, ul.headers-and-sizes {
   li {
     list-style: none;
   }
+}
+
+section#icons i {
+  font-size: xx-large;
+  margin-right: 20px;
 }
