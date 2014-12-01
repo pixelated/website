@@ -19,6 +19,7 @@ $total_count_bg: #C0B9B9;
 $error: #D72A25;
 $attention: #F6A40A;
 $success: #2DAB49;
+$top_pane: #EAEAEA;
 
 $secondary_callout: #FF7902;
 
@@ -127,11 +128,6 @@ section.guide-section {
   #action-card { background-color: $action; }
   #action-dark-card { background-color: $action-dark; }
 
-  #primary-color-card { background-color: $primary_color; }
-  #secondary-color-card { background-color: $secondary; }
-  #top-pane-card { background-color: $top_pane; }
-  #contrast-card { background-color: $contrast; }
-  #action-buttons-card { background-color: $action_buttons; }
   #success-card { background-color: $success; }
   #attention-card { background-color: $attention; }
   #warning-card { background-color: $warning; }
@@ -155,4 +151,10 @@ ul.headers-and-sizes {
 section#icons i {
   font-size: xx-large;
   margin-right: 20px;
+}
+
+ul.typography, ul.headers-and-sizes {
+  li {
+    list-style: none;
+  }
 }
