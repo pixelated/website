@@ -2,6 +2,15 @@
 ---
 
 /* Color variables */
+$highlight: #FF9C00;
+$highlight-dark: #FF7902;
+$action: #2BA6CB;
+$action-dark: #178CA6;
+
+$background-dark: #3E3A37;
+$background-gray: #EEE;
+$background-light: #FFF;
+
 $warning: #F7E8AF;
 $search-highlight: #FFEF29;
 
@@ -10,12 +19,6 @@ $total_count_bg: #C0B9B9;
 $error: #D72A25;
 $attention: #F6A40A;
 $success: #2DAB49;
-
-$contrast: #EEE;
-$top_pane: #EAEAEA;
-$secondary: #3E3A37;
-$primary_color: #EF4E2F;
-$action_buttons: #2ba6cb;
 
 $secondary_callout: #FF7902;
 
@@ -117,6 +120,13 @@ section.guide-section {
 
 .color-grid {
   margin-bottom: 25px;
+  #highlight-card { background-color: $highlight; }
+  #highlight-dark-card { background-color: $highlight-dark; }
+  #background-dark-card { background-color: $background-dark; }
+  #background-gray-card { background-color: $background-gray; }
+  #action-card { background-color: $action; }
+  #action-dark-card { background-color: $action-dark; }
+
   #primary-color-card { background-color: $primary_color; }
   #secondary-color-card { background-color: $secondary; }
   #top-pane-card { background-color: $top_pane; }
