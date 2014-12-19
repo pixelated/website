@@ -18,51 +18,45 @@
 <body>
 
   <div id="style-guide-wrap" data-offcanvas>
-      <nav>
+      <nav class="top-bar" data-topbar>
         <ul class="left">
-            <li class="project-logo"><a href="/">Pixelated Project</a></li>
+            <li class="project-logo"><a href="/">PIXELATED</a></li>
         </ul>
         <ul class="right">
-          <li><a href="/" {%if page.path == "index.md" %}class="active-page"{% endif %}>Home</a></li>
-          <li><a href="/develop_pixelated/" {%if page.path == "develop_pixelated.md" %}class="active-page"{% endif %}>Develop Pixelated</a></li>
-          <li><a href="/style-guide/" {%if page.path == "style-guide.html" %}class="active-page"{% endif %}>Style Guide</a></li>
-        </ul>
-      </nav>
-    <section {%if page.url == "/style-guide/" %}class="content-guide" {%else %} class="content"{% endif %}> {{ content }}</section>
-    
-    <footer class="site-footer">
-      <ul>
-        <li>
-          <i class="gray fa fa-github"></i>
-          <a href="https://github.com/pixelated-project">
-            <span class="username">pixelated-project</span>
-          </a>
-        </li>
-        <li>
-          <i class="gray fa fa-envelope"></i>
-          <a href="mailto:&#116;&#101;&#097;&#109;&#064;&#112;&#105;&#120;&#101;&#108;&#097;&#116;&#101;&#100;&#045;&#112;&#114;&#111;&#106;&#101;&#099;&#116;&#046;&#111;&#114;&#103;">
-            <span class="username">team at pixelated - project . org</span>
-          </a>
-            <div class="gray">504A 14EA 39DE 1800 B676 9619 FF0E A8AE D649 7991</div>
-        </li>
-        <li>
-          <i class="gray fa fa-comment"></i>
-          <a href="irc://irc.freenode.net/pixelated">
-            <span class="username">#pixelated at irc.freenode.net</span>
-          </a>
-        </li>
-        <li>
-          <i class="gray fa fa-twitter"></i>
-          <a href="https://twitter.com/pixelatedteam">
-            <span class="username">pixelatedteam</span>
-          </a>
-        </li>
+          <li><a href="#welcome">ABOUT</a></li>
+          <li><a href="#colors">GETTING STARTED</a></li>
+          <li><a href="#typography">CONTACT</a></li>
       </ul>
-    </footer>
-  </div>
-
-  <script src="/assets/js/jquery.js"></script>
-  <script src="/assets/js/style-guide.js"></script>
-
+  </nav>
+  <section id="welcome" class="guide-section" name="welcome">
+    <h2>Welcome to the Pixelated Style Guide</h2>
+    <p>
+    Here you'll find information about visual design and UI guidelines for Pixelated, such as colors, typography and components. 
+    </p>
+    <p>
+    This is a live style guide - that means it's reflecting the actual application cascading stylesheets, but also that it will be continuously and automatically updated as our design evolves.
+    </p>
+  </section>
+   <section id="colors" class="guide-section" name="colors">
+    <h2>Welcome to the Pixelated Style Guide</h2>
+    <p>
+    Here you'll find information about visual design and UI guidelines for Pixelated, such as colors, typography and components. 
+    </p>
+    <p>
+    This is a live style guide - that means it's reflecting the actual application cascading stylesheets, but also that it will be continuously and automatically updated as our design evolves.
+    </p>
+  </section>
+   <section id="typography" class="guide-section" name="typography">
+    <h2>Welcome to the Pixelated Style Guide</h2>
+    <p>
+    Here you'll find information about visual design and UI guidelines for Pixelated, such as colors, typography and components. 
+    </p>
+    <p>
+    This is a live style guide - that means it's reflecting the actual application cascading stylesheets, but also that it will be continuously and automatically updated as our design evolves.
+    </p>
+  </section>
+    </div>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/style-guide.js"></script>
 </body>
 </html>

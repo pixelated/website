@@ -89,22 +89,9 @@ li.project-logo {
   }
 }
 
-.top-bar {
-  top: 51px;
-  left: 0;
-  background-color: #F2F3ED;
-
-  a {
-    color: #FF7900; 
-    &:hover {
-      color: #FF9D00;
-    }
-  }
-}
-
 section {
   &.guide-section {
-    padding:112px 32px;
+    padding:61px 32px;
     height: 100%;
     overflow: visible;
   }
