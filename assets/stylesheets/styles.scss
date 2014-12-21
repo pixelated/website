@@ -19,6 +19,45 @@ $success: #2DAB49;
 $top_pane: #EAEAEA;
 $secondary_callout: #FF7902;
 
+html {
+  height:100%;
+}
+
+body {
+  min-height:100%;
+  overflow: hidden;
+  background: #FFF;
+}
+
+header#main {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.tip-msg {
+  padding: 10px;
+  margin: 8px 20px -25px 20px;
+  background: $warning;
+  color: darken($warning, 50%);
+  font-size: 0.9em;
+  i {
+    margin-right: 5px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+
 body {
   display: block;
   overflow: scroll !important; 
