@@ -85,10 +85,12 @@ nav {
   width: $page_width;
   background-color: #3e3a37;
   color: white;
-  height: 51px;
+  height: 80px;
+  vertical-align: middle;
   
   a {
     color: $background-gray; 
+    vertical-align: middle;
     &:hover {
       color: #52bbda;
     }
@@ -124,9 +126,6 @@ section.guide-section {
 
   &:nth-child(4) {
     background-color: $highlight;
-    ul li {
-      text-align: center;
-    }
     h2, h3, a {
       color: $background-gray;
     }
@@ -247,7 +246,7 @@ ul.left, ul.right {
 /* made it simple */
 
 #wrapper {
-  width: $page_width;
+  max-width: $page_width;
   margin: 0 auto;
 }
 
@@ -260,6 +259,7 @@ section {
     color: #53585F;
     padding-bottom: 10px;
     letter-spacing: -1px;
+    text-align: center;
   }
   h4 {
     display: inline-block;
@@ -272,6 +272,7 @@ section {
       padding: 0;
       margin: 0;
       vertical-align: top;
+      text-align: center;
       a {
         color: #53585F;
         vertical-align: middle;
