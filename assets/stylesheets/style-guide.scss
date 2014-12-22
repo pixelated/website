@@ -71,21 +71,6 @@ ul.right {
   }
 }
 
-section.guide-section {
-  display: block;
-  height: 100%;
-  overflow-y: auto;
-  /*padding: 66px 32px;*/
-
-  &:nth-child(even) {
-    background-color: $top_pane;  
-  }
-
-  &:last-child {
-    min-height: 666px;
-  }
-}
-
 .color-card {
   width: 160px;
   height: 230px;

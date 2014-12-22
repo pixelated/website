@@ -29,6 +29,8 @@ body {
   min-height:100%;
   overflow: hidden;
   background-color: $background-gray;
+  display: block;
+  overflow: scroll !important; 
 }
 
 header#main {
@@ -59,12 +61,6 @@ header#main {
   text-align: right;
 }
 
-
-body {
-  display: block;
-  overflow: scroll !important; 
-}
-
 html {
   font-family: sans-serif;
   line-height: 1.5;
@@ -82,10 +78,10 @@ html {
 nav {
   position: fixed;    
   z-index: 10;
-  width: $page_width;
+  width: 100%;
   background-color: #3e3a37;
   color: white;
-  height: 80px;
+  height: 60px;
   vertical-align: middle;
   
   a {
@@ -108,7 +104,7 @@ ul {
 }
 
 svg#hive {
-  margin-top: 80px;
+  margin-top: 60px;
   width: 100%;
   height: 265px;
   background-color: $action-dark;
@@ -123,7 +119,6 @@ section.guide-section {
   display: block;
   height: 100%;
   overflow-y: auto;
-  /*padding: 66px 32px;*/
 
   &:nth-child(2) {
     background-color: $action-dark;
@@ -144,14 +139,6 @@ section.guide-section {
     a i {
       color: darken($highlight, 20%);
       font-size: 4em;
-      /*
-      background: darken($highlight, 20%);
-      height: 70px;
-      width: 70px;
-      border-radius: 35px;
-      display: inline-block;
-      vertical-align: baseline;
-      */
     }
   }
 
@@ -210,7 +197,6 @@ section#top {
 
 section {
   &.guide-section {
-    /* padding:61px 32px; */
     height: 100%;
     overflow: visible;
   }
@@ -255,10 +241,8 @@ ul.left, ul.right {
   color: #C0B9B9;
 }
 
-/* made it simple */
-
 #wrapper {
-  max-width: $page_width;
+  max-width: 100%;
   margin: 0 auto;
 }
 
