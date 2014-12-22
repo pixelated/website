@@ -75,7 +75,7 @@ section.guide-section {
   display: block;
   height: 100%;
   overflow-y: auto;
-  padding: 66px 32px;
+  /*padding: 66px 32px;*/
 
   &:nth-child(even) {
     background-color: $top_pane;  
