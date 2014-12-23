@@ -1381,7 +1381,13 @@ h3 {
   font-size: 1.375rem;
 }
 
-h4, h5 {
+h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #53585F
+}
+
+h5 {
   font-size: 1.125rem;
 }
 
