@@ -83,7 +83,7 @@ nav {
   color: white;
   height: 60px;
   vertical-align: middle;
-  
+
   a {
     color: $background-gray; 
     vertical-align: middle;
@@ -99,26 +99,17 @@ nav {
   }
 } 
 
-ul {
-  margin: 0 0 0 40px;
-}
-
-svg#hive {
-  margin-top: 60px;
-  width: 100%;
-  height: 265px;
-  background-color: $action-dark;
-  text {
-    font-family: Open Sans;
-    fill: white;
-    font-weight: bold;
-  }
+nav, section.guide-section {
+  padding-right: 12%;
+  padding-left: 12%;
 }
 
 section.guide-section {
   display: block;
   height: 100%;
   overflow-y: auto;
+  /*padding-right: 12%;
+  padding-left: 12%;*/
 
   .no-padding {
     padding: 0;
@@ -149,6 +140,22 @@ section.guide-section {
 
   &:nth-child(5) {
     background-color: white;
+  }
+}
+
+ul {
+  margin: 0 0 0 40px;
+}
+
+svg#hive {
+  margin-top: 60px;
+  width: 100%;
+  height: 265px;
+  background-color: $action-dark;
+  text {
+    font-family: Open Sans;
+    fill: white;
+    font-weight: bold;
   }
 }
 
@@ -223,12 +230,10 @@ blockquote {
 ul li {
   display: list-item;
   list-style: inherit;
-  margin-left: 30px;
 }
 
 ul.left, ul.right {
-  padding: 10px;
-  margin: 0 25px;
+  padding: 10px 0;
   font-weight: bold;
   list-style: none;
 
