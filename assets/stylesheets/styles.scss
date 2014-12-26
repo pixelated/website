@@ -117,16 +117,15 @@ nav {
   }
 } 
 
-.about-section {
-    padding-top: 65px;
-    padding-bottom: 35px;
-  }
-
 section.guide-section {
   padding: 40px 12%;
   display: block;
   height: 100%;
   overflow-y: auto;
+
+  &.about-section {
+    padding-top: 65px;
+} 
 
   .no-padding {
     padding: 0;
@@ -168,6 +167,7 @@ section.guide-section {
   }
 
   color: #53585F;
+
   h2 {
     font-size: 18pt;
     font-weight: 700;
