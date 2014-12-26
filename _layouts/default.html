@@ -8,61 +8,52 @@
     <meta name="description" content="Secure OSS email solution">
 
     <!-- Custom CSS -->
-    <link href="https://sassaas.herokuapp.com/compile?f=https://raw.githubusercontent.com/pixelated-project/pixelated-user-agent/master/web-ui/app/scss/main.scss" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/assets/stylesheets/style-guide.css" type="text/css">
     <link rel="stylesheet" href="/assets/stylesheets/styles.css" type="text/css">
     <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/stylesheets/opensans.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/stylesheets/foundation.css" type="text/css">
+    <link rel="stylesheet" href="/assets/stylesheets/normalize.css" type="text/css">
   </head>
 
 <body>
-
-  <div id="style-guide-wrap" data-offcanvas>
-      <nav>
-        <ul class="left">
-            <li class="project-logo"><a href="/">Pixelated Project</a></li>
+  <div id="wrapper" data-offcanvas>
+    <div class="sticky">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="project-logo"><a href="/"><img src="/assets/images/pixelated-white-small.png"></a></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
-        <ul class="right">
-          <li><a href="/" {%if page.path == "index.md" %}class="active-page"{% endif %}>Home</a></li>
-          <li><a href="/develop_pixelated/" {%if page.path == "develop_pixelated.md" %}class="active-page"{% endif %}>Develop Pixelated</a></li>
-          <li><a href="/style-guide/" {%if page.path == "style-guide.html" %}class="active-page"{% endif %}>Style Guide</a></li>
-        </ul>
+        <section class='top-bar-section'>
+          <ul class="right">
+            <li><a href={% if page.url == '/about/'%} ../{% endif %}#about>ABOUT</a></li>
+            <li><a href={% if page.url == '/about/'%} ../{% endif %}#getting-started>GETTING STARTED</a></li>
+            <li><a href={% if page.url == '/about/'%} ../{% endif %}#contact>CONTACT</a></li>
+          </ul>
+        </section>
       </nav>
-    <section {%if page.url == "/style-guide/" %}class="content-guide" {%else %} class="content"{% endif %}> {{ content }}</section>
-    
-    <footer class="site-footer">
-      <ul>
-        <li>
-          <i class="gray fa fa-github"></i>
-          <a href="https://github.com/pixelated-project">
-            <span class="username">pixelated-project</span>
-          </a>
-        </li>
-        <li>
-          <i class="gray fa fa-envelope"></i>
-          <a href="mailto:&#116;&#101;&#097;&#109;&#064;&#112;&#105;&#120;&#101;&#108;&#097;&#116;&#101;&#100;&#045;&#112;&#114;&#111;&#106;&#101;&#099;&#116;&#046;&#111;&#114;&#103;">
-            <span class="username">team at pixelated - project . org</span>
-          </a>
-            <div class="gray">504A 14EA 39DE 1800 B676 9619 FF0E A8AE D649 7991</div>
-        </li>
-        <li>
-          <i class="gray fa fa-comment"></i>
-          <a href="irc://irc.freenode.net/pixelated">
-            <span class="username">#pixelated at irc.freenode.net</span>
-          </a>
-        </li>
-        <li>
-          <i class="gray fa fa-twitter"></i>
-          <a href="https://twitter.com/pixelatedteam">
-            <span class="username">pixelatedteam</span>
-          </a>
-        </li>
-      </ul>
-    </footer>
+    </div>
+    {{ content }}
   </div>
-
   <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/foundation.js"></script>
+  <script src="/assets/js/foundation.top-bar.js"></script>
+  <script src="/assets/js/snap.svg-min.js"></script>
+  <script src="/assets/js/hive.js"></script>
   <script src="/assets/js/style-guide.js"></script>
+  <script>
+    $(document).foundation();
+    // Hack to make Foundation's top bar work, as simply initializing foundation wasn't working and I couldn't figure out why
+    function toggleMenu() {
+      var topBar;
+      topBar = $('.top-bar');
 
+      if (topBar.hasClass('expanded')) {
+        topBar.removeClass('expanded');
+      } else {
+        topBar.addClass('expanded');
+      }
+    }
+    $('.toggle-topbar').on('click', toggleMenu);
+  </script>
 </body>
 </html>
