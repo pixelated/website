@@ -104,6 +104,10 @@ nav, section.guide-section {
   padding-left: 12%;
 }
 
+.padding-top {
+    padding-top: 75px;
+  }
+
 section.guide-section {
   display: block;
   height: 100%;
@@ -116,6 +120,7 @@ section.guide-section {
 
   &:nth-child(2) {
     background-color: $action-dark;
+    color: white;
     h2, h3 {
       color: $background-gray;
     }
@@ -127,6 +132,7 @@ section.guide-section {
 
   &:nth-child(4) {
     background-color: $highlight;
+    color: white;
     h2, h3, a {
       color: $background-gray;
     }
