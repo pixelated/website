@@ -19,5 +19,5 @@ if ($('#hive').length) {
   }
 
   all.add(pixelated);
-  all.add(hive.text(400, 90, "Modern email with encryption."));
+  all.add(hive.text(400, 90, "Modern email with encryption.").addClass("hide-for-small-only"));
 }
