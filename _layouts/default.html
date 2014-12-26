@@ -42,18 +42,6 @@
   <script src="/assets/js/style-guide.js"></script>
   <script>
     $(document).foundation();
-    // Hack to make Foundation's top bar work, as simply initializing foundation wasn't working and I couldn't figure out why
-    function toggleMenu() {
-      var topBar;
-      topBar = $('.top-bar');
-
-      if (topBar.hasClass('expanded')) {
-        topBar.removeClass('expanded');
-      } else {
-        topBar.addClass('expanded');
-      }
-    }
-    $('.toggle-topbar').on('click', toggleMenu);
   </script>
 </body>
 </html>
