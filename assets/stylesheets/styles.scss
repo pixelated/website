@@ -25,7 +25,20 @@ html {
   height:100%;
 }
 
-body {
+.pixelated .guide-section li a {
+  font-weight: normal;
+}
+
+body.pixelated,
+.pixelated h2,
+.pixelated h3,
+.pixelated .top-bar a
+{
+  font-family: "Open Sans","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+}
+
+body.pixelated {
   min-height:100%;
   overflow: hidden;
   background-color: $background-gray;
