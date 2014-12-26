@@ -2402,7 +2402,6 @@ clear: both; } }
 
 .top-bar {
   overflow: hidden;
-  height: 2.8125rem;
   line-height: 2.8125rem;
   position: relative;
   background: #333333;

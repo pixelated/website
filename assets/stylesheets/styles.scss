@@ -75,6 +75,10 @@ html {
   top: 3px;
 }
 
+.sticky {
+  background-color: #333;
+}
+
 nav {
   position: fixed;    
   z-index: 10;
@@ -270,7 +274,7 @@ ul.left, ul.right {
 }
 
 .top-bar {
-  padding: 0 12%;
+  padding: 8px 12%;
 }
 
 .project-logo {
