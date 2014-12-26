@@ -109,8 +109,7 @@ nav {
   }
 
 section.guide-section {
-  padding-right: 12%;
-  padding-left: 12%;
+  padding: 40px 12%;
   display: block;
   height: 100%;
   overflow-y: auto;
@@ -147,7 +146,6 @@ section.guide-section {
   &:nth-child(5) {
     background-color: white;
   }
-  padding: 20px 40px;
   color: #53585F;
   h2 {
     font-size: 18pt;
@@ -273,6 +271,10 @@ ul.left, ul.right {
 
 .top-bar-section ul{
   background: #333;
+}
+
+.top-bar {
+  padding: 0 12%;
 }
 
 .project-logo {
