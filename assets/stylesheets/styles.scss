@@ -32,6 +32,7 @@ html {
 body.pixelated,
 .pixelated h2,
 .pixelated h3,
+.pixelated h4,
 .pixelated .top-bar a
 {
   font-family: "Open Sans","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -142,6 +143,9 @@ section.guide-section {
 
   &:nth-child(3) {
     background-color: white;
+    h4 {
+      color: $background-dark;
+    }
   }
 
   &:nth-child(4) {
@@ -158,7 +162,11 @@ section.guide-section {
 
   &:nth-child(5) {
     background-color: white;
+    h3 {
+      color: $background-dark;
+    }
   }
+
   color: #53585F;
   h2 {
     font-size: 18pt;
@@ -171,6 +179,11 @@ section.guide-section {
   }
   h4 {
     display: inline-block;
+    color: $background-dark;
+  }
+
+  h3 {
+    color: $background-dark;
   }
 
   ul {
