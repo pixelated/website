@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# LEAP Platform Workshop
+
+---
+
+# Requirements
+
+- One Debian stable box, virtualized or bare metal
+- Remote or local (vagrant or other solutions)
+- 1GB ram, 15gb diskspace
+- able to login via ssh as root
+
+## Caching
+
+- Use local caching proxy: `http://10.92.21.140:8000`
+
+## Documentation Links
+
+- How to setup vagrant for LEAP: https://leap.se/en/docs/platform/development
+- Single node email tutorial: https://leap.se/en/docs/platform/tutorials/single-node-email
+
+---
+
+# Introduction
+
+
+- who are we
+- leap platform
+
+---
+
+# Timetable
+
+- Install LEAP mail provider from scatch        90 mins
+- try pixelated-useragent against new provider
+- Troubleshooting / Questions
+- Free floating
+
+---
+
+# Install LEAP Overview
+
+- Get server ready
+- Decide where to store the configuration (local laptop or on server itself)
+- install [leap_platform](https://leap.se/en/docs/platform/tutorials/single-node-email#Check.out.the.platform) and and the command line tool [leap_cli](https://leap.se/en/docs/platform/tutorials/single-node-email#Install.the.LEAP.command-line.utility)
+
+---
+
+# Caching
+
+Use local caching proxy: `http://10.92.21.140:8000`
+
+# Vagrant Config
+
+- Install [vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf) plugin
+
+```bash
+vagrant plugin install vagrant-proxyconf
+```
+
+Add this to your Vagrantfile
+
+```ruby
+config.apt_proxy.http  = "http://10.92.21.140:8000"
+```
+
+You need to reload/provision your vagrant box after adding this!
+
+---
+
+# Links
+
+https://pixelated-project.org/
+https://leap.se
+
+made with remark, a simple, in-browser, markdown-driven slideshow tool: https://github.com/gnab/remark
+
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
