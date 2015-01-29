@@ -86,9 +86,25 @@ https://pixelated-project.org/slides/hackday-berlin-platform.html
 
 Use local caching proxy: `http://10.92.21.140:8000`
 
-## Vagrant Config
+---
 
-- Install [vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf) plugin
+# Vagrant Config
+
+Import workshop basebox
+
+```bash
+vagrant box add platform-workshop.box
+```
+
+Create Vagrantfile
+
+```bash
+vagrant init platform-workshop
+```
+
+## Configure caching
+
+Install [vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf) plugin
 
 ```bash
 vagrant plugin install vagrant-proxyconf
@@ -100,7 +116,32 @@ Add this to your Vagrantfile
 config.apt_proxy.http  = "http://10.92.21.140:8000"
 ```
 
-You need to reload/provision your vagrant box after adding this!
+---
+
+# Configure Vagrant Port-Forwarding
+
+```ruby
+config.vm.network :forwarded_port, guest: 3333, guest_ip: '127.0.0.1', host: 3333
+```
+
+## Start the box
+
+```bash
+vagrant up
+```
+
+## Log in
+
+```bash
+vagrant ssh
+```
+
+After logging into your box, you should find this file:
+
+```bash
+$ cat /etc/apt/apt.conf.d/01proxy
+Acquire::http::Proxy "http://10.92.21.140:8000";
+```
 
 ???
 
@@ -118,9 +159,24 @@ ssh root@1.2.3.4
 
 ---
 
-# Lets's go
+# Let's go
 
 We'll follow the [LEAP Single node email tutorial](https://leap.se/en/docs/platform/tutorials/single-node-email)
+
+Basically, it boils down to these commands to set up a LEAP email provider:
+
+```
+mkdir -p ~/leap/example
+cd ~/leap/example/
+leap new .
+ssh-keygen
+leap add-user --self
+leap cert ca
+leap cert csr
+leap node add node1 ip_address:<IP> services:couchdb,mx,soledad,webapp tags:production
+leap node init production
+leap deploy
+```
 
 ???
 
@@ -143,12 +199,45 @@ leap inspect provider.json
 leap inspect files/ca/ca.crt
 ```
 
+...
+
+---
+
+# Testing
+
+```bash
+vagrant@leap-debian:~/leap/example$ leap test
+ = [node1.example.org] PASS: Network > Can connect to internet?
+ = [node1.example.org] PASS: Network > Is stunnel running?
+ = [node1.example.org] PASS: Network > Is shorewall running?
+ = [node1.example.org] PASS: CouchDB > Are daemons running?
+ = [node1.example.org] PASS: CouchDB > Is CouchDB running?
+ = [node1.example.org] PASS: CouchDB > Is cluster membership ok?
+ = [node1.example.org] PASS: CouchDB > Are configured nodes online?
+ = [node1.example.org] PASS: CouchDB > Do ACL users exist?
+ = [node1.example.org] PASS: CouchDB > Do required databases exist?
+ = [node1.example.org] PASS: CouchDB > Can records be created?
+ = [node1.example.org] PASS: Mx > Can contact couchdb?
+ = [node1.example.org] PASS: Mx > Can contact couchdb via haproxy?
+ = [node1.example.org] PASS: Mx > Are MX daemons running?
+ = [node1.example.org] PASS: Soledad > Is Soledad running?
+ = [node1.example.org] PASS: Webapp > Can contact couchdb?
+ = [node1.example.org] PASS: Webapp > Can contact couchdb via haproxy?
+ = [node1.example.org] PASS: Webapp > Are daemons running?
+ = [node1.example.org] PASS: Webapp > Can access webapp?
+ = [node1.example.org] PASS: Webapp > Can create and authenticate and delete user via API?
+ = [node1.example.org] PASS: Webapp > Can sync Soledad?
+ = [node1.example.org] 20 tests: 20 passes, 0 skips, 0 warnings, 0 failures, 0 errors
+```
+
+Something failing ? See the [LEAP Troubleshooting documentation section](https://leap.se/en/docs/platform/troubleshooting)
 
 ---
 
 # Setup DNS / local resolver
 
-Only needed if you want to access the platform from your local laptop:
+Only needed if you want to access the platform from your local laptop,
+this is beeing setup during `leap deploy` on the server:
 
 Add this to /etc/hosts:
 ```bash
@@ -156,6 +245,42 @@ x.x.x.w node1.example.org example.org api.example.org nicknym.example.org
 ```
 
 ---
+
+# Let's try it
+
+## Register User
+
+```bash
+$ pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt --register example.org testuser1
+```
+
+put this into ~/pixelated.cfg:
+```
+[pixelated]
+HOST=127.0.0.1
+PORT=3333
+LEAP_USERNAME=testuser1
+LEAP_PASSWORD=...
+#LEAP_SERVER_NAME=staging.pixelated-project.org
+LEAP_SERVER_NAME=example.org
+```
+
+## First run
+
+```bash
+pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt --config ~/pixelated.cfg
+```
+
+## Subsequent runs
+
+At the moment, you need to remove an existing ~/.leap folder before starting the useragen again:
+
+```
+rm -rf ~/.leap/
+```
+
+---
+
 
 # Links
 
