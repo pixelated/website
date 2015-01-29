@@ -71,14 +71,22 @@ https://pixelated-project.org/slides/hackday-berlin-platform.html
 - Get server ready
 - Decide where to store the configuration (local laptop or on server itself)
 - install [leap_platform](https://leap.se/en/docs/platform/tutorials/single-node-email#Check.out.the.platform) and and the command line tool [leap_cli](https://leap.se/en/docs/platform/tutorials/single-node-email#Install.the.LEAP.command-line.utility)
+- configure provider configuration using leap_cli
+- deploy configuratiom to server using leap_cli
+
+???
+
+- leap deploy takes ~30 mins, we'll use this time to explain more about the platform
 
 ---
 
-# Caching
+# Get box ready
+
+## Caching
 
 Use local caching proxy: `http://10.92.21.140:8000`
 
-# Vagrant Config
+## Vagrant Config
 
 - Install [vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf) plugin
 
@@ -93,6 +101,59 @@ config.apt_proxy.http  = "http://10.92.21.140:8000"
 ```
 
 You need to reload/provision your vagrant box after adding this!
+
+???
+
+- leap deploy will download a lot of debian packages
+- gems as well (but uses https)
+
+# ssh
+
+
+You should be able to login like this:
+
+```
+ssh root@1.2.3.4
+```
+
+---
+
+# Lets's go
+
+We'll follow the [LEAP Single node email tutorial](https://leap.se/en/docs/platform/tutorials/single-node-email)
+
+???
+
+- Open tutorial in browser and continue until "leap deploy"
+
+---
+
+# Waiting...
+
+![Default-aligned image](img/compiling.png)
+
+---
+
+# More about the Platform
+
+leap inspect:
+
+```bash
+leap inspect provider.json
+leap inspect files/ca/ca.crt
+```
+
+
+---
+
+# Setup DNS / local resolver
+
+Only needed if you want to access the platform from your local laptop:
+
+Add this to /etc/hosts:
+```bash
+x.x.x.w node1.example.org example.org api.example.org nicknym.example.org
+```
 
 ---
 
