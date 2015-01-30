@@ -52,15 +52,16 @@ https://pixelated-project.org/slides/hackday-berlin-platform.html
 
 ???
 
-- who are we
-- thoughtworks / pixelated / leap
+- Who are we
+- Thoughtworks / Pixelated / LEAP
+- We want to have an LEAP email provider running during this workshop !
 
 ---
 
 # Overview
 
-- Install LEAP mail provider from scatch        90 mins
-- try pixelated-useragent against new provider
+- Install LEAP mail provider from scatch
+- Try pixelated-useragent against new provider
 - Troubleshooting / Questions
 - Hacking !1!
 
@@ -70,9 +71,9 @@ https://pixelated-project.org/slides/hackday-berlin-platform.html
 
 - Get server ready
 - Decide where to store the configuration (local laptop or on server itself)
-- install [leap_platform](https://leap.se/en/docs/platform/tutorials/single-node-email#Check.out.the.platform) and and the command line tool [leap_cli](https://leap.se/en/docs/platform/tutorials/single-node-email#Install.the.LEAP.command-line.utility)
-- configure provider configuration using leap_cli
-- deploy configuratiom to server using leap_cli
+- Install [leap_platform](https://leap.se/en/docs/platform/tutorials/single-node-email#Check.out.the.platform) and and the command line tool [leap_cli](https://leap.se/en/docs/platform/tutorials/single-node-email#Install.the.LEAP.command-line.utility)
+- Configure provider configuration using leap_cli
+- Deploy configuratiom to server using leap_cli
 
 ???
 
@@ -165,18 +166,21 @@ We'll follow the [LEAP Single node email tutorial](https://leap.se/en/docs/platf
 
 Basically, it boils down to these commands to set up a LEAP email provider:
 
-```
+```bash
 mkdir -p ~/leap/example
+mv ~/leap_platform ~/leap/
 cd ~/leap/example/
 leap new .
-ssh-keygen
 leap add-user --self
 leap cert ca
 leap cert csr
+/sbin/ifconfig
 leap node add node1 ip_address:<IP> services:couchdb,mx,soledad,webapp tags:production
 leap node init production
 leap deploy
 ```
+
+- Use screen or tmux so you can do things while deploy is running
 
 ???
 
@@ -192,7 +196,57 @@ leap deploy
 
 # More about the Platform
 
-leap inspect:
+- Puppet recipes
+- A lot of puppet modules
+- uses puppet hiera for node configuration data
+- Tries to use standard tools where possible (couchdb, postfix, gpg, …)
+- Installs and configures LEAP tools on top (leap_mx, nicknym, …)
+
+???
+
+- shared modules project
+
+---
+
+# Leap MX
+
+- Queries db to resolve aliases, encrypts and stores incoming emails to the user's db
+- Mail is stored encrypted completly, including headers
+
+# Database
+
+- Bigcouch, moving to Couchdb 2.0 soon
+- horizontally scaleable, document oriented NoSQL
+
+???
+
+bigcouch merge
+
+---
+
+# Web App
+
+- Admin User Managment
+- Helpdesk for users
+
+
+---
+
+# Provider Configuration
+
+## Files of interest
+
+```
+Leapfile
+provider.json
+hiera/node1.yaml
+nodes/
+tags/
+users/
+services/
+```
+
+## `leap inspect`
 
 ```bash
 leap inspect provider.json
@@ -200,6 +254,24 @@ leap inspect files/ca/ca.crt
 ```
 
 ...
+
+---
+
+# LEAP Web API URLs
+
+
+https://192.168.121.51/1/config/soledad-service.json
+
+
+# SSH
+
+- standard vagarnt ssh keypair is preinstalled on vagrant workshop box for the user vagrant
+
+Use this to login:
+
+```bash
+ssh -i ~/.vagrant.d/insecure_private_key root@<IP>
+```
 
 ---
 
@@ -254,8 +326,8 @@ x.x.x.w node1.example.org example.org api.example.org nicknym.example.org
 $ pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt --register example.org testuser1
 ```
 
-put this into ~/pixelated.cfg:
-```
+put this into /vagrant/pixelated.cfg:
+```bash
 [pixelated]
 HOST=127.0.0.1
 PORT=3333
@@ -267,16 +339,36 @@ LEAP_SERVER_NAME=example.org
 
 ## First run
 
-```bash
-pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt --config ~/pixelated.cfg
-```
-
-## Subsequent runs
-
 At the moment, you need to remove an existing ~/.leap folder before starting the useragen again:
 
-```
+```bash
 rm -rf ~/.leap/
+pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt --config /vagrant/pixelated.cfg
+```
+
+## Send testmail
+
+```bash
+/etc/init.d/leap-mx restart
+
+apt-get install swaks
+swaks -f swaks@example.org -t testuser1@example.org -s example.org
+```
+
+---
+
+# Use the useragent UI
+
+Open this URL in your browser:
+
+```bash
+http://localhost:3333
+```
+
+# LEAP Webapp
+
+```bash
+https://<IP>
 ```
 
 ---
@@ -287,7 +379,7 @@ rm -rf ~/.leap/
 https://pixelated-project.org/
 https://leap.se
 
-made with remark, a simple, in-browser, markdown-driven slideshow tool: https://github.com/gnab/remark
+made with [remark](https://github.com/gnab/remark), a simple, in-browser, markdown-driven slideshow tool
 
 
 
