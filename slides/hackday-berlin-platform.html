@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>LEAP PLatform Workshop</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -13,15 +13,22 @@
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
+      .footnote {
+        position: absolute;
+        bottom: 4em;
+      }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
     </style>
-  </head>
+    <link rel="icon" href="https://leap.se/favicon.ico" type="image/x-icon" />
+    </head>
   <body>
     <textarea id="source">
 
 class: center, middle
 
 <img src="img/pixelated-hackday-Berlin.png" height="75%" width="75%" align="top" />
+<img src="img/leap-color-small.png" height="25%" width="25%" align="middle" />
+
 # LEAP Platform Workshop
 
 slides are available at:
@@ -30,25 +37,30 @@ https://pixelated-project.org/slides/hackday-berlin-platform.html
 
 ---
 
-# Requirements
-
+### Server Requirements
 - One Debian stable box, virtualized or bare metal
 - Remote or local (vagrant or other solutions)
-- 1GB ram, 15gb diskspace
-- able to login via ssh as root
+- 1gb ram, 15gb diskspace
+- Login possible via ssh as root
 
-## Caching
+### Vagrant
 
-- Use local caching proxy: `http://10.92.21.140:8000`
+- Copy workshop vagratbox from network (http://1.2.3.4:8000/hackday-platform.box)
+  or usbstick
 
-## Documentation Links
+### Caching
+
+- For local boxes use caching proxy: `http://10.92.21.140:8000`
+
+### Documentation Links
 
 - [How to setup vagrant for LEAP](https://leap.se/en/docs/platform/development)
 - [Single node email tutorial](https://leap.se/en/docs/platform/tutorials/single-node-email)
 
 ---
+name: introduction
 
-# Introduction
+## Introduction
 
 ???
 
@@ -58,38 +70,46 @@ https://pixelated-project.org/slides/hackday-berlin-platform.html
 
 ---
 
-# Overview
+## Overview
 
-- Install LEAP mail provider from scatch
-- Try pixelated-useragent against new provider
+- Install LEAP email provider from scatch
+
+--
+
+- Overview of LEAP platform software
+
+--
+
+- Try pixelated-useragent or Bitmask against new provider
+
+--
+
 - Troubleshooting / Questions
+
+--
+
 - Hacking !1!
-
----
-
-# Install LEAP Overview
-
-- Get server ready
-- Decide where to store the configuration (local laptop or on server itself)
-- Install [leap_platform](https://leap.se/en/docs/platform/tutorials/single-node-email#Check.out.the.platform) and and the command line tool [leap_cli](https://leap.se/en/docs/platform/tutorials/single-node-email#Install.the.LEAP.command-line.utility)
-- Configure provider configuration using leap_cli
-- Deploy configuratiom to server using leap_cli
 
 ???
 
-- leap deploy takes ~30 mins, we'll use this time to explain more about the platform
+- leap deploy takes ~30 mins, we'll explain more about the platform
 
 ---
+template: default
+layout: true
 
-# Get box ready
+#### Preparation
+---
 
-## Caching
+## Get box ready
+
+### Caching
 
 Use local caching proxy: `http://10.92.21.140:8000`
 
 ---
 
-# Vagrant Config
+## Vagrant Config
 
 Import workshop basebox
 
@@ -102,6 +122,13 @@ Create Vagrantfile
 ```bash
 vagrant init platform-workshop
 ```
+
+## Configure Vagrant Port-Forwarding
+
+```ruby
+config.vm.network :forwarded_port, guest: 3333, guest_ip: '127.0.0.1', host: 3333
+```
+---
 
 ## Configure caching
 
@@ -119,11 +146,6 @@ config.apt_proxy.http  = "http://10.92.21.140:8000"
 
 ---
 
-# Configure Vagrant Port-Forwarding
-
-```ruby
-config.vm.network :forwarded_port, guest: 3333, guest_ip: '127.0.0.1', host: 3333
-```
 
 ## Start the box
 
@@ -131,7 +153,7 @@ config.vm.network :forwarded_port, guest: 3333, guest_ip: '127.0.0.1', host: 333
 vagrant up
 ```
 
-## Log in
+### Log in
 
 ```bash
 vagrant ssh
@@ -149,22 +171,29 @@ Acquire::http::Proxy "http://10.92.21.140:8000";
 - leap deploy will download a lot of debian packages
 - gems as well (but uses https)
 
-# ssh
+---
+template: default
+layout: true
 
-
-You should be able to login like this:
-
-```
-ssh root@1.2.3.4
-```
+#### Install LEAP
 
 ---
 
-# Let's go
+## Install LEAP Overview
+
+- Get server ready
+- Where to store the configuration
+- Install [leap_platform](https://leap.se/en/docs/platform/tutorials/single-node-email#Check.out.the.platform) and and the command line tool [leap_cli](https://leap.se/en/docs/platform/tutorials/single-node-email#Install.the.LEAP.command-line.utility)
+- Configure provider
+- Deploy configuration to server
+
+---
+
+## Let's go
 
 We'll follow the [LEAP Single node email tutorial](https://leap.se/en/docs/platform/tutorials/single-node-email)
 
-Basically, it boils down to these commands to set up a LEAP email provider:
+It boils down to these commands to set up a LEAP email provider:
 
 ```bash
 mkdir -p ~/leap/example
@@ -188,13 +217,22 @@ leap deploy
 
 ---
 
-# Waiting...
+## Waiting...
 
 ![Default-aligned image](img/compiling.png)
 
+???
+
+Show this slide when deployment is running
+
+---
+template: default
+layout: true
+
+#### LEAP Platform
 ---
 
-# More about the Platform
+## More about the Platform
 
 - Puppet recipes
 - A lot of puppet modules
@@ -205,36 +243,95 @@ leap deploy
 ???
 
 - shared modules project
+- sane and secure default settings
 
 ---
 
-# Leap MX
+## Leap MX
 
+- Running on mx server
 - Queries db to resolve aliases, encrypts and stores incoming emails to the user's db
 - Mail is stored encrypted completly, including headers
 
-# Database
+<br>
+<br>
+
+.footnote[https://leap.se/git/leap_mx.git]
+
+---
+
+## Nicknym
+
+- Public key lookup, mapping nicknames to user keys
+- OpenPGP, OTR, X.509, RSA, etc.
+- federated protocol
+-  Different Levels of trust:
+  - TOFU first, i.e. lookup gpg keyservers
+  - lookup DNSSEC / DANE entries
+  - keys signed by own LEAP provider
+  - Federated Web of trust bewtween different LEAP providers
+
+
+- Similar projects: [Nyms.io](http://nyms.io/), developed by [Subgraph](https://subgraph.com/sgos/secure-communication/index.en.html)
+
+.footnote[https://leap.se/de/docs/design/nicknym]
+
+
+---
+
+## Web App
+
+- Admin User Managment
+- Helpdesk for users
+- API for clients to communicate
+
+.footnote[https://leap.se/de/docs/design/webapp]
+
+---
+
+## Secure Remote Password
+
+- provider never has access to the password cleartext
+
+.footnote[https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol]
+
+???
+
+## SRP
+
+- no more lavabit !
+
+---
+
+## Couchdb
 
 - Bigcouch, moving to Couchdb 2.0 soon
 - horizontally scaleable, document oriented NoSQL
 
+## Soledad
+
+- client-encrypted storage
+- based on Ubuntu u1db
+- Sync to multiple devices
+- offline support
+
+.footnote[https://leap.se/de/docs/design/soledad]
+
 ???
 
-bigcouch merge
+### couchdb
+
+- bigcouch merge
+
+### soledad
+
+- keys and data is stored in soledad
 
 ---
 
-# Web App
+## Provider Configuration
 
-- Admin User Managment
-- Helpdesk for users
-
-
----
-
-# Provider Configuration
-
-## Files of interest
+### Files of interest
 
 ```
 Leapfile
@@ -246,67 +343,79 @@ users/
 services/
 ```
 
-## `leap inspect`
+## leap inspect
 
 ```bash
 leap inspect provider.json
 leap inspect files/ca/ca.crt
 ```
 
-...
-
 ---
-
-# LEAP Web API URLs
+???
+## LEAP Web API URLs
 
 
 https://192.168.121.51/1/config/soledad-service.json
 
+---
+???
+## SSH
 
-# SSH
+- standard vagrant ssh keypair is preinstalled on workshop box for the user vagrant
 
-- standard vagarnt ssh keypair is preinstalled on vagrant workshop box for the user vagrant
-
-Use this to login:
+After deploying, use this to login:
 
 ```bash
 ssh -i ~/.vagrant.d/insecure_private_key root@<IP>
 ```
 
+???
+
+- this pubkey was added by the `leap add-user --self` cmd
+
 ---
 
-# Testing
+## Fixing leap_mx
 
 ```bash
-vagrant@leap-debian:~/leap/example$ leap test
+/etc/init.d/leap-mx restart
+```
+
+---
+
+## Testing
+
+```bash
+*vagrant@leap-debian:~/leap/example$ leap test
  = [node1.example.org] PASS: Network > Can connect to internet?
  = [node1.example.org] PASS: Network > Is stunnel running?
  = [node1.example.org] PASS: Network > Is shorewall running?
  = [node1.example.org] PASS: CouchDB > Are daemons running?
  = [node1.example.org] PASS: CouchDB > Is CouchDB running?
- = [node1.example.org] PASS: CouchDB > Is cluster membership ok?
- = [node1.example.org] PASS: CouchDB > Are configured nodes online?
- = [node1.example.org] PASS: CouchDB > Do ACL users exist?
- = [node1.example.org] PASS: CouchDB > Do required databases exist?
+ … 
  = [node1.example.org] PASS: CouchDB > Can records be created?
  = [node1.example.org] PASS: Mx > Can contact couchdb?
  = [node1.example.org] PASS: Mx > Can contact couchdb via haproxy?
  = [node1.example.org] PASS: Mx > Are MX daemons running?
  = [node1.example.org] PASS: Soledad > Is Soledad running?
  = [node1.example.org] PASS: Webapp > Can contact couchdb?
- = [node1.example.org] PASS: Webapp > Can contact couchdb via haproxy?
- = [node1.example.org] PASS: Webapp > Are daemons running?
- = [node1.example.org] PASS: Webapp > Can access webapp?
+ …
  = [node1.example.org] PASS: Webapp > Can create and authenticate and delete user via API?
  = [node1.example.org] PASS: Webapp > Can sync Soledad?
  = [node1.example.org] 20 tests: 20 passes, 0 skips, 0 warnings, 0 failures, 0 errors
 ```
 
-Something failing ? See the [LEAP Troubleshooting documentation section](https://leap.se/en/docs/platform/troubleshooting)
+---
+
+# Something failing ?
+
+<img src="img/omg-onoz.gif" height="30%" width="30%" align="middle" />
+
+- See the [LEAP Troubleshooting documentation section](https://leap.se/en/docs/platform/troubleshooting)
 
 ---
 
-# Setup DNS / local resolver
+## Setup DNS / local resolver
 
 Only needed if you want to access the platform from your local laptop,
 this is beeing setup during `leap deploy` on the server:
@@ -317,13 +426,17 @@ x.x.x.w node1.example.org example.org api.example.org nicknym.example.org
 ```
 
 ---
+template: default
+layout: true
 
-# Let's try it
+#### Pixelated Useragent
+---
 
 ## Register User
 
 ```bash
-$ pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt --register example.org testuser1
+$ pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt \
+  --register example.org testuser1
 ```
 
 put this into /vagrant/pixelated.cfg:
@@ -337,27 +450,28 @@ LEAP_PASSWORD=...
 LEAP_SERVER_NAME=example.org
 ```
 
+---
+
 ## First run
 
 At the moment, you need to remove an existing ~/.leap folder before starting the useragen again:
 
 ```bash
 rm -rf ~/.leap/
-pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt --config /vagrant/pixelated.cfg
+pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt \
+  --config /vagrant/pixelated.cfg
 ```
 
 ## Send testmail
 
 ```bash
-/etc/init.d/leap-mx restart
-
 apt-get install swaks
 swaks -f swaks@example.org -t testuser1@example.org -s example.org
 ```
 
 ---
 
-# Use the useragent UI
+## Use the useragent UI
 
 Open this URL in your browser:
 
@@ -365,18 +479,80 @@ Open this URL in your browser:
 http://localhost:3333
 ```
 
-# LEAP Webapp
+---
+template: default
+layout: true
+
+#### Etc
+
+---
+
+## LEAP Webapp
 
 ```bash
-https://<IP>
+https://example.org
 ```
 
 ---
 
+## Query keys
 
-# Links
+### Simple query for domain-internal keys using webapp:
+
+```bash
+curl -sk https://example.org/key/testuser1
+```
+
+### Query nickserver:
+
+```bash
+curl -sk -X POST -d address=testuser1@example.org https://example.org:6425
+```
+
+or slightly easier
+
+```bash
+curl -sk https://example.org:6425/?address=testuser1@example.org
+```
+
+Query 'foreign' key:
+
+```bash
+curl -sk https://example.org:6425/?address=varac@leap.se
+```
+
+---
+
+## Bitmask
+<img src="img/bitmask.net.png" height="25%" width="25%" align="top" />
+
+- Currently only for Android (VPN only) and Debian/Ubuntu
+- Installation Details: https://bitmask.net/en/install
+- Userguide: https://leap.se/en/docs/client/user-running
+
+.footnote[https://leap.se/en/docs/client]
+
+---
+
+# Want more ?
+
+### Adding monitor service
+
+- Add "monitor" service to nodes/node1.json
+
+- deploy
+```bash
+leap deploy
+```
+
+- Nagios is at https://example.org/nagios3/
+
+---
+
+## Links
 
 https://pixelated-project.org/
+
 https://leap.se
 
 made with [remark](https://github.com/gnab/remark), a simple, in-browser, markdown-driven slideshow tool
