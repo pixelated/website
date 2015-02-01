@@ -40,17 +40,17 @@ https://pixelated-project.org/slides/hackday-berlin-platform.html
 ### Server Requirements
 - One Debian stable box, virtualized or bare metal
 - Remote or local (vagrant or other solutions)
-- 1gb ram, 15gb diskspace
+- 512mb ram, 15gb diskspace
 - Login possible via ssh as root
 
 ### Vagrant
 
-- Copy workshop vagratbox from network (http://1.2.3.4:8000/hackday-platform.box)
+- Copy workshop vagratbox from network (http://192.168.5.104/)
   or usbstick
 
 ### Caching
 
-- For local boxes use caching proxy: `http://10.92.21.140:8000`
+- For local boxes use caching proxy: http://192.168.5.104:8000
 
 ### Documentation Links
 
@@ -105,7 +105,7 @@ layout: true
 
 ### Caching
 
-Use local caching proxy: `http://10.92.21.140:8000`
+Use local caching proxy: http://192.168.5.104:8000
 
 ---
 
@@ -114,13 +114,13 @@ Use local caching proxy: `http://10.92.21.140:8000`
 Import workshop basebox
 
 ```bash
-vagrant box add platform-workshop.box
+vagrant box add hackday-platform hackday-platform.box ~/Downloads/hackday-platform.box
 ```
 
 Create Vagrantfile
 
 ```bash
-vagrant init platform-workshop
+vagrant init hackday-platform
 ```
 
 ## Configure Vagrant Port-Forwarding
@@ -141,7 +141,7 @@ vagrant plugin install vagrant-proxyconf
 Add this to your Vagrantfile
 
 ```ruby
-config.apt_proxy.http  = "http://10.92.21.140:8000"
+config.apt_proxy.http  = "http://192.168.5.104:8000"
 ```
 
 ---
@@ -163,7 +163,7 @@ After logging into your box, you should find this file:
 
 ```bash
 $ cat /etc/apt/apt.conf.d/01proxy
-Acquire::http::Proxy "http://10.92.21.140:8000";
+Acquire::http::Proxy "http://192.168.5.104:8000";
 ```
 
 ???
@@ -196,6 +196,7 @@ We'll follow the [LEAP Single node email tutorial](https://leap.se/en/docs/platf
 It boils down to these commands to set up a LEAP email provider:
 
 ```bash
+vagrant ssh
 mkdir -p ~/leap/example
 mv ~/leap_platform ~/leap/
 cd ~/leap/example/
@@ -378,7 +379,7 @@ ssh -i ~/.vagrant.d/insecure_private_key root@<IP>
 ## Fixing leap_mx
 
 ```bash
-/etc/init.d/leap-mx restart
+sudo /etc/init.d/leap-mx restart
 ```
 
 ---
@@ -458,7 +459,8 @@ At the moment, you need to remove an existing ~/.leap folder before starting the
 
 ```bash
 rm -rf ~/.leap/
-pixelated-user-agent --leap-cert ~/leap/example/files/ca/ca.crt \
+pixelated-user-agent --host 0.0.0.0 \
+  --leap-cert ~/leap/example/files/ca/ca.crt \
   --config /vagrant/pixelated.cfg
 ```
 
@@ -477,6 +479,12 @@ Open this URL in your browser:
 
 ```bash
 http://localhost:3333
+```
+
+Doesn't work ? Try disabling the firewall on the vagrantbox (only use for testing):
+
+```bash
+sudo shorewall clear
 ```
 
 ---
