@@ -1,0 +1,9 @@
+
+article.blogpost, main.posts {
+  width: 70%;
+  margin: 40px auto 0;
+}
+
+article.blogpost h1 {
+  text-align: center;
+}
