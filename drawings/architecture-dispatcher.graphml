@@ -18,10 +18,10 @@
       <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="401.0" width="678.54" x="59.72999999999996" y="125.04000000000002"/>
-          <y:Fill color="#FDAB3D" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="337.27" y="198.5">
+          <y:Geometry height="401.0" width="695.54" x="50.72999999999996" y="125.04000000000002"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#FDAB3D" type="line" width="4.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="345.77" y="198.5">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -38,7 +38,7 @@
         <y:ShapeNode>
           <y:Geometry height="126.63999999999993" width="89.56000000000006" x="86.0" y="146.68000000000004"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="44.8544921875" modelName="internal" modelPosition="t" textColor="#3E3A37" visible="true" width="74.7080078125" x="7.42599609375003" y="4.0">User's
 Computer</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
@@ -50,7 +50,7 @@ Computer</y:NodeLabel>
         <y:ShapeNode>
           <y:Geometry height="215.93988272831396" width="213.24999999999994" x="284.0" y="146.68000000000006"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="24.42724609375" modelName="internal" modelPosition="t" textColor="#3E3A37" visible="true" width="147.63525390625" x="32.807373046875" y="4.0">Pixelated Dispatcher</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
@@ -61,7 +61,7 @@ Computer</y:NodeLabel>
         <y:ShapeNode>
           <y:Geometry height="55.0" width="70.56000000000006" x="324.71999999999997" y="212.5"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.68359375" modelName="custom" textColor="#3E3A37" visible="true" width="64.48046875" x="3.0397656250000296" y="9.158203125">Dispatcher
 Proxy<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -80,7 +80,7 @@ Proxy<y:LabelModel>
         <y:ShapeNode>
           <y:Geometry height="55.0" width="70.56000000000006" x="414.71999999999997" y="290.5"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.68359375" modelName="custom" textColor="#3E3A37" visible="true" width="64.48046875" x="3.0397656250000296" y="9.158203125">Dispatcher
 Manager<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -99,7 +99,7 @@ Manager<y:LabelModel>
         <y:ShapeNode>
           <y:Geometry height="44.400000000000034" width="51.56000000000006" x="105.0" y="217.79999999999998"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.341796875" modelName="custom" textColor="#3E3A37" visible="true" width="50.611328125" x="0.47433593750002956" y="12.029101562500017">Browser<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -117,7 +117,7 @@ Manager<y:LabelModel>
         <y:ShapeNode>
           <y:Geometry height="55.0" width="81.24000000000018" x="552.5200000000002" y="298.04"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.68359375" modelName="custom" textColor="#3E3A37" visible="true" width="66.455078125" x="7.392460937500118" y="9.158203125">Pixelated
 User-Agent<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -136,7 +136,7 @@ User-Agent<y:LabelModel>
         <y:ShapeNode>
           <y:Geometry height="55.0" width="81.24000000000018" x="544.8800000000007" y="253.45988272831408"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.68359375" modelName="custom" textColor="#3E3A37" visible="true" width="66.455078125" x="7.392460937500118" y="9.158203125">Pixelated
 User-Agent<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -155,7 +155,7 @@ User-Agent<y:LabelModel>
         <y:ShapeNode>
           <y:Geometry height="55.0" width="81.24000000000018" x="532.0800000000006" y="204.12000000000006"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.68359375" modelName="custom" textColor="#3E3A37" visible="true" width="66.455078125" x="7.392460937500118" y="9.158203125">Pixelated
 User-Agent<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -174,7 +174,7 @@ User-Agent<y:LabelModel>
         <y:ShapeNode>
           <y:Geometry height="55.00000000000003" width="425.56000000000006" x="284.0" y="410.04"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#3E3A37" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="24.42724609375" modelName="custom" textColor="#3E3A37" visible="true" width="103.228515625" x="161.16574218750003" y="15.286376953125">LEAP Platform<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -191,10 +191,10 @@ User-Agent<y:LabelModel>
       <data key="d4"/>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="38.0" width="678.54" x="59.72999999999996" y="81.32000000000002"/>
+          <y:Geometry height="38.0" width="695.54" x="50.72999999999996" y="81.32000000000002"/>
           <y:Fill color="#FF7902" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.236328125" modelName="custom" textColor="#FFFFFF" visible="true" width="388.8828125" x="144.82859374999998" y="3.3818359375">High Level Overview Pixelated Dispatcher<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.236328125" modelName="custom" textColor="#FFFFFF" visible="true" width="388.8828125" x="153.32859374999998" y="3.3818359375">High Level Overview Pixelated Dispatcher<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -315,7 +315,7 @@ User-Agent<y:LabelModel>
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="8.374999999999943" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="7.874999999999943" sy="62.02880130636265" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="plain"/>
           <y:BendStyle smoothed="false"/>
