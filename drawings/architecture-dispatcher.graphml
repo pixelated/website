@@ -193,7 +193,7 @@ User-Agent<y:LabelModel>
         <y:ShapeNode>
           <y:Geometry height="38.0" width="695.54" x="50.72999999999996" y="81.32000000000002"/>
           <y:Fill color="#FF7902" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#FF7902" type="line" width="4.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.236328125" modelName="custom" textColor="#FFFFFF" visible="true" width="388.8828125" x="153.32859374999998" y="3.3818359375">High Level Overview Pixelated Dispatcher<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>

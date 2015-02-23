@@ -168,7 +168,7 @@
         <y:ShapeNode>
           <y:Geometry height="62.81249999999994" width="1381.3172371686908" x="-1.3541666666667425" y="-1.4062499999999716"/>
           <y:Fill color="#FF7902" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#FF7902" type="line" width="4.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Open Sans" fontSize="30" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="44.8544921875" modelName="custom" textColor="#FFFFFF" visible="true" width="584.400390625" x="398.4584232718454" y="8.979003906249972">High Level Overview Pixelated User Agent<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>

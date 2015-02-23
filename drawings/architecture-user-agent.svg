@@ -121,21 +121,24 @@
     <g stroke-linecap="butt" font-size="30" transform="matrix(1,0,0,1,17,17)" fill="white" text-rendering="geometricPrecision" font-family="'Open Sans'" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
       <text x="399.1042" xml:space="preserve" y="41.6382" clip-path="url(#clipPath2)" stroke="none">High Level Overview Pixelated User Agent</text>
     </g>
-    <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,17,17)" stroke-linecap="butt">
-      <path fill="none" d="M582.1985 336.6397 L729.7982 336.6397" clip-path="url(#clipPath2)"/>
-      <path d="M737.7982 336.6397 L725.7982 331.6397 L728.7982 336.6397 L725.7982 341.6397 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <text x="640.448" font-size="15" y="328.2452" clip-path="url(#clipPath2)" font-family="'Open Sans'" stroke="none" xml:space="preserve">SMTP</text>
+    <g stroke-linecap="butt" transform="matrix(1,0,0,1,17,17)" fill="rgb(255,121,2)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(255,121,2)" stroke-width="4" stroke-miterlimit="1.45">
+      <rect fill="none" x="-1.3542" width="1381.3172" height="62.8125" y="-1.4062" clip-path="url(#clipPath2)"/>
+      <path fill="none" d="M582.1985 336.6397 L729.7982 336.6397" stroke-width="1" clip-path="url(#clipPath2)" stroke="black"/>
+      <path fill="black" d="M737.7982 336.6397 L725.7982 331.6397 L728.7982 336.6397 L725.7982 341.6397 Z" stroke-width="1" clip-path="url(#clipPath2)" stroke="none"/>
+    </g>
+    <g font-size="15" stroke-linecap="butt" transform="matrix(1,0,0,1,17,17)" text-rendering="geometricPrecision" font-family="'Open Sans'" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
+      <text x="640.448" xml:space="preserve" y="328.2452" clip-path="url(#clipPath2)" stroke="none">SMTP</text>
       <path fill="none" d="M131.0938 241.4238 L131.0938 412.0595 L339.8398 412.0595" clip-path="url(#clipPath2)"/>
-      <path d="M347.8398 412.0595 L335.8398 407.0595 L338.8398 412.0595 L335.8398 417.0595 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <text x="188.7554" font-size="15" y="403.665" clip-path="url(#clipPath2)" font-family="'Open Sans'" stroke="none" xml:space="preserve">RESTful https</text>
+      <path d="M347.8398 412.0595 L335.8398 407.0595 L338.8398 412.0595 L335.8398 417.0595 Z" stroke="none" clip-path="url(#clipPath2)"/>
+      <text x="188.7554" xml:space="preserve" y="403.665" clip-path="url(#clipPath2)" stroke="none">RESTful https</text>
       <path fill="none" d="M770.308 439.9002 L567.98 439.9002" clip-path="url(#clipPath2)"/>
-      <path d="M778.308 439.9002 L766.308 434.9002 L769.308 439.9002 L766.308 444.9002 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <path d="M559.98 439.9002 L571.98 444.9002 L568.98 439.9002 L571.98 434.9002 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <text x="641.5649" font-size="15" y="431.5057" clip-path="url(#clipPath2)" font-family="'Open Sans'" stroke="none" xml:space="preserve">soledad</text>
+      <path d="M778.308 439.9002 L766.308 434.9002 L769.308 439.9002 L766.308 444.9002 Z" stroke="none" clip-path="url(#clipPath2)"/>
+      <path d="M559.98 439.9002 L571.98 444.9002 L568.98 439.9002 L571.98 434.9002 Z" stroke="none" clip-path="url(#clipPath2)"/>
+      <text x="641.5649" xml:space="preserve" y="431.5057" clip-path="url(#clipPath2)" stroke="none">soledad</text>
       <path fill="none" d="M1010.2073 399.2752 L1175.5197 399.2752" clip-path="url(#clipPath2)"/>
-      <path d="M1002.2073 399.2752 L1014.2073 404.2752 L1011.2073 399.2752 L1014.2073 394.2752 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <path d="M1183.5197 399.2752 L1171.5197 394.2752 L1174.5197 399.2752 L1171.5197 404.2752 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <text x="1054.0925" font-size="15" y="390.8807" clip-path="url(#clipPath2)" font-family="'Open Sans'" stroke="none" xml:space="preserve">SMTP(s)</text>
+      <path d="M1002.2073 399.2752 L1014.2073 404.2752 L1011.2073 399.2752 L1014.2073 394.2752 Z" stroke="none" clip-path="url(#clipPath2)"/>
+      <path d="M1183.5197 399.2752 L1171.5197 394.2752 L1174.5197 399.2752 L1171.5197 404.2752 Z" stroke="none" clip-path="url(#clipPath2)"/>
+      <text x="1054.0925" xml:space="preserve" y="390.8807" clip-path="url(#clipPath2)" stroke="none">SMTP(s)</text>
     </g>
   </g>
 </svg>
