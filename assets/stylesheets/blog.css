@@ -7,3 +7,16 @@ article.blogpost, main.posts {
 article.blogpost h1 {
   text-align: center;
 }
+
+li.blog-list {
+  list-style-type: none;
+} 
+
+div.blog-post-footer  {
+  text-align: center;
+  margin: 10px 0;
+}
+
+div.blog-post-footer img {
+  width: 80px;
+}
