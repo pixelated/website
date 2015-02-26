@@ -1,0 +1,23 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pixelated-project.org</title>
+<link href="https://pixelated-project.org"/>
+<link type="application/atom+xml" rel="self" href="https://pixelated-project.org/atom.xml"/>
+<updated>{{ site.time | date_to_xmlschema }}</updated>
+<id>https://pixelated-project.org/</id>
+<author>
+<name>Pixelated Blog</name>
+</author>
+{% for post in site.posts %}
+<entry>
+<id>https://pixelated-project.org{{ post.id }}</id>
+<link type="text/html" rel="alternate" href="https://pixelated-project.org{{ post.url }}"/>
+<title>{{ post.title | xml_escape }}</title>
+<updated>{{ post.date | date_to_xmlschema }}</updated>
+<content type="html">{{ post.content | xml_escape }}</content>
+</entry>
+{% endfor %}
+</feed>
