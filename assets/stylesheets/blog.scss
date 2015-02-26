@@ -14,9 +14,16 @@ li.blog-list {
   list-style-type: none;
 } 
 
-div.blog-post-footer  {
+div.blog-post-footer, div.blog-posts-index-footer {
   text-align: center;
   margin: 10px 0;
+}
+
+div.blog-posts-index-footer {
+	margin-top: 20px;
+	a i {
+		font-size: 1.7rem;
+	}
 }
 
 div.blog-post-footer img {
