@@ -29,6 +29,15 @@ html {
   font-weight: normal;
 }
 
+svg {
+  font-weight: normal;
+  font-family: 'OpenSans';
+  
+  g.clickable-section {
+    cursor: ponter;
+  }
+}
+
 body.pixelated,
 .pixelated h2,
 .pixelated h3,
