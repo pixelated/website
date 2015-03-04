@@ -35,6 +35,12 @@ svg {
   
   g.clickable-section {
     cursor: ponter;
+
+    .clickable-section-bg {
+      &:hover {
+        fill: #fd9625;
+      }
+    }
   }
 }
 
@@ -323,4 +329,13 @@ nav.top-bar {
 
 .project-logo {
   padding: 2px;
+}
+
+.reveal-modal-bg {
+  position: fixed !important;
+}
+
+.reveal-modal {
+  width: 70% !important;
+  text-align: center !important;
 }
