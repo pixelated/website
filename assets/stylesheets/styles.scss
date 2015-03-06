@@ -38,7 +38,7 @@ svg {
 
     .clickable-section-bg {
       &:hover {
-        fill: #fd9625;
+        darken(#FDAB3D, 15);
       }
     }
   }
