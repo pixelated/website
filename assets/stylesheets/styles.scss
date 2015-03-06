@@ -339,6 +339,7 @@ nav.top-bar {
   width: 70% !important;
   text-align: center !important;
 
+
   img {
     padding-bottom: 30px;
   }
@@ -349,5 +350,21 @@ nav.top-bar {
     color: #53585F;
     letter-spacing: -1px;
     margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 40em){
+  .reveal-modal {
+    max-height: 100% !important;
+  }
+}
+
+div#dispatcher-modal {
+  img {
+    height: 80% !important;
+    width: 80% !important;
+  }
+  a {
+    display: block !important;
   }
 }
