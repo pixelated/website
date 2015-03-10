@@ -33,14 +33,14 @@ layout: default
     <h2>GETTING STARTED</h2>
     <ul class="small-block-grid-1 medium-block-grid-2">
       <li>
-        <a href="https://try.pixelated-project.org:8080/">
+        <a href="https://try.pixelated-project.org:8080/" target="_blank">
         <i class="fa fa-eye"></i>
         <h3>Look</h3>
         Try our latest demo version.
         </a>
       </li>
       <li>
-        <a href="https://github.com/pixelated-project">
+        <a href="https://github.com/pixelated-project" target="_blank">
         <i class="fa fa-github-alt"></i>
         <h3>Contribute</h3>
         Resources and information at Github.
@@ -56,9 +56,15 @@ layout: default
            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="49.2 658.2 612 140"
            enable-background="new 49.2 658.2 612 140" xml:space="preserve">
           <rect x="173.9" y="658.2" fill="#FD890A" width="362.4" height="140"/>
-          <rect x="418.2" y="690.1" fill="#FDAB3D" width="118.3" height="108.1"/>
-          <text transform="matrix(1 0 0 1 461.7148 763.0039)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">LEAP</text>
-          <text transform="matrix(1 0 0 1 453.8291 778.4493)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">Platform</text>
+          
+          <a xlink:href="https://leap.se/en/docs/platform/tutorials/single-node-email" target="_blank">
+            <g id="leap" class="clickable-section">
+              <rect class="clickable-section-bg" x="418.2" y="690.1" fill="#FDAB3D" width="118.3" height="108.1"/>
+              <text transform="matrix(1 0 0 1 461.7148 763.0039)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">LEAP</text>
+              <text transform="matrix(1 0 0 1 453.8291 778.4493)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">Platform</text>
+            </g>
+          </a>
+
           <rect x="49.2" y="658.2" fill="#7EC9E3" width="118.3" height="140"/>
           <text transform="matrix(1 0 0 1 84.874 761.1661)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">Browser</text>
           <rect x="49.2" y="658.2" fill="#197994" width="118.3" height="31.8"/>
@@ -73,7 +79,7 @@ layout: default
           <circle fill="#197994" cx="602.1" cy="719.3" r="21.7"/>
           <text transform="matrix(1 0 0 1 590.248 728.2988)" fill="#FFFFFF" font-family="'FontAwesome'" font-size="25.4394"></text>
           
-          <a xlink:href="#" data-reveal-id="dispatcher-modal">
+          <a xlink:href="#" data-reveal-id="dispatcher-modal" target="_blank">
             <g id="dispatcher" class="clickable-section">
               <rect class="clickable-section-bg" x="173.9" y="690.1" fill="#FDAB3D" width="118.3" height="108.1"/>
               <text transform="matrix(1 0 0 1 206.977 763.0039)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">Pixelated </text>
@@ -87,7 +93,7 @@ layout: default
           <text transform="matrix(1 0 0 1 148.5542 721.9014)" fill="#FFFFFF" font-family="'OpenSans'" font-size="8.177">HTTPS</text>
           <path fill="#FD890A" d="M315.4,707.6l10.8,11.5l-10.8,11.5V707.6z"/>
           
-          <a xlink:href="#" data-reveal-id="user-agent-modal">
+          <a xlink:href="#" data-reveal-id="user-agent-modal" target="_blank">
             <g id="user-agent" class="clickable-section">
               <rect class="clickable-section-bg" x="296.1" y="690.1" fill="#FDAB3D" width="118.3" height="108.1"/>
               <text transform="matrix(1 0 0 1 329.0449 763.0039)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">Pixelated</text>
@@ -109,7 +115,7 @@ layout: default
           <path fill="#197994" d="M193.4,706.6l10.8,11.5l-10.8,11.6V706.6z"/>
           <path fill="#FD890A" d="M315.8,707.2l10.8,11.5l-10.8,11.5V707.2z"/>
           
-          <a xlink:href="#" data-reveal-id="platform-modal">
+          <a xlink:href="#" data-reveal-id="platform-modal" target="_blank">
             <g id="platform" class="clickable-section">
               <rect class="clickable-section-bg" x="173.9" y="658.2" fill="#FD890A" width="362.5" height="31.9"/>
               <text transform="matrix(1 0 0 1 303.2621 679.0674)" fill="#FFFFFF" font-family="'OpenSans'" font-size="12.7197">Pixelated Platform</text>
@@ -120,21 +126,21 @@ layout: default
       <div id="dispatcher-modal" class="reveal-modal" data-reveal>
         <h2>PIXELATED DISPATCHER</h2>
         <img src="/assets/images/pixelated-dispatcher.png">
-        <a href="https://github.com/pixelated-project/pixelated-dispatcher">Learn more about the Pixelated dispatcher with our documentation on Github</a>
+        <a href="https://github.com/pixelated-project/pixelated-dispatcher" target="_blank">Learn more about the Pixelated dispatcher with our documentation on Github</a>
         <a class="close-reveal-modal">&#215;</a>
       </div>
 
       <div id="user-agent-modal" class="reveal-modal" data-reveal>
         <h2>PIXELATED USER AGENT</h2>
         <img src="/assets/images/pixelated-user-agent.png">
-        <a href="https://github.com/pixelated-project/pixelated-user-agent">Learn more about the Pixelated user agent with our documentation on Github</a>
+        <a href="https://github.com/pixelated-project/pixelated-user-agent" target="_blank">Learn more about the Pixelated user agent with our documentation on Github</a>
         <a class="close-reveal-modal">&#215;</a>
       </div>
 
       <div id="platform-modal" class="reveal-modal" data-reveal>
         <h2>PIXELATED PLATFORM</h2>
         <img src="/assets/images/pixelated-platform.png">
-        <a href="https://github.com/pixelated-project/pixelated-platform">Learn more about the Pixelated platform with our documentation on Github</a>
+        <a href="https://github.com/pixelated-project/pixelated-platform" target="_blank">Learn more about the Pixelated platform with our documentation on Github</a>
         <a class="close-reveal-modal">&#215;</a>
       </div>
       </li>
@@ -152,14 +158,14 @@ layout: default
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/pixelatedteam">
+        <a href="https://twitter.com/pixelatedteam" target="_blank">
           <i class="fa fa-twitter"></i>
            <h4>Twitter</h4>
            <div>@pixelatedteam</div>
         </a>
       </li>
       <li>
-        <a href="irc://irc.freenode.net/pixelated">
+        <a href="irc://irc.freenode.net/pixelated" target="_blank">
           <i class="fa fa-comments-o"></i>
           <h4>IRC</h4>
           <div>#pixelated@irc.freenode.net</div>
