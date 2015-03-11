@@ -31,7 +31,7 @@ html {
 
 svg {
   font-weight: normal;
-  font-family: 'OpenSans';
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   
   .clickable-section {
     cursor: ponter;
@@ -39,6 +39,7 @@ svg {
     .clickable-section-bg {
       &:hover {
         fill: darken(#FDAB3D, 8);
+        cursor: ponter;
       }
     }
   }
