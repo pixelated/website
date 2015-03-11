@@ -36,6 +36,10 @@ svg {
   .clickable-section {
     cursor: ponter;
 
+    .diagram-text {
+      text-decoration: underline;
+    }
+
     .clickable-section-bg {
       &:hover {
         fill: darken(#FDAB3D, 8);
