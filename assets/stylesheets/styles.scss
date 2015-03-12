@@ -34,7 +34,7 @@ svg {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   
   .clickable-section {
-    cursor: ponter;
+    cursor: pointer;
 
     .diagram-text {
       text-decoration: underline;
@@ -43,7 +43,7 @@ svg {
     .clickable-section-bg {
       &:hover {
         fill: darken(#FDAB3D, 8);
-        cursor: ponter;
+        cursor: pointer;
       }
     }
   }
@@ -125,6 +125,7 @@ nav {
   a {
     color: $background-gray; 
     vertical-align: middle;
+    
     &:hover {
       color: #52bbda;
     }
@@ -225,6 +226,10 @@ section.guide-section {
         color: #53585F;
         vertical-align: middle;
         font-size: 1.2em;
+
+        &:hover {
+          text-decoration: underline;
+        }
         i {
           font-size: 40px;
           vertical-align: middle;
