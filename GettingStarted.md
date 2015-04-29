@@ -50,7 +50,7 @@ You need to set up: [**Pixelated Platform**][3] (which brings along the Pixelate
 You want to help develop the User Agent and always wanted to work with FlightJs or a Python Webapp?
 [**Start here.**][2]
 
-You want to help develop the Dispatcher, because you love Python backend development?
+You want to help develop the Dispatcher, because you love Javascript and Python backend development?
 [**Start here.**][4]
 
 You want to help develop the Pixelated Platform and get all excited about infrastructure as code and Puppet?
