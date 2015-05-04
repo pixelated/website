@@ -378,3 +378,9 @@ div#dispatcher-modal {
     display: block !important;
   }
 }
+
+@media only screen and (max-width: 40em) {
+  .github-fork-ribbon {
+    display: none;
+  }
+}
