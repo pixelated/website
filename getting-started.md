@@ -38,6 +38,7 @@ You want to help develop the Dispatcher, because you love Javascript and Python 
 You want to help develop the Pixelated Platform and get all excited about infrastructure as code and Puppet?
 [**Start here.**][3]
 
+<br />
 
 A Guide to Pixelated Components
 ===============================
