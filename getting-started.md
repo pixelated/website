@@ -13,7 +13,7 @@ All you have to do is find a Pixelated provider:
 
 > *We are not yet in production mode. Just be a little patient -- there will be Pixelated providers available soon!*
 >
-> In the meantime, you can <a target="_blank" href="http://try.pixelated-project.org:8080">try Pixelated on our test server</a>
+> In the meantime, you can <a target="_blank" href="https://try.pixelated-project.org:8080">try Pixelated on our test server</a>
 
 
 #### ACTIVISTS and other high-risk email users
@@ -25,7 +25,7 @@ You need to install: <a target="_blank" href="https://github.com/pixelated-proje
 
 Do you want to set up a Pixelated email provider for your friends, an organization, or something similar?
 
-You need to set up: <a target="_blank" href="https://github.com/pixelated-project/pixelated-platform">platform</a> (which brings along the <a target="_blank" href="https://github.com/pixelated-project/pixelated-dispatcher">dispatcher</a> and the <a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">user Agent</a> as a Webmail interface)
+You need to set up: <a target="_blank" href="https://github.com/pixelated-project/pixelated-platform">platform</a> (which brings along the <a target="_blank" href="https://github.com/pixelated-project/pixelated-dispatcher">dispatcher</a> and the <a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">user agent</a> as a webmail interface)
 
 #### DEVELOPERS and contributors
 
