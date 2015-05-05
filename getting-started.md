@@ -13,30 +13,30 @@ All you have to do is find a Pixelated provider:
 
 > *We are not yet in production mode. Just be a little patient -- there will be Pixelated providers available soon!*
 >
-> In the meantime, you can [**try Pixelated on our test server**][1]
+> In the meantime, you can <a target="_blank" href="http://try.pixelated-project.org:8080">try Pixelated on our test server</a>
 
 
 #### ACTIVISTS and other high-risk email users
 Do you want to use Pixelated but, due to your personal threat model, you are not comfortable with having your private key stored on the provider’s server?
 
-You need to install: [**Pixelated User Agent**][2]: run it on localhost and connect to your Pixelated Provider
+You need to install: <a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">Pixelated User Agent</a>: run it on localhost and connect to your Pixelated Provider
 
 #### SYSADMINS or tech-savvy people
 
 Do you want to set up a Pixelated email provider for your friends, an organization, or something similar?
 
-You need to set up: [**Pixelated Platform**][3] (which brings along the [**Pixelated Dispatcher**][4] and the [**User Agent**][2] as a Webmail interface)
+You need to set up: <a target="_blank" href="https://github.com/pixelated-project/pixelated-platform">platform</a> (which brings along the <a target="_blank" href="https://github.com/pixelated-project/pixelated-dispatcher">dispatcher</a> and the <a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">user Agent</a> as a Webmail interface)
 
 #### DEVELOPERS and contributors
 
 You want to help develop the User Agent and always wanted to work with FlightJS or a Python Webapp?
-[**Start here.**][2]
+<a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">Start here</a>
 
 You want to help develop the Dispatcher, because you love Javascript and Python backend development?
-[**Start here.**][4]
+<a target="_blank" href="https://github.com/pixelated-project/pixelated-dispatcher">Start here</a>
 
 You want to help develop the Pixelated Platform and get all excited about infrastructure as code and Puppet?
-[**Start here.**][3]
+<a target="_blank" href="https://github.com/pixelated-project/pixelated-platform">Start here</a>
 
 <br />
 
@@ -54,9 +54,3 @@ Pixelated can be run as a group email solution. In order to keep user data and d
 
 ### LEAP Platform
 In a Pixelated server-side setup, the provider is running the **Pixelated Platform**, which includes a LEAP single node installation and the Pixelated dispatcher that spins up instances of the user agent on every user log-in. LEAP ensures that all data is encrypted at rest, including your meta data, and communicates with other email providers via SMTP/TLS.
-
-
-[1]: http://try.pixelated-project.org:8080
-[2]: https://github.com/pixelated-project/pixelated-user-agent
-[3]: https://github.com/pixelated-project/pixelated-platform
-[4]: https://github.com/pixelated-project/pixelated-dispatcher
