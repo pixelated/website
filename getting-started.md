@@ -25,7 +25,7 @@ You need to install: [**Pixelated User Agent**][2]: run it on localhost and conn
 
 Do you want to set up a Pixelated email provider for your friends, an organization, or something similar?
 
-You need to set up: [**Pixelated Platform**][3] (which brings along the Pixelated Dispatcher and the User Agent as a Webmail interface)
+You need to set up: [**Pixelated Platform**][3] (which brings along the [**Pixelated Dispatcher**][4] and the [**User Agent**][2] as a Webmail interface)
 
 #### DEVELOPERS and contributors
 
