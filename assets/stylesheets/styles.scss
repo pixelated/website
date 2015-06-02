@@ -380,7 +380,181 @@ div#dispatcher-modal {
 }
 
 @media only screen and (max-width: 40em) {
-  .github-fork-ribbon {
-    display: none;
+  .github-fork-ribbon-wrapper {
+    top: 60px !important;
   }
 }
+
+@media only screen and (min-width: 725px !important) {
+  .top-bar {
+    background: #333333;
+    overflow: visible; }
+    .top-bar:before, .top-bar:after {
+      content: " ";
+      display: table; }
+    .top-bar:after {
+      clear: both; }
+    .top-bar .toggle-topbar {
+      display: none; }
+    .top-bar .title-area {
+      float: left; }
+    .top-bar .name h1 a {
+      width: auto; }
+    .top-bar input,
+    .top-bar .button,
+    .top-bar button {
+      font-size: 0.875rem;
+      position: relative;
+      height: 1.75rem;
+      top: 0.53125rem; }
+    .top-bar.expanded {
+      background: #333333; }
+
+  .contain-to-grid .top-bar {
+    max-width: 62.5em;
+    margin: 0 auto;
+    margin-bottom: 0; }
+
+  .top-bar-section {
+    transition: none 0 0;
+    left: 0 !important; }
+    .top-bar-section ul {
+      width: auto;
+      height: auto !important;
+      display: inline; }
+      .top-bar-section ul li {
+        float: left; }
+        .top-bar-section ul li .js-generated {
+          display: none; }
+    .top-bar-section li.hover > a:not(.button) {
+      background-color: #555555;
+      background: #333333;
+      color: #FFFFFF; }
+    .top-bar-section li:not(.has-form) a:not(.button) {
+      padding: 0 0.9375rem;
+      line-height: 2.8125rem;
+      background: #333333; }
+      .top-bar-section li:not(.has-form) a:not(.button):hover {
+        background-color: #555555;
+        background: #333333; }
+    .top-bar-section li.active:not(.has-form) a:not(.button) {
+      padding: 0 0.9375rem;
+      line-height: 2.8125rem;
+      color: #FFFFFF;
+      background: #2ba6cb; }
+      .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+        background: #258faf;
+        color: #FFFFFF; }
+    .top-bar-section .has-dropdown > a {
+      padding-right: 2.1875rem !important; }
+      .top-bar-section .has-dropdown > a:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: inset 5px;
+        border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+        border-top-style: solid;
+        margin-top: -2.5px;
+        top: 1.40625rem; }
+    .top-bar-section .has-dropdown.moved {
+      position: relative; }
+      .top-bar-section .has-dropdown.moved > .dropdown {
+        display: block;
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px); }
+    .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+      display: block;
+      position: static !important;
+      height: auto;
+      width: auto;
+      overflow: visible;
+      clip: auto;
+      position: absolute !important; }
+    .top-bar-section .has-dropdown > a:focus + .dropdown {
+      display: block;
+      position: static !important;
+      height: auto;
+      width: auto;
+      overflow: visible;
+      clip: auto;
+      position: absolute !important; }
+    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+      border: none;
+      content: "\00bb";
+      top: 1rem;
+      margin-top: -1px;
+      right: 5px;
+      line-height: 1.2; }
+    .top-bar-section .dropdown {
+      left: 0;
+      top: auto;
+      background: transparent;
+      min-width: 100%; }
+      .top-bar-section .dropdown li a {
+        color: #FFFFFF;
+        line-height: 2.8125rem;
+        white-space: nowrap;
+        padding: 12px 0.9375rem;
+        background: #333333; }
+      .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+        color: #FFFFFF;
+        background: #333333; }
+      .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+        color: #FFFFFF;
+        background-color: #555555;
+        background: #333333; }
+      .top-bar-section .dropdown li label {
+        white-space: nowrap;
+        background: #333333; }
+      .top-bar-section .dropdown li .dropdown {
+        left: 100%;
+        top: 0; }
+    .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+      border-bottom: none;
+      border-top: none;
+      border-right: solid 1px #4e4e4e;
+      clear: none;
+      height: 2.8125rem;
+      width: 0; }
+    .top-bar-section .has-form {
+      background: #333333;
+      padding: 0 0.9375rem;
+      height: 2.8125rem; }
+    .top-bar-section .right li .dropdown {
+      left: auto;
+      right: 0; }
+      .top-bar-section .right li .dropdown li .dropdown {
+        right: 100%; }
+    .top-bar-section .left li .dropdown {
+      right: auto;
+      left: 0; }
+      .top-bar-section .left li .dropdown li .dropdown {
+        left: 100%; }
+
+  .no-js .top-bar-section ul li:hover > a {
+    background-color: #555555;
+    background: #333333;
+    color: #FFFFFF; }
+  .no-js .top-bar-section ul li:active > a {
+    background: #2ba6cb;
+    color: #FFFFFF; }
+  .no-js .top-bar-section .has-dropdown:hover > .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important; }
+  .no-js .top-bar-section .has-dropdown > a:focus + .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important; } }
