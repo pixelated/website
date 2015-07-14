@@ -17,3 +17,5 @@ It was a great opportunity to get to know people, present Pixelated and start co
 ![FISL](/assets/images/posts/fisl03.png)
 
 ![FISL](/assets/images/posts/fisl02.png)
+
+<div style="font-size: small; font-style: italic; font-weight: lighter;">(Photos: Rica Retamal)</div>
