@@ -5,8 +5,6 @@ excerpt: Most people think of email like sending a letter in the post, a person-
 
 --- 
 
-#This Email is for the People I Sent it to. Nobody Else.
-
 by [Lourenço P. Soares](https://twitter.com/protolous) and [Lisa Junger](https://twitter.com/lieblingswelt)
 
 *Our email infrastructure is flawed. We need to reconsider our approach to email to make it safer  -  and easier.*

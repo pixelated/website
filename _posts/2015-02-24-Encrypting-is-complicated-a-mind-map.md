@@ -5,8 +5,6 @@ excerpt: It turns out there's a reason why current email encryption implementati
 
 --- 
 
-#Encrypting is complicated, a mind map
-
 by [Lourenço P. Soares](https://twitter.com/protolous)
 
 There are many variables that come in play when encrypting email and the combinations can be overwhelming.

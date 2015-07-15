@@ -1,7 +1,8 @@
 ---
 layout: faq
 ---
-{{ page.date | date: "%-d %B %Y"}}
+<h1>{{ page.title | title }}</h1>
+<span class="post-date" style="font-style: italic;">{{ page.date | date: "%-d %B %Y"}}</span>
 <article>
  {{ content }}
 </article>
