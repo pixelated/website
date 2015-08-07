@@ -19,24 +19,24 @@ All you have to do is find a Pixelated provider:
 #### ACTIVISTS and other high-risk email users
 Do you want to use Pixelated but, due to your personal threat model, you are not comfortable with having your private key stored on the provider’s server?
 
-You need to install: <a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">Pixelated User Agent</a>: run it on localhost and connect to your Pixelated Provider
+You need to install: <a target="_blank" href="https://github.com/pixelated/pixelated-user-agent">Pixelated User Agent</a>: run it on localhost and connect to your Pixelated Provider
 
 #### SYSADMINS or tech-savvy people
 
 Do you want to set up a Pixelated email provider for your friends, an organization, or something similar?
 
-You need to set up: <a target="_blank" href="https://github.com/pixelated-project/pixelated-platform">platform</a> (which brings along the <a target="_blank" href="https://github.com/pixelated-project/pixelated-dispatcher">dispatcher</a> and the <a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">user agent</a> as a webmail interface)
+You need to set up: <a target="_blank" href="https://github.com/pixelated/pixelated-platform">platform</a> (which brings along the <a target="_blank" href="https://github.com/pixelated/pixelated-dispatcher">dispatcher</a> and the <a target="_blank" href="https://github.com/pixelated/pixelated-user-agent">user agent</a> as a webmail interface)
 
 #### DEVELOPERS and contributors
 
 You want to help develop the User Agent and always wanted to work with FlightJS or a Python Webapp?
-<a target="_blank" href="https://github.com/pixelated-project/pixelated-user-agent">Start here</a>
+<a target="_blank" href="https://github.com/pixelated/pixelated-user-agent">Start here</a>
 
 You want to help develop the Dispatcher, because you love Javascript and Python backend development?
-<a target="_blank" href="https://github.com/pixelated-project/pixelated-dispatcher">Start here</a>
+<a target="_blank" href="https://github.com/pixelated/pixelated-dispatcher">Start here</a>
 
 You want to help develop the Pixelated Platform and get all excited about infrastructure as code and Puppet?
-<a target="_blank" href="https://github.com/pixelated-project/pixelated-platform">Start here</a>
+<a target="_blank" href="https://github.com/pixelated/pixelated-platform">Start here</a>
 
 <br />
 

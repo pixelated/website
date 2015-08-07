@@ -28,7 +28,7 @@ Getting started
 
 >**Starting with the User Agent is probably a good idea.**
 
-* First create a fork of the <a href="https://github.com/pixelated-project/pixelated-user-agent">Pixelated User Agent repo</a> and clone it.
+* First create a fork of the <a href="https://github.com/pixelated/pixelated-user-agent">Pixelated User Agent repo</a> and clone it.
 
 * For a Quickstart, dependencies are: node, npm, ruby, bundle, virtualenv, git. Once you have that, from the root of the project run:
 
@@ -43,14 +43,14 @@ Getting started
   2. __A pixelated-user-agent service__
 * The Service component, which is the web service that serves the Web Ui to the browser, provides the REST API which the Web Ui uses, and integrates with the LEAP or Pixelated provider.
 
->**Hooked? For more detail on setting things up visit <a href= "https://github.com/pixelated-project/pixelated-user-agent">Github: Pixelated User Agent</a>**
+>**Hooked? For more detail on setting things up visit <a href= "https://github.com/pixelated/pixelated-user-agent">Github: Pixelated User Agent</a>**
 
 
 >### 2. Pixelated Dispatcher
 
 >**Or how to run multiple user agents on a server**
 
-* Here is where you can create a fork of the <a href="https://github.com/pixelated-project/pixelated-dispatcher">Pixelated-Dispatcher repo</a>.
+* Here is where you can create a fork of the <a href="https://github.com/pixelated/pixelated-dispatcher">Pixelated-Dispatcher repo</a>.
 
 * The pixelated-dispatcher allows you to run multiple instances of an application that had been designed for a single user, hence the name pixelated-dispatcher. Aside from managing the different instances it also provides a login form to restrict access to individual agents.
 
@@ -83,13 +83,13 @@ Getting started
     to isolate the agents from each other and to provide the necessary runtime environment.
 
 
->**To set up your full-fledged dispatcher development environment visit <a href="https://github.com/pixelated-project/pixelated-dispatcher">Github: pixelated-dispatcher.</a>**
+>**To set up your full-fledged dispatcher development environment visit <a href="https://github.com/pixelated/pixelated-dispatcher">Github: pixelated-dispatcher.</a>**
 
 
 >### 3. Pixelated Platform
 
 * It is the objective of the Pixelated Platform to provide a simple to install and maintain mail server based on the LEAP Platform.
 
-* Bear with us: we are not quite there, yet, with our Images. Stay tuned, there's more to come on <a href="https://github.com/pixelated-project/pixelated-platform">Github: pixelated-platform.</a>
+* Bear with us: we are not quite there, yet, with our Images. Stay tuned, there's more to come on <a href="https://github.com/pixelated/pixelated-platform">Github: pixelated-platform.</a>
 
 >**In the meantime we recommend checking out <a href="https://leap.se/en">the LEAP project</a>!**
