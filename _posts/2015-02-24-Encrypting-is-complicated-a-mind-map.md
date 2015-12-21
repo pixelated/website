@@ -11,7 +11,7 @@ There are many variables that come in play when encrypting email and the combina
 
 Encrypting emails to only one sender is relatively simple - because it is either encrypted or not - and the sender only have to worry about how much the keys available can be trusted. Emailing many people is a different matter altogether. If a recipient receives an encrypted email, it is reasonable to expect that it is private between sender and recipient, but as you can see below, it is not always true.
 
-![Encrypting messages](/assets/images/posts/Encrypt_message_mind_map.png)
+![Encrypting messages](/assets/images/posts/encryption-map/Encrypt_message_mind_map.png)
 
 This map aims to cover all the possible scenarios. As mentioned above, the cases under a single recipient are pretty straightforward and hinge mostly on how many keys the recipient has made available to the sender and how much the sender trust one of these keys. In the chart above, the ![T](/assets/images/posts/T.png) icon indicates that from that point, the flow jumps to the appropriate top level case (e.g.: after verification, a key becomes trusted). We also have one case to ask for the key, which is a catch-all for the cases where one is not available and the sender is not comfortable sending the message in plain text.
 

@@ -10,14 +10,14 @@ Between July 8th and 11th, the Pixelated team attended the [FISL 16](http://soft
 
 It was a great opportunity to get to know people, present Pixelated and start contributing relationships. Here are some of the pictures:
 
-![FISL](/assets/images/posts/fisl06.jpg)
+![FISL](/assets/images/posts/fisl/fisl06.jpg)
 
-![FISL](/assets/images/posts/fisl07.jpg)
+![FISL](/assets/images/posts/fisl/fisl07.jpg)
 
-![FISL](/assets/images/posts/fisl04.png)
+![FISL](/assets/images/posts/fisl/fisl04.png)
 
-![FISL](/assets/images/posts/fisl03.png)
+![FISL](/assets/images/posts/fisl/fisl03.png)
 
-![FISL](/assets/images/posts/fisl02.png)
+![FISL](/assets/images/posts/fisl/fisl02.png)
 
 <div style="font-size: small; font-style: italic; font-weight: lighter;">(Photos: Rica Retamal)</div>
