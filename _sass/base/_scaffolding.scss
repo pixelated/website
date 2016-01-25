@@ -90,9 +90,9 @@ body {
   // Quotes
 
   blockquote {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin: 1.5em 0;
     padding: 0 2em;
+    border-left: 1px solid $color-black;
   }
 
   // Text formatting
