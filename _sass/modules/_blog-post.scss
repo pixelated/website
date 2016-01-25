@@ -32,6 +32,10 @@
   }
 
   &__content {
+    blockquote {
+      border-left: 1px solid $color-black;
+    }
+
     img[alt=half] {
       display: block;
       margin-left: auto;
