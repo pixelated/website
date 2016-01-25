@@ -13,6 +13,9 @@ body {
   font-family: $font-family-base;
   background: $color-white;
   color: $color-gray-mediumdark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 
   .wrapper {
     height: 100%;
