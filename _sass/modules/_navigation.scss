@@ -11,14 +11,14 @@
   &__icon {
     display: inline;
     float: left;
-    margin-left: 5%;
+    margin-left: $margin-sm;
 
     @media #{$media-md} {
-      margin-left: 15%;
+      margin-left: $margin-md;
     }
 
     @media #{$media-lg} {
-      margin-left: 25%;
+      margin-left: $margin-lg;
     }
 
     svg {
@@ -29,14 +29,14 @@
   &__links {
     float: right;
     text-transform: uppercase;
-    margin-right: 5%;
+    margin-right: $margin-sm;
 
     @media #{$media-md} {
-      margin-right: 15%;
+      margin-right: $margin-md;
     }
 
     @media #{$media-lg} {
-      margin-right: 25%;
+      margin-right: $margin-lg;
     }
 
 
