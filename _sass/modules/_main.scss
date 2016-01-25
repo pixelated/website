@@ -36,6 +36,26 @@
     }
   }
 
+  &__video {
+    p {
+      font-size: $font-size-r-big;
+    }
+
+    svg {
+      fill: currentColor;
+      cursor: pointer;
+      width: 60px;
+
+      @media #{$media-md} {
+        width: 100px;
+      }
+
+      &:hover {
+        color: lighten($color-gray-mediumdark, 20%);
+      }
+    }
+  }
+
 
   &__contribution {
     margin-top: 50px;
