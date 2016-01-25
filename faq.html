@@ -260,6 +260,11 @@ layout: default
     <p>Languages: Python, Javascript/HTML/CSS</p>
     <p>The User-Agent is the user-facing piece of Pixelated. It consists of a single-page webapp (since users are most accustomed to using webmail as opposed to a locally installed email client) and provides a RESTful API. The User-Agent focuses on high-quality user experience in order to facilitate the use of email encryption. Pixelated uses an opportunistic approach to encryption: it encrypts every email that it can find public keys for. Using the Pixelated User-Agent, the email user does not have to worry about key generation or key management anymore, since it is handled automatically as far as possible. The User-Agent is the mail client of the Pixelated ecosystem. It is composed of two parts, a web interface written in JavaScript (FlightJS) and a Python API that interacts with a LEAP Provider, the e-mail platform that Pixelated is built on.</p>
 
+    <h2 id="pixelated-puppet-module">Pixelated Puppet Module</h2>
+    <p><a href="https://github.com/pixelated/puppet-pixelated">Repository on Github</a></p>
+    <p>Languages: Puppet, Ruby</p>
+    <p>This puppet module provides a simple way to add Pixelated to a running LEAP Platform. It sets up the <a href="https://github.com/pixelated/pixelated-dispatcher">Pixelated Dispatcher</a> and a multi-user instance of the <a href="https://github.com/pixelated/pixelated-user-agent">Pixelated User-Agent</a>.</p>
+
     <h2 id="soledad">Soledad</h2>
     <p><a href="https://github.com/leapcode/soledad">Repository on Github</a></p>
     <p>Soledad (Synchronization of Locally Encrypted Documents Among Devices) is a server daemon and client library that allows applications to securely share a common state among devices. Any data saved to the database by the application is client-encrypted, backed up in the cloud, and synchronized among a user’s devices.</p>
