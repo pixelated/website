@@ -1,0 +1,21 @@
+.faq {
+  padding-left: 5%;
+  padding-right: 5%;
+
+  @media #{$media-md} {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media #{$media-lg} {
+      padding-left: 25%;
+      padding-right: 25%;
+  }
+
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba($color-black, 0), rgba($color-black, 1), rgba($color-black, 0));
+  }
+}
