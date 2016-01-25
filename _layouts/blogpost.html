@@ -4,7 +4,15 @@ layout: default
 
 <article class='blog-post'>
   <h1 class="blog-post__header">{{ page.title | title }}</h1>
-  <span class="blog-post__date">{{ page.date | date: "%-d %B %Y"}}</span>
+
+  <div class="blog-post__meta">
+    {% for author in page.authors %}
+    <span><a href="{{ author.link }}">{{author.name}}</a></span>
+    {% endfor %}
+    <span>{{ page.date | date: "%-d %B %Y"}}</span>
+  </div>
+
   <article class="blog-post__content">{{ content }}</article>
-  <div class="blog-post__footer"><a href="/blog">back to all</a></div>
+
+  <div class="blog-post__footer"><a href="/blog">Back to all</a></div>
 </article>
