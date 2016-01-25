@@ -59,6 +59,7 @@ body {
   p {
     padding: 0;
     margin: 0 0 1em;
+    font-weight: lighter;
   }
 
   // Lists
@@ -68,18 +69,28 @@ body {
   dl {
     padding: 0;
     margin: 0 0 1em;
+    font-weight: lighter;
   }
 
 
   ul {
     list-style-position: outside;
-    margin-left: 1.1em;
+    margin-left: 2em;
   }
 
 
   ol {
     list-style-position: outside;
-    margin-left: 1.4em;
+    margin-left: 2em;
+  }
+
+  // Quotes
+
+  blockquote {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 0 2em;
+    border-left: 1px solid $color-black;
   }
 
   // Text formatting
