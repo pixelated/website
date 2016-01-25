@@ -17,4 +17,8 @@
     height: 1px;
     background-image: linear-gradient(to right, rgba($color-black, 0), rgba($color-black, 1), rgba($color-black, 0));
   }
+
+  svg {
+    width: 100%;
+  }
 }
