@@ -1,0 +1,14 @@
+.navigation {
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: $color-gray-mediumdark;
+
+  ul li > a {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

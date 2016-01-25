@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+}
+
+
+body {
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  line-height: $line-height-base;
+  font-size: $font-size-a-base;
+  line-height: $line-height-base;
+  font-family: $font-family-base;
+  background: $color-white;
+  color: $color-white;
+
+  .wrapper {
+    height: 100%;
+
+    .content {
+      height: 100%;
+    }
+  }
+
+
+  // Headlines
+  h1 {
+    font-size: $font-size-r-huge;
+    margin: 1em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+
+  h2 {
+    font-size: $font-size-r-bigger;
+    margin: 1em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+
+  h3 {
+    font-size: $font-size-r-big;
+    margin: 1em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  // Paragraph
+
+  p {
+    padding: 0;
+    margin: 0 0 1em;
+  }
+
+  // Lists
+
+  ul,
+  ol,
+  dl {
+    padding: 0;
+    margin: 0 0 1em;
+  }
+
+
+  ul {
+    list-style-position: outside;
+    margin-left: 1.1em;
+  }
+
+
+  ol {
+    list-style-position: outside;
+    margin-left: 1.4em;
+  }
+
+  // Text formatting
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  // Link
+
+  a {
+    color: $color-orange;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: darken($color-orange, 25%);
+      text-decoration: underline;
+    }
+  }
+}
+
+/*
+ * Text alignment
+ */
+
+.text-left {
+  text-align: left;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.text-right {
+  text-align: right;
+}

@@ -1,19 +1,39 @@
-/* Color variables */
-$highlight: #FF9C00;
-$highlight-dark: #FF7902;
-$action: #2BA6CB;
-$action-dark: #178CA6;
-$background-dark: #3E3A37;
-$background-gray: #EEE;
-$background-light: #FFF;
+/*
+ * Colors
+ */
+$color-orange: #FF9C00;
+$color-orange-medium-dark: #F6A40A;
+$color-orange-dark: #FF7902;
+$color-orange-dark-transparent: rgba($color-orange-dark, 0.4);
 
-$warning: #F7E8AF;
-$search-highlight: #FFEF29;
-$total_count_bg: #C0B9B9;
-$error: #D72A25;
-$attention: #F6A40A;
-$success: #2DAB49;
-$top_pane: #EAEAEA;
-$secondary_callout: #FF7902;
+$color-turquoise: #2BA6CB;
+$color-turquoise-dark: #178CA6;
+$color-turquoise-dark-transparent: rgba($color-turquoise-dark, 0.9);
 
-$page_width: 780px;
+$color-black: #000;
+$color-gray-dark: #3E3A37;
+$color-gray-mediumdark: #333333;
+$color-gray-medium: #C0B9B9;
+$color-gray-light: #EEE;
+$color-white: #FFF;
+
+$color-yellow: #FFEF29;
+$color-yellow-light: #F7E8AF;
+
+$color-red: #D72A25;
+$color-green: #2DAB49;
+
+/*
+ * Typography
+ */
+$font-family-base: "Open Sans","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$line-height-base: 1.5;
+
+$browser-context: 16;
+
+$font-size-a-base: rem-calc(16px);
+$font-size-r-huge: scut-em(40px, 16px);
+$font-size-r-bigger: scut-em(32px, 16px);
+$font-size-r-big: scut-em(24px, 16px);
+$font-size-r-base: scut-em(16px, 16px);
+$font-size-r-small: scut-em(14px, 16px);

@@ -2,16 +2,19 @@
 ---
 
 // vendor
-@import "vendor/normalize";
+@import "vendor/scut";
 @import "vendor/foundation";
+@import "vendor/normalize";
 
 // config and variables
 @import "base/config";
+@import "base/scaffolding";
 
 // scaffolding
 @import "base/fonts";
 
 // modules
-@import "modules/foo";
+@import "modules/navigation";
+@import "modules/main";
 @import "modules/blog-index";
 @import "modules/blog-post";
