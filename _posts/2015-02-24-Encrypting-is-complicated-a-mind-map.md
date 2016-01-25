@@ -1,12 +1,12 @@
 ---
 layout: blogpost
 title: Encrypting is complicated, a mind map
-author: Lourenço P. Soares
+authors:
+  - name: Lourenço P. Soares
+    link: https://twitter.com/protolous
 excerpt: It turns out there's a reason why current email encryption implementations are not easy. On top of all complexities of public and private keys, you want be able to guarantee that a message will not leak unless the sender is ok with it. Here's a mind map of all the combinations we are looking into, plus some explanations.
 
 ---
-
-by [Lourenço P. Soares](https://twitter.com/protolous)
 
 There are many variables that come in play when encrypting email and the combinations can be overwhelming.
 

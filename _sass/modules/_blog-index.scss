@@ -1,5 +1,4 @@
 .blog-index {
-  height: 100%;
   padding-left: 5%;
   padding-right: 5%;
 
@@ -38,9 +37,10 @@
 
       span {
         padding: 0 10px;
+        border-right: 1px solid $color-gray-medium;
 
-        &:nth-child(2) {
-          border-left: 1px solid $color-gray-medium;
+        &:last-child {
+          border: none;
         }
       }
     }

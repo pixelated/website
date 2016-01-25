@@ -1,12 +1,14 @@
 ---
 layout: blogpost
 title: This Email is for the People I Sent it to. Nobody Else.
-author: Lourenço P. Soares and Lisa Junger
+authors:
+  - name: Lourenço P. Soares
+    link: https://twitter.com/protolous
+  - name: Lisa Junger
+    link: https://twitter.com/lieblingswelt
 excerpt: Most people think of email like sending a letter in the post, a person-to-person communication in a sealed envelope. However, email is more like sending a postcard. Multiple actors have access to the contents and we need to be careful who we ask to convey our communication.
 
 ---
-
-by [Lourenço P. Soares](https://twitter.com/protolous) and [Lisa Junger](https://twitter.com/lieblingswelt)
 
 *Our email infrastructure is flawed. We need to reconsider our approach to email to make it safer  -  and easier.*
 
