@@ -3,7 +3,7 @@
 
 // vendor
 @import "vendor/normalize";
-@import "vendor/font-awesome";
+@import "vendor/foundation";
 
 // config and variables
 @import "base/config";
@@ -14,6 +14,3 @@
 // modules
 @import "modules/foo";
 @import "modules/blog";
-
-// foundation
-@import "vendor/foundation";

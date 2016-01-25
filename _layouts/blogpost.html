@@ -1,14 +1,14 @@
 ---
-layout: faq
+layout: default
 ---
+
+<article class='blogpost'>
 <h1>{{ page.title | title }}</h1>
 <span class="post-date" style="font-style: italic;">{{ page.date | date: "%-d %B %Y"}}</span>
 <article>
- {{ content }}
+    {{ content }}
 </article>
 <div class="blog-post-footer">
-<img src="/assets/images/pixelated-logo.png">
+  <a href="/blog">back to all</a>
 </div>
-<div class="blog-post-footer">
-<a href="/blog">back to all</a>
-</div>
+</article>

@@ -1,42 +1,37 @@
 /* Blog */
-
-article.blogpost, main.posts {
+article.blogpost,
+main.posts {
   width: 70%;
   margin: 40px auto 0;
 }
-
 article.blogpost h1 {
   text-align: left;
   font-weight: 500;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Ronoto, Arial, sans-serif;
   margin-bottom: 5px;
 }
-
 .post-date {
   font-weight: lighter;
   font-style: italic !important;
 }
-
 li.blog-list {
   list-style-type: none;
 }
-
-div.blog-post-footer, div.blog-posts-index-footer {
+div.blog-post-footer,
+div.blog-posts-index-footer {
   text-align: center;
   margin: 10px 0;
 }
-
 div.blog-posts-index-footer {
-	margin-top: 20px;
-	a i {
-		font-size: 1.7rem;
-	}
+  margin-top: 20px;
+  a svg {
+    font-size: 1.7rem;
+    fill: #000;
+  }
 }
-
 div.blog-post-footer img {
   width: 80px;
 }
-
 img[alt=half] {
   width: 50%;
 }
