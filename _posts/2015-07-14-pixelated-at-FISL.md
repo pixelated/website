@@ -1,8 +1,9 @@
 ---
 layout: blogpost
 title: Pixelated at FISL
+author: Gabriel Albo
 excerpt: Pixelated was present at FISL in Porto Alegre, Brazil. See the pictures here!
---- 
+---
 
 by [Gabriel Albo](https://twitter.com/albogabriel)
 

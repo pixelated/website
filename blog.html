@@ -2,15 +2,18 @@
 layout: default
 ---
 
-<main class="blog-index">
-  <ul class="blog-index__list">
-    {% for post in site.posts %}
-    <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <span>{{ post.date | date: "%-d %B %Y"}}</span>
-      <p>{{ post.excerpt | strip_html }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="blog-index">
+  {% for post in site.posts %}
+    <div class="blog-index__item">
+      <h2 class="blog-index__item-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="blog-index__item-excerpt">{{ post.excerpt | strip_html }}</p>
+      <div class="blog-index__item-meta">
+        <span>{{post.author}}</span>
+        <span>{{ post.date | date: "%-d %B %Y"}}</span>
+      </div>
+      <hr>
+    </div>
+  {% endfor %}
+
   <div class="blog-index__footer"><a href="/atom.xml" target="_blank">RSS</a></div>
-</main>
+</div>

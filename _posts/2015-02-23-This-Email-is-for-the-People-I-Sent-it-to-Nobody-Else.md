@@ -1,15 +1,16 @@
 ---
 layout: blogpost
 title: This Email is for the People I Sent it to. Nobody Else.
-excerpt: Most people think of email like sending a letter in the post, a person-to-person communication in a sealed envelope. However, email is more like sending a postcard. Multiple actors have access to the contents and we need to be careful who we ask to convey our communication.  
+author: Lourenço P. Soares and Lisa Junger
+excerpt: Most people think of email like sending a letter in the post, a person-to-person communication in a sealed envelope. However, email is more like sending a postcard. Multiple actors have access to the contents and we need to be careful who we ask to convey our communication.
 
---- 
+---
 
 by [Lourenço P. Soares](https://twitter.com/protolous) and [Lisa Junger](https://twitter.com/lieblingswelt)
 
 *Our email infrastructure is flawed. We need to reconsider our approach to email to make it safer  -  and easier.*
 
-Most people think of email like sending a letter in the post, a person-to-person communication in a sealed envelope. However, email is more like sending a postcard. Multiple actors have access to the contents and we need to be careful who we ask to convey our communication.  
+Most people think of email like sending a letter in the post, a person-to-person communication in a sealed envelope. However, email is more like sending a postcard. Multiple actors have access to the contents and we need to be careful who we ask to convey our communication.
 
 Email is a staple of our digital lives. It is vital to the way Internet users shop, share and work. With the unprecedented level of mass surveillance revealed by Edward Snowden[\[1\]](http://www.theguardian.com/world/the-nsa-files), we understand better than ever that secure email is a vital element to protecting our personal privacy.
 
