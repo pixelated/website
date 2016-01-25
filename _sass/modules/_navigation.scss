@@ -1,14 +1,70 @@
 .navigation {
-  padding-left: 15%;
-  padding-right: 15%;
+  $navbar-height: 60px;
+
+  @include scut-clearfix;
   background-color: $color-gray-mediumdark;
+  height: $navbar-height;
+  line-height: $navbar-height;
+  vertical-align: middle;
+  position: relative;
 
-  ul li > a {
-    text-transform: uppercase;
-    font-weight: bold;
+  &__icon {
+    display: inline;
+    float: left;
+    margin-left: 5%;
 
-    &:hover {
-      color: red;
+    @media #{$media-md} {
+      margin-left: 15%;
     }
+
+    @media #{$media-lg} {
+      margin-left: 25%;
+    }
+
+    svg {
+      height: $navbar-height;
+    }
+  }
+
+  &__links {
+    float: right;
+    text-transform: uppercase;
+    margin-right: 5%;
+
+    @media #{$media-md} {
+      margin-right: 15%;
+    }
+
+    @media #{$media-lg} {
+      margin-right: 25%;
+    }
+
+
+    li {
+      list-style: none;
+      display: inline;
+
+      &:first-child {
+        margin-right: 10px;
+
+        @media #{$media-md} {
+          margin-right: 20px;
+        }
+
+        @media #{$media-lg} {
+          margin-right: 40px;
+        }
+      }
+
+      a {
+        color: $color-white;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
   }
 }

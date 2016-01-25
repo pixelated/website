@@ -1,13 +1,9 @@
-<div class="sticky navigation">
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li>
-        <a href="/">{% include icons/pixelated-logo.svg %}</a>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-    </ul>
-    <section class='top-bar-section'>
-      <ul class="right">
+<div class="navigation">
+    <section class="navigation__icon">
+      <a href="/" title="Home">{% include icons/pixelated-logo.svg %}</a>
+    </section>
+    <section class="navigation__links">
+      <ul>
         <li><a href={% if page.url !='/' %} /{% endif %}blog>Blog</a></li>
         <li><a href={% if page.url !='/' %} /{% endif %}faq>FAQ</a></li>
       </ul>
