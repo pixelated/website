@@ -1,7 +1,17 @@
 .blog-index {
   height: 100%;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  @media #{$media-md} {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media #{$media-lg} {
+      padding-left: 25%;
+      padding-right: 25%;
+  }
 
   &__item {
     color: $color-gray-mediumdark;
