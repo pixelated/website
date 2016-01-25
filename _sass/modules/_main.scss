@@ -1,6 +1,5 @@
 .main {
-  height: 100%;
-  padding: 40px;
+  min-height: 100%;
   background: linear-gradient(to bottom right, $color-orange-dark-transparent 0%, $color-turquoise-dark-transparent 10%, $color-turquoise-dark 100%), url(../icons/hive.svg) no-repeat;
   background-color: $color-turquoise-dark;
   background-repeat: repeat;
@@ -8,17 +7,68 @@
 
 
   &__header {
-    height: 300px;
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+
+    @media #{$media-md} {
+      padding-top: 80px;
+      width: 60%;
+    }
+
+    @media #{$media-lg} {
+      width: 40%;
+    }
+
+    p {
+      font-size: $font-size-r-big;
+
+      @media #{$media-md} {
+        font-size: $font-size-r-bigger;
+      }
+
+      @media #{$media-lg} {
+        font-size: $font-size-r-huge;
+      }
+    }
   }
 
 
   &__contribution {
-    height: 300px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 
-    button {
+    @media #{$media-md} {
+      width: 60%;
     }
+
+    @media #{$media-lg} {
+      width: 40%;
+    }
+
+    p {
+      font-size: $font-size-r-base;
+      font-weight: bolder;
+
+      @media #{$media-md} {
+        font-size: $font-size-r-big;
+      }
+
+      @media #{$media-lg} {
+        font-size: $font-size-r-big;
+      }
+    }
+
+    button {}
   }
 }
+
 
 .sidebar {
   width: 60px;
@@ -33,17 +83,21 @@
   left: 0;
   top: 30%;
 
-  @media #{$media-md} {
+
+  @media #{$media-sm} {
     display: none;
   }
+
 
   @media #{$media-lg} {
     display: block;
   }
 
+
   ul {
     list-style: none;
     margin: 0;
+
 
     a {
       color: $color-gray-mediumdark;
