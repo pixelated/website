@@ -1,0 +1,27 @@
+.blog-post {
+  width: 70%;
+  margin: 40px auto 0;
+
+  &__header {
+    text-align: left;
+    font-weight: 500;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Ronoto, Arial, sans-serif;
+    margin-bottom: 5px;
+  }
+
+  &__content {
+    img[alt=half] {
+      width: 50%;
+    }
+  }
+
+  &__date {
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  &__footer {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
