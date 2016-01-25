@@ -1,4 +1,6 @@
 .faq {
+  $separator-margin: 70px;
+
   padding-left: $margin-sm;
   padding-right: $margin-sm;
 
@@ -15,6 +17,9 @@
   hr {
     border: 0;
     height: 1px;
+    margin-top: $separator-margin;
+    margin-bottom: $separator-margin;
+
     background-image: linear-gradient(to right, rgba($color-black, 0), rgba($color-black, 1), rgba($color-black, 0));
   }
 
