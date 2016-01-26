@@ -4,15 +4,15 @@
   background-color: $color-turquoise-dark;
   background-repeat: repeat;
   text-align: center;
-
+  color: $color-white;
 
   &__header {
+    color: $color-white;
     padding-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-
 
     @media #{$media-md} {
       width: 60%;
@@ -35,30 +35,39 @@
     }
   }
 
-  &__video {
-    p {
-      font-size: $font-size-r-big;
+  &__links {
+    font-size: $font-size-r-big;
+
+    @media #{$media-md} {
+      div {
+        display: inline-block;
+        padding: 0 40px;
+      }
+    }
+
+    &--video {
+      a {
+        color: $color-gray-medium;
+
+        &:hover {
+          color: lighten($color-gray-medium, 20%);
+        }
+      }
     }
 
     svg {
       fill: currentColor;
-      cursor: pointer;
       width: 60px;
 
       @media #{$media-md} {
         width: 100px;
       }
-
-      &:hover {
-        color: lighten($color-gray-mediumdark, 20%);
-      }
     }
   }
 
 
-  &__contribution {
-    margin-top: 50px;
-    display: block;
+  &__footer {
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -73,7 +82,6 @@
 
     p {
       font-size: $font-size-r-base;
-      font-weight: bolder;
 
       @media #{$media-md} {
         font-size: $font-size-r-big;
@@ -83,14 +91,11 @@
         font-size: $font-size-r-big;
       }
     }
-
-    button {}
   }
 }
 
 
 .sidebar {
-  width: 60px;
   border: 3px solid $color-gray-mediumdark;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -107,26 +112,27 @@
     display: none;
   }
 
+  @media #{$media-md} {
+    display: block;
+    width: 30px;
+  }
 
   @media #{$media-lg} {
     display: block;
+    width: 50px;
   }
-
 
   ul {
     list-style: none;
     margin: 0;
-
 
     a {
       color: $color-gray-mediumdark;
 
       &:hover {
         color: lighten($color-gray-mediumdark, 20%);
-        text-decoration: none;
       }
     }
-
 
     svg {
       fill: currentColor;
