@@ -1,6 +1,22 @@
 .faq {
   $separator-margin: 70px;
 
+  &__toc {
+    ol {
+      counter-reset: item;
+    }
+
+    li {
+      display: block;
+
+      &:before {
+        content: counters(item, ".") "\00a0\00a0\00a0";
+        counter-increment: item;
+      }
+    }
+
+  }
+
   hr {
     border: 0;
     height: 1px;
