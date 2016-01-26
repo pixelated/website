@@ -2,13 +2,14 @@
   min-height: 100%;
 
   &__header {
-    color: $color-gray-medium;
+    color: $color-turquoise;
   }
 
   &__meta {
     font-size: $font-size-r-tiny;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 
     span {
       padding: 0 10px;
