@@ -1,6 +1,4 @@
 .navigation {
-  $navbar-height: 50px;
-
   @include scut-clearfix;
   background-color: rgba($color-gray-mediumdark, 0.9);
   box-shadow: 0 0 5px 2px rgba($color-gray-mediumdark, 0.9);

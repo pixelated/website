@@ -1,20 +1,6 @@
 .faq {
   $separator-margin: 70px;
 
-  min-height: 100%;
-  padding-left: $margin-sm;
-  padding-right: $margin-sm;
-
-  @media #{$media-md} {
-    padding-left: $margin-md;
-    padding-right: $margin-md;
-  }
-
-  @media #{$media-lg} {
-    padding-left: $margin-lg;
-    padding-right: $margin-lg;
-  }
-
   hr {
     border: 0;
     height: 1px;

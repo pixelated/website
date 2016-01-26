@@ -1,17 +1,5 @@
 .blog-post {
   min-height: 100%;
-  padding-left: $margin-sm;
-  padding-right: $margin-sm;
-
-  @media #{$media-md} {
-    padding-left: $margin-md;
-    padding-right: $margin-md;
-  }
-
-  @media #{$media-lg} {
-    padding-left: $margin-lg;
-    padding-right: $margin-lg;
-  }
 
   &__header {
     color: $color-gray-medium;

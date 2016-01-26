@@ -1,10 +1,24 @@
-.main {
-  min-height: 100%;
+.home {
   background: linear-gradient(to bottom right, $color-orange-dark-transparent 0%, $color-turquoise-dark-transparent 10%, $color-turquoise-dark 100%), url(../icons/hive.svg) no-repeat;
   background-color: $color-turquoise-dark;
   background-repeat: repeat;
   text-align: center;
   color: $color-white;
+  min-height: 100%;
+  padding-top: $navbar-height;
+  padding-left: $margin-sm;
+  padding-right: $margin-sm;
+
+  @media #{$media-md} {
+    padding-left: $margin-md;
+    padding-right: $margin-md;
+  }
+
+  @media #{$media-lg} {
+    padding-left: $margin-lg;
+    padding-right: $margin-lg;
+  }
+
 
   &__header {
     color: $color-white;
@@ -12,15 +26,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-
-    @media #{$media-md} {
-      width: 60%;
-    }
-
-    @media #{$media-lg} {
-      width: 40%;
-    }
 
     p {
       font-size: $font-size-r-big;
@@ -70,15 +75,6 @@
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-
-    @media #{$media-md} {
-      width: 60%;
-    }
-
-    @media #{$media-lg} {
-      width: 40%;
-    }
 
     p {
       font-size: $font-size-r-base;
