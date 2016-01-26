@@ -1,15 +1,16 @@
 .blog-index {
-  padding-left: 5%;
-  padding-right: 5%;
+  min-height: 100%;
+  padding-left: $margin-sm;
+  padding-right: $margin-sm;
 
   @media #{$media-md} {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: $margin-md;
+    padding-right: $margin-md;
   }
 
   @media #{$media-lg} {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: $margin-lg;
+    padding-right: $margin-lg;
   }
 
   &__item {

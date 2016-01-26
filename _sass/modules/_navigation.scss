@@ -1,12 +1,15 @@
 .navigation {
-  $navbar-height: 60px;
+  $navbar-height: 50px;
 
   @include scut-clearfix;
-  background-color: $color-gray-mediumdark;
+  background-color: rgba($color-gray-mediumdark, 0.9);
+  box-shadow: 0 0 5px 2px rgba($color-gray-mediumdark, 0.9);
   height: $navbar-height;
   line-height: $navbar-height;
   vertical-align: middle;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   &__icon {
     display: inline;
