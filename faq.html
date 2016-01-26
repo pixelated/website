@@ -161,10 +161,11 @@ layout: default
     <p>If you have a good idea or if you want to fix your pet peeve, please figure out the component in which your pet peeve is implemented, using the technical architecture sketch below. Browse that component&#39;s Github issues for related bugs.</p>
     <ul>
       <li>If you know JavaScript or HTML/CSS, you can contribute to the front-end portion of the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a>.</li>
-      <li>If you know Python, you can contribute to the server portion of the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a>, or the <a href="#pixelated-dispatcher" target="_self">Pixelated Dispatcher</a>, or the <a href="#leap-platform" target="_self">LEAP platform</a>.</li>
+      <li>If you know Python, you can contribute to the server portion of the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a>, or the <a href="#pixelated-dispatcher" target="_self">Pixelated Dispatcher</a>.</li>
       <li>If you know Puppet, you can contribute to the <a href="#pixelated-puppet-module" target="_self">Pixelated Puppet Module</a>.</li>
-      <li>If you know Email protocols, you can contribute to the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a> or the <a href="#leap-platform" target="_self">LEAP platform</a>.</li>
+      <li>If you know Email protocols, you can contribute to the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a>.</li>
     </ul>
+    <p>We're standing on the shoulders of giants, so apart from contributing directly, you can also contribute the <a href="#leap-platform" target="_self">LEAP project</a>, which we build upon.</p>
 
     <h2 id="where-do-i-submit-my-contribution">Where do I submit my contribution?</h2>
     <p>Awesome! You&#39;ve finished working on your first contribution!</p>
@@ -270,13 +271,14 @@ layout: default
     <p>Languages: Puppet, Ruby</p>
     <p>This puppet module provides a simple way to add Pixelated to a running LEAP Platform. It sets up the <a target="_blank" href="https://github.com/pixelated/pixelated-dispatcher">Pixelated Dispatcher</a> and a multi-user instance of the <a target="_blank" href="https://github.com/pixelated/pixelated-user-agent">Pixelated User-Agent</a>.</p>
 
+    <h2 id="leap-platform">LEAP platform</h2>
+    <p><a target="_blank" href="https://github.com/leapcode/leap_platform">Repository on Github</a></p>
+    <p><a target="_blank" href="https://leap.se/code/projects/platform/issues?query_id=172">Issues to work on for beginners</a></p>
+    <p>In a Pixelated server-side setup, the provider is running the Pixelated Platform, which includes a LEAP single node installation and the Pixelated dispatcher that spins up instances of the user agent on every user log-in. LEAP ensures that all data is encrypted at rest, including your meta data, and communicates with other email providers via SMTP/TLS.</p>
+
     <h2 id="soledad">Soledad</h2>
     <p><a target="_blank" href="https://github.com/leapcode/soledad">Repository on Github</a></p>
     <p>Soledad (Synchronization of Locally Encrypted Documents Among Devices) is a server daemon and client library that allows applications to securely share a common state among devices. Any data saved to the database by the application is client-encrypted, backed up in the cloud, and synchronized among a user’s devices.</p>
-
-    <h2 id="leap-platform">LEAP platform</h2>
-    <p><a target="_blank" href="https://github.com/leapcode/leap_platform">Repository on Github</a></p>
-    <p>In a Pixelated server-side setup, the provider is running the Pixelated Platform, which includes a LEAP single node installation and the Pixelated dispatcher that spins up instances of the user agent on every user log-in. LEAP ensures that all data is encrypted at rest, including your meta data, and communicates with other email providers via SMTP/TLS.</p>
 
     <h2 id="what-are-the-underlying-technical-threat-models">What are the underlying technical threat models?</h2>
     <p>When we designed Pixelated, we had the following attacks in mind:</p>
