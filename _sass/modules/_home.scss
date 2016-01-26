@@ -57,6 +57,10 @@
         &:hover {
           color: lighten($color-gray-medium, 20%);
         }
+
+        &:focus {
+          color: $color-gray-medium;
+        }
       }
     }
 
