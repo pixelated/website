@@ -43,14 +43,24 @@
   &__links {
     font-size: $font-size-r-big;
 
-    @media #{$media-md} {
-      div {
+    &--video,
+    &--try,
+    &--contribute {
+      display: block;
+
+      @media #{$media-md} {
         display: inline-block;
-        padding: 0 40px;
+        padding: 0 10px;
+      }
+
+      @media #{$media-lg} {
+        display: inline-block;
+        padding: 0 20px;
       }
     }
 
-    &--video {
+    &--video,
+    &--try {
       a {
         color: $color-gray-medium;
 

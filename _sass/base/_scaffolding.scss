@@ -23,17 +23,15 @@ body {
     .content {
         min-height: 100%;
         padding-top: $navbar-height;
-        padding-left: $margin-sm;
-        padding-right: $margin-sm;
+        width: 90%;
+        margin: auto;
 
         @media #{$media-md} {
-          padding-left: $margin-md;
-          padding-right: $margin-md;
+          width: 80%;
         }
 
         @media #{$media-lg} {
-          padding-left: $margin-lg;
-          padding-right: $margin-lg;
+          width: 60%;
         }
     }
   }

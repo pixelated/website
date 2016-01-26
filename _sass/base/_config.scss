@@ -23,10 +23,6 @@ $color-yellow-light: #F7E8AF;
 $color-red: #D72A25;
 $color-green: #2DAB49;
 
-$margin-sm: 5%;
-$margin-md: 15%;
-$margin-lg: 25%;
-
 /*
  * Typography
  */
@@ -58,3 +54,7 @@ $media-retina:              "#{$media-screen} and (-webkit-min-device-pixel-rati
 
 $navbar-height: 50px;
 $anchor-offset: ($navbar-height + 40px);
+
+$margin-sm: 5%;
+$margin-md: 10%;
+$margin-lg: 20%;
