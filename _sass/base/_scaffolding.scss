@@ -70,6 +70,17 @@ body {
     font-weight: bold;
   }
 
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before {
+    display: block;
+    content: " ";
+    margin-top: -$anchor-offset;
+    height: $anchor-offset;
+    visibility: hidden;
+  }
+
   // Paragraph
 
   p {

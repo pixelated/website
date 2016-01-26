@@ -57,3 +57,4 @@ $media-lg:                  "#{$media-screen} and (min-width:#{$screen-lg-min})"
 $media-retina:              "#{$media-screen} and (-webkit-min-device-pixel-ratio : 1.5), #{$media-screen} and (-o-min-device-pixel-ratio: 3/2), #{$media-screen} and (min--moz-device-pixel-ratio: 1.5), #{$media-screen} and (min-device-pixel-ratio: 1.5)";
 
 $navbar-height: 50px;
+$anchor-offset: ($navbar-height + 40px);
