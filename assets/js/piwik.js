@@ -6,7 +6,7 @@
     }
 
     var GOAL_CONTRIBUTOR = 1;
-    var endpoint = 'http://192.168.135.1:8080/piwik.php';
+    var endpoint = 'https://pixelated-project.org/piwik/piwik.php';
     var siteId = window.location.hostname === 'pixelated-project.org' ? 1 : 2;
 
     var tracker = root._tracker = Piwik.getTracker(endpoint, siteId);
