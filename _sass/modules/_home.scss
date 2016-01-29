@@ -5,18 +5,15 @@
   text-align: center;
   color: $color-white;
   min-height: 100%;
-  padding-top: $navbar-height;
-  padding-left: $margin-sm;
-  padding-right: $margin-sm;
+  box-sizing: border-box;
+  padding: $navbar-height $margin-sm 0 $margin-sm;
 
   @media #{$media-md} {
-    padding-left: $margin-md;
-    padding-right: $margin-md;
+    padding: $navbar-height $margin-md 0 $margin-md;
   }
 
   @media #{$media-lg} {
-    padding-left: $margin-lg;
-    padding-right: $margin-lg;
+    padding: $navbar-height $margin-lg 0 $margin-lg;
   }
 
 
@@ -90,9 +87,8 @@
 
 
   &__footer {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 0 auto;
+    padding-bottom: 10px;
 
     p {
       font-size: $font-size-r-base;

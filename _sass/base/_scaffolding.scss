@@ -21,8 +21,10 @@ body {
     height: 100%;
 
     .content {
-        min-height: 100%;
+        box-sizing: border-box;
         padding-top: $navbar-height;
+        margin-top: -$navbar-height;
+        min-height: 100%;
         width: 90%;
         margin: auto;
 
