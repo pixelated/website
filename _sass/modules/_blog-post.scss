@@ -3,20 +3,30 @@
 
   &__header {
     color: $color-turquoise;
+    font-size: $font-size-r-title;
+    font-weight: 600;
   }
 
   &__meta {
-    font-size: $font-size-r-tiny;
+    font-size: $font-size-r-base;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-weight: bold;
 
     span {
       padding: 0 10px;
       border-right: 1px solid $color-gray-medium;
 
+      a {
+        font-weight: 600;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
       &:last-child {
         border: none;
+        font-size: $font-size-r-small;
       }
     }
   }
