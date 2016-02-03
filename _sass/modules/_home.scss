@@ -39,6 +39,9 @@
 
   &__links {
     font-size: $font-size-r-big;
+    i {
+      font-size: 85px;
+    }
 
     &--video,
     &--try,
@@ -117,7 +120,6 @@
   left: 0;
   top: 30%;
 
-
   @media #{$media-sm} {
     display: none;
   }
@@ -136,11 +138,32 @@
     list-style: none;
     margin: 0;
 
-    a {
-      color: $color-gray-mediumdark;
+    li {
+      padding: 2px 0 3px 0;
+      text-align: center;
 
-      &:hover {
-        color: lighten($color-gray-mediumdark, 20%);
+      &:last-child {
+        padding-bottom: 2px;
+      }
+
+      a {
+        color: $color-gray-mediumdark;
+
+        &:hover {
+          color: lighten($color-gray-mediumdark, 20%);
+        }
+
+        i {
+          font-size: 45px;
+
+          &.fa-envelope {
+            font-size: 37px;
+          }
+          &.fa-comments-o, &.fa-slack {
+            font-size: 42px;
+            padding-top: 3px;
+          }
+        }
       }
     }
 

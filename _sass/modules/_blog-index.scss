@@ -54,9 +54,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 30px;
-    svg {
+
+    i {
       color: $color-gray-medium;
-      fill: currentColor;
+      font-size: 30px;
     }
   }
 }
