@@ -62,10 +62,10 @@
     &--video,
     &--try {
       a {
-        color: $color-gray-medium;
+        color: $color-white;
 
         &:hover {
-          color: lighten($color-gray-medium, 20%);
+          color: lighten($color-gray-medium, 10%);
         }
 
         &:focus {
