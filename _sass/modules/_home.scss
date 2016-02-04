@@ -142,10 +142,23 @@
       &:hover {
         color: lighten($color-gray-mediumdark, 20%);
       }
+
+      &#navbar-email svg {
+        width: 38px;
+      }
+
+      &#navbar-slack svg {
+        padding-top: 4px;
+      }
+    }
+
+    li {
+      text-align: center;
     }
 
     svg {
       fill: currentColor;
+      width: 43px;
     }
   }
 }
