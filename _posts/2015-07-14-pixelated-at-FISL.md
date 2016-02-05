@@ -1,10 +1,11 @@
 ---
 layout: blogpost
 title: Pixelated at FISL
+authors:
+  - name: Gabriel Albo
+    link: https://twitter.com/albogabriel
 excerpt: Pixelated was present at FISL in Porto Alegre, Brazil. See the pictures here!
---- 
-
-by [Gabriel Albo](https://twitter.com/albogabriel)
+---
 
 Between July 8th and 11th, the Pixelated team attended the [FISL 16](http://softwarelivre.org/fisl16) conference. We have been present at the communities area and were able to do lots of activities, including a few talks about Pixelated, privacy, mass surveillance and open-source.
 

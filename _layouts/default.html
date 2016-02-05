@@ -1,69 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" 
-      type="image/png" 
-      href="/assets/images/Favicon.png">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pixelated - Modern email with privacy</title>
-    <meta name="description" content="Pixelated is a secure, open source email solution with encryption and decentralised hosting.">
-    <meta name="viewport" content="width=device-width">
+---
+layout: base
+---
 
-    <meta property="og:title" content="Pixelated" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Pixelated is a secure, open source email solution with encryption and decentralised hosting." />
-    <meta property="og:url" content="https://pixelated-project.org/" />
-    <meta property="og:image" img src="/assets/images/fb_marca.png" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/stylesheets/styles.css" type="text/css">
-    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/assets/stylesheets/opensans.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/assets/stylesheets/foundation.css" type="text/css">
-    <link rel="stylesheet" href="/assets/stylesheets/normalize.css" type="text/css">
-
-     <link rel="stylesheet" href="/assets/stylesheets/gh-fork-ribbon.css">
-    <!--[if lt IE 9]>
-        <link rel="stylesheet" href="gh-fork-ribbon.ie.css">
-    <[endif]-->
-    </head>
-<body class="pixelated">
-  <div id="wrapper" data-offcanvas>
-    <div class="sticky">
-      <div class="github-fork-ribbon-wrapper right">
-       <div class="github-fork-ribbon">
-           <a href="https://github.com/pixelated" target="_blank">Fork us on GitHub</a>
-       </div>
-      </div>
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="project-logo"><a href="/"><img alt="pixelated logo" src="/assets/images/pixelated-white-small.svg"></a></li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-        <section class='top-bar-section'>
-          <ul class="right">
-            <li><a href={% if page.url != '/'%} /{% endif %}about>ABOUT</a></li>
-            <li><a href={% if page.url != '/'%} /{% endif %}getting-started>GET STARTED</a></li>
-            <li><a href={% if page.url != '/'%} /{% endif %}blog>BLOG</a></li>
-            <li><a href={% if page.url != '/'%} /{% endif %}#contact>CONTACT</a></li>
-          </ul>
-        </section>
-      </nav>
-    </div>
-    {{ content }}
-  </div>
-  <script src="/assets/js/jquery.js"></script>
-  <script src="assets/js/modernizr.js"></script>
-  <script src="/assets/js/foundation.js"></script>
-  <script src="/assets/js/foundation.top-bar.js"></script>
-  <script src="/assets/js/foundation.reveal.js"></script>
-  <script src="/assets/js/foundation.tooltip.js"></script>
-  <script src="/assets/js/snap.svg-min.js"></script>
-  <script src="/assets/js/hive.js"></script>
-  <script src="/assets/js/style-guide.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-</body>
-</html>
+<div class="content">
+  {{ content }}
+</div>

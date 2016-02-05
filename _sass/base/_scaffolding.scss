@@ -1,0 +1,144 @@
+html {
+  height: 100%;
+}
+
+
+body {
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  line-height: $line-height-base;
+  font-size: $font-size-a-base;
+  line-height: $line-height-base;
+  font-family: $font-family-base;
+  background: $color-white;
+  color: $color-gray-mediumdark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  .wrapper {
+    height: 100%;
+
+    .content {
+        box-sizing: border-box;
+        padding-top: $navbar-height;
+        margin-top: -$navbar-height;
+        min-height: 100%;
+        width: 90%;
+        margin: auto;
+
+        @media #{$media-md} {
+          width: 80%;
+        }
+
+        @media #{$media-lg} {
+          width: 60%;
+        }
+    }
+  }
+
+
+  // Headlines
+  h1 {
+    font-size: $font-size-r-huge;
+    margin: 1em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+
+  h2 {
+    font-size: $font-size-r-bigger;
+    margin: 1em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+
+  h3 {
+    font-size: $font-size-r-big;
+    margin: 1em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: $font-size-r-base;
+    margin: 1em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before {
+    display: block;
+    content: " ";
+    margin-top: -$anchor-offset;
+    height: $anchor-offset;
+    visibility: hidden;
+  }
+
+  // Paragraph
+
+  p {
+    padding: 0;
+    margin: 0 0 1em;
+    font-weight: lighter;
+  }
+
+  // Lists
+
+  ul,
+  ol,
+  dl {
+    padding: 0;
+    margin: 0 0 1em;
+    font-weight: lighter;
+  }
+
+
+  ul {
+    list-style-position: outside;
+    margin-left: 2em;
+  }
+
+
+  ol {
+    list-style-position: outside;
+    margin-left: 2em;
+  }
+
+  // Quotes
+
+  blockquote {
+    margin: 1.5em 0;
+    padding: 0 2em;
+    border-left: 1px solid $color-black;
+  }
+
+  // Text formatting
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  // Link
+
+  a {
+    color: $color-orange;
+    text-decoration: none;
+    font-weight: bolder;
+
+    &:hover,
+    &:focus {
+      color: $color-orange-dark;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.faq {
+  $separator-margin: 70px;
+
+  &__toc {
+    ol {
+      counter-reset: item;
+    }
+
+    li {
+      display: block;
+
+      &:before {
+        content: counters(item, ".") "\00a0\00a0\00a0";
+        counter-increment: item;
+      }
+    }
+
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    margin-top: $separator-margin;
+    margin-bottom: $separator-margin;
+
+    background-image: linear-gradient(to right, rgba($color-black, 0), rgba($color-black, 1), rgba($color-black, 0));
+  }
+
+  h1, h2, h3, h4 {
+    color: $color-turquoise;
+  }
+
+  svg {
+    width: 100%;
+  }
+}

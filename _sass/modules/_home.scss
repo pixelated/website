@@ -1,0 +1,164 @@
+.home {
+  background: linear-gradient(to bottom right, $color-orange-dark-transparent 0%, $color-turquoise-dark-transparent 0%, $color-turquoise-dark 100%), url(../icons/hive.svg) no-repeat;
+  background-color: $color-turquoise-dark;
+  background-repeat: repeat;
+  text-align: center;
+  color: $color-white;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: $navbar-height $margin-sm 0 $margin-sm;
+
+  @media #{$media-md} {
+    padding: $navbar-height $margin-md 0 $margin-md;
+  }
+
+  @media #{$media-lg} {
+    padding: $navbar-height $margin-lg 0 $margin-lg;
+  }
+
+
+  &__header {
+    color: $color-white;
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      font-size: $font-size-r-big;
+
+      @media #{$media-md} {
+        font-size: $font-size-r-bigger;
+      }
+
+      @media #{$media-lg} {
+        font-size: $font-size-r-huge;
+      }
+    }
+  }
+
+  &__links {
+    font-size: $font-size-r-big;
+
+    &--video,
+    &--try,
+    &--contribute {
+      display: block;
+
+      @media #{$media-md} {
+        display: inline-block;
+        padding: 0 10px;
+      }
+
+      @media #{$media-lg} {
+        display: inline-block;
+        padding: 0 20px;
+      }
+    }
+
+    &--video,
+    &--try {
+      a {
+        color: $color-white;
+
+        &:hover {
+          color: lighten($color-gray-medium, 10%);
+        }
+
+        &:focus {
+          color: $color-gray-medium;
+        }
+      }
+    }
+
+    &--contribute {
+      font-weight: bold;
+    }
+
+    svg {
+      fill: currentColor;
+      width: 60px;
+
+      @media #{$media-md} {
+        width: 100px;
+      }
+    }
+  }
+
+
+  &__footer {
+    margin: 30px auto 0 auto;
+    padding-bottom: 10px;
+
+    p {
+      font-size: $font-size-r-base;
+
+      @media #{$media-md} {
+        font-size: $font-size-r-big;
+      }
+
+      @media #{$media-lg} {
+        font-size: $font-size-r-big;
+      }
+    }
+  }
+}
+
+
+.sidebar {
+  border: 3px solid $color-gray-mediumdark;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: none;
+  background-color: $color-turquoise-dark;
+  padding: 8px;
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 30%;
+
+
+  @media #{$media-sm} {
+    display: none;
+  }
+
+  @media #{$media-md} {
+    display: block;
+    width: 30px;
+  }
+
+  @media #{$media-lg} {
+    display: block;
+    width: 50px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    a {
+      color: $color-gray-mediumdark;
+
+      &:hover {
+        color: lighten($color-gray-mediumdark, 20%);
+      }
+
+      &#navbar-email svg {
+        width: 38px;
+      }
+
+      &#navbar-slack svg {
+        padding-top: 4px;
+      }
+    }
+
+    li {
+      text-align: center;
+    }
+
+    svg {
+      fill: currentColor;
+      width: 43px;
+    }
+  }
+}

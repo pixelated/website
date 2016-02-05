@@ -1,14 +1,18 @@
 ---
-layout: faq
+layout: default
 ---
-<h1>{{ page.title | title }}</h1>
-<span class="post-date" style="font-style: italic;">{{ page.date | date: "%-d %B %Y"}}</span>
-<article>
- {{ content }}
+
+<article class='blog-post'>
+  <h1 class="blog-post__header">{{ page.title | title }}</h1>
+
+  <div class="blog-post__meta">
+    {% for author in page.authors %}
+    <span><a href="{{ author.link }}">{{author.name}}</a></span>
+    {% endfor %}
+    <span>{{ page.date | date: "%-d %B %Y"}}</span>
+  </div>
+
+  <article class="blog-post__content">{{ content }}</article>
+
+  <div class="blog-post__footer"><a href="/blog">Back to all</a></div>
 </article>
-<div class="blog-post-footer">
-<img src="/assets/images/pixelated-logo.png">
-</div>
-<div class="blog-post-footer">
-<a href="/blog">back to all</a>
-</div>

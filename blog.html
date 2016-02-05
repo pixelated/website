@@ -2,20 +2,24 @@
 layout: default
 ---
 
-
-<link rel="stylesheet" href="/assets/stylesheets/blog.css" type="text/css">
-
-<main class='posts'>
-<ul>
+<div class="blog-index">
   {% for post in site.posts %}
-  <li class="blog-list">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    {{ post.date | date: "%-d %B %Y"}}
-    <p>{{ post.excerpt | strip_html }}</p>
-  </li>
+    <div class="blog-index__item">
+      <h2 class="blog-index__item-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="blog-index__item-excerpt">{{ post.excerpt | strip_html }}</p>
+      <div class="blog-index__item-meta">
+        {% for author in post.authors %}
+        <span><a href="{{ author.link }}">{{author.name}}</a></span>
+        {% endfor %}
+        <span>{{ post.date | date: "%-d %B %Y"}}</span>
+      </div>
+      <hr>
+    </div>
   {% endfor %}
-</ul>
-<div class="blog-posts-index-footer">
-<a href="/atom.xml" target="_blank"><i class="fa fa-rss"></i></a>
+
+  <div class="blog-index__footer">
+    <a href="/atom.xml" target="_blank">
+      {% include icons/rss.svg %}
+    </a>
+  </div>
 </div>
-</main>

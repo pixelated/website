@@ -1,0 +1,71 @@
+.navigation {
+  @include scut-clearfix;
+  background-color: rgba($color-gray-mediumdark, 0.9);
+  box-shadow: 0 0 5px 2px rgba($color-gray-mediumdark, 0.9);
+  height: $navbar-height;
+  line-height: $navbar-height;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__icon {
+    display: inline;
+    float: left;
+    margin-left: $margin-sm;
+
+    @media #{$media-md} {
+      margin-left: $margin-md;
+    }
+
+    @media #{$media-lg} {
+      margin-left: $margin-lg;
+    }
+
+    svg {
+      height: $navbar-height;
+    }
+  }
+
+  &__links {
+    float: right;
+    text-transform: uppercase;
+    margin-right: $margin-sm;
+
+    @media #{$media-md} {
+      margin-right: $margin-md;
+    }
+
+    @media #{$media-lg} {
+      margin-right: $margin-lg;
+    }
+
+
+    li {
+      list-style: none;
+      display: inline;
+
+      &:first-child {
+        margin-right: 10px;
+
+        @media #{$media-md} {
+          margin-right: 20px;
+        }
+
+        @media #{$media-lg} {
+          margin-right: 40px;
+        }
+      }
+
+      a {
+        color: $color-white;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+}

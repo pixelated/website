@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="/assets/icons/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pixelated - Modern email with privacy</title>
+    <meta name="description" content="Pixelated is a secure, open source email solution with encryption and decentralised hosting.">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Theme color on mobile -->
+    <meta name="theme-color" content="#2BA6CB">
+
+     <!-- OpenGraph Description for Facebook etc. -->
+    <meta property="og:title" content="Pixelated" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Pixelated is a secure, open source email solution with encryption and decentralised hosting." />
+    <meta property="og:url" content="https://pixelated-project.org/" />
+    <meta property="og:image" img src="/assets/images/fb_marca.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/stylesheets/styles.css" type="text/css">
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.js" defer></script>
+    <script src="/assets/js/jquery.magnificent-popup.js" defer></script>
+    <script src="/assets/js/popup.js" defer></script>
+    <script src="https://pixelated-project.org/piwik/piwik.js" defer></script>
+    <script src="/assets/js/piwik.js" defer></script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      {% include nav.html %}
+      {{ content }}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<div class="navigation">
+    <section class="navigation__icon">
+      <a href="/" title="Home">{% include icons/pixelated-logo.svg %}</a>
+    </section>
+    <section class="navigation__links">
+      <ul>
+        <li><a href={% if page.url !='/' %} /{% endif %}blog>Blog</a></li>
+        <li><a href={% if page.url !='/' %} /{% endif %}faq>FAQ</a></li>
+      </ul>
+    </section>
+  </nav>
+</div>
