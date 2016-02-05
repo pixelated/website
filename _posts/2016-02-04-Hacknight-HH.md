@@ -7,7 +7,7 @@ authors:
 excerpt: Hooray, the Pixelated Team is doing another Hacknight session! If you want to become involved with privacy-related project, this is for you.
 ---
 
-Hooray, the Pixelated Team is doing another Hacknight session! If you want to become involved with privacy-related project, this is for you.
+Hooray, the Pixelated Team is doing another Hacknight session! If you want to get involved with a privacy-related project, this is for you.
 
 We will help you set up the Pixelated development environment on your machine and help you to work on a couple of features of the web client (aka the user-agent). We will set up a running test provider for the workshop.
 
@@ -22,7 +22,7 @@ A few exciting things we're working on at this hack night:
 ## Side notes
 
 * Doors open on February 15 2016 at 18:00. We aim to have everything wrapped up by 22:00. We will provide food and beverages.
-* Venue is ThoughtWorks office at Großer Burstah 46, 20457 Hamburg
+* Venue is the ThoughtWorks office at Großer Burstah 46, 20457 Hamburg
 * Even though you can certainly also take part without registering for the event, registering [here](https://www.eventbrite.de/e/pixelatedleap-hacknight-easy-to-use-encrypted-email-with-decentralized-hosting-tickets-21338472947) or [via email](mailto:team@pixelated-project.org) would help us to organize a sane amount of snacks and drinks.
 * It's highly recommended that you bring your own laptop. If you cannot bring a laptop, we will encourage you to pair with someone who has brought theirs.
 
