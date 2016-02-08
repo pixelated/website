@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     <div class="blog-index__item">
       <h2 class="blog-index__item-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="blog-index__item-excerpt">{{ post.excerpt | strip_html }}</p>
+      <p class="blog-index__item-excerpt">{{ post.excerpt | strip_html }} <a href="{{ post.url }}">Read more ...</a></p>
       <div class="blog-index__item-meta">
         {% for author in post.authors %}
         <span><a href="{{ author.link }}">{{author.name}}</a></span>
