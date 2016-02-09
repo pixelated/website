@@ -17,28 +17,46 @@
   }
 
 
-  &__header {
+  &__tagline {
     color: $color-white;
-    padding-top: 50px;
+    padding: 50px 0 0 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: $font-size-r-bigger;
+    font-weight: bold;
+    text-shadow: 0 0 30px $color-white;
 
-    p {
+    @media #{$media-md} {
+      font-size: $font-size-r-bigger;
+    }
+
+    @media #{$media-lg} {
+      font-size: $font-size-r-huge;
+    }
+  }
+
+  &__valueprop {
+    color: $color-white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $font-size-r-mediumbig;
+
+    @media #{$media-md} {
       font-size: $font-size-r-big;
+    }
 
-      @media #{$media-md} {
-        font-size: $font-size-r-bigger;
-      }
-
-      @media #{$media-lg} {
-        font-size: $font-size-r-huge;
-      }
+    @media #{$media-lg} {
+      font-size: $font-size-r-big;
     }
   }
 
   &__links {
     font-size: $font-size-r-big;
+    margin-top: 20px;
 
     &--video,
     &--try,
@@ -73,6 +91,7 @@
 
     &--contribute {
       font-weight: bold;
+      text-shadow: 0 0 30px $color-white;
     }
 
     svg {
@@ -87,19 +106,16 @@
 
 
   &__footer {
-    margin: 30px auto 0 auto;
+    margin: 50px auto 0 auto;
     padding-bottom: 10px;
+    font-size: $font-size-r-base;
 
-    p {
-      font-size: $font-size-r-base;
+    @media #{$media-md} {
+      font-size: $font-size-r-big;
+    }
 
-      @media #{$media-md} {
-        font-size: $font-size-r-big;
-      }
-
-      @media #{$media-lg} {
-        font-size: $font-size-r-big;
-      }
+    @media #{$media-lg} {
+      font-size: $font-size-r-big;
     }
   }
 }
