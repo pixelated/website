@@ -130,22 +130,35 @@
   padding: 8px;
   position: fixed;
   display: block;
-  left: 0;
-  top: 30%;
 
 
-  @media #{$media-sm} {
-    display: none;
+  @media (max-width: 679px) {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+
+    border: none;
+    border-top: 3px solid $color-gray-mediumdark;
+    border-radius: 0;
+    
+    ul li {
+      display: inline-block;
+      padding: 0 4px;
+    }
   }
 
   @media #{$media-md} {
     display: block;
     width: 50px;
+    left: 0;
+    top: 30%;
   }
 
   @media #{$media-lg} {
     display: block;
     width: 50px;
+    left: 0;
+    top: 30%;
   }
 
   ul {
