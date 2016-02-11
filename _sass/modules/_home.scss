@@ -132,7 +132,7 @@
   display: block;
 
 
-  @media (max-width: 679px) {
+  @media #{$media-sm} {
     position: relative;
     bottom: 0;
     text-align: center;
