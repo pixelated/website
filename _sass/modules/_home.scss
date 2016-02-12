@@ -131,36 +131,6 @@
   position: fixed;
   display: block;
 
-
-  @media #{$media-sm} {
-    position: relative;
-    bottom: 0;
-    text-align: center;
-
-    border: none;
-    border-top: 3px solid $color-gray-mediumdark;
-    border-radius: 0;
-    
-    ul li {
-      display: inline-block;
-      padding: 0 4px;
-    }
-  }
-
-  @media #{$media-md} {
-    display: block;
-    width: 50px;
-    left: 0;
-    top: 30%;
-  }
-
-  @media #{$media-lg} {
-    display: block;
-    width: 50px;
-    left: 0;
-    top: 30%;
-  }
-
   ul {
     list-style: none;
     margin: 0;
@@ -189,5 +159,38 @@
       fill: currentColor;
       width: 43px;
     }
+  }
+
+  @media #{$media-sm} {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+
+    border: none;
+    border-top: 3px solid $color-gray-mediumdark;
+    border-radius: 0;
+
+    ul {
+      li {
+        display: inline-block;
+        padding: 0 4px;
+      }
+
+      a {
+        svg {
+          width: 36px;
+        }
+        &#navbar-email svg {
+          width: 35px;
+        }
+      }
+    }
+  }
+
+  @media #{$media-md}, #{$media-lg} {
+    display: block;
+    width: 50px;
+    left: 0;
+    top: 30%;
   }
 }
