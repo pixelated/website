@@ -15,13 +15,15 @@ welcome to the first edition of the PixelState. This newsletter is a wrap-up of 
 
 #### Multi-User without Docker
 
-In the past, Pixelated was running strictly in single-user mode. As a consequence of this, we had to manage different instances, which was done via Docker. While being a good idea in the beginning, this quickly became a drag, since Python is not used as a binary, but interpreted at runtime, causing the lightweight Docker instances to blow up to 50MB in idle state, even worse under load. Keeping an eye on simplicity, scalabity, and memory consumption, you are now able to [run the User Agent in multi-user mode](https://github.com/pixelated/pixelated-user-agent/blob/master/README.md#multi-user-mode), all nicely and without Docker.
+In the past, Pixelated was running strictly in single-user mode. LEAP libraries where not built in a way that would allow multiple users in one process, which made totally sense as at that point in time there had been only their Bitmask client. As a consequence of this, we had to manage different instances, which was done via Docker. Despite being a good idea in the beginning, this quickly became a drag, since Python is not used as a binary, but interpreted at runtime, causing the lightweight Docker instances to blow up to 50MB in idle state, even worse under load. 
+
+We helped to change that and by now libraries are updated and fit our multi-user requirements. Keeping an eye on simplicity, scalabity, and memory consumption, you are now able to [run the User Agent in multi-user mode](https://github.com/pixelated/pixelated-user-agent/blob/master/README.md#multi-user-mode), all nicely and without Docker.
 
 #### Simplified setup
 
 Simplifying the setup had multiple goals: Contributor onboarding, easy deployment, and support for multiple OS.
 
-During [the most recent hacknight](https://cryptohack.net/post/10th-feb-hacknight-welcome.html) in down under, we came across a bunch of difficulties with Windows, which we're solving right now.
+During [the most recent hacknight](https://cryptohack.net/post/10th-feb-hacknight-welcome.html) in Down Under, we came across a bunch of difficulties with Windows, which we're solving right now.
 
 #### Homepage redesign
 
