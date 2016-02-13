@@ -9,25 +9,25 @@ excerpt: Current threads, news, discussions, and related stuff.
 
 Hi fellow Pixelettes and Pixelators,
 
-welcome to the first edition of the PixelState. This newsletter is a wrap-up of current threads, news, discussions, etc. that happened here over the course of the last month.
+Welcome to the first edition of the PixelState. This newsletter is a wrap-up of current threads, news, discussions, etc. that happened here during the last month.
 
 ## PixelThreads
 
 #### Multi-User without Docker
 
-In the past, Pixelated was running strictly in single-user mode. LEAP libraries where not built in a way that would allow multiple users in one process, which made totally sense as at that point in time there had been only their Bitmask client. As a consequence of this, we had to manage different instances, which was done via Docker. Despite being a good idea in the beginning, this quickly became a drag, since Python is not used as a binary, but interpreted at runtime, causing the lightweight Docker instances to blow up to 50MB in idle state, even worse under load. 
+In the past, Pixelated ran strictly in single-user mode. LEAP libraries were not built to allow multiple users in one process, which made sense when there existed only one client (Bitmask). As a consequence of this, we managed multiple instances of the Pixelated user agent via Docker. This unfortunately became a drag, since Python is not used as a binary, but interpreted at runtime, causing the lightweight Docker instances to blow up to 50MB when idle, and even further when under load. 
 
-We helped to change that and by now libraries are updated and fit our multi-user requirements. Keeping an eye on simplicity, scalabity, and memory consumption, you are now able to [run the User Agent in multi-user mode](https://github.com/pixelated/pixelated-user-agent/blob/master/README.md#multi-user-mode), all nicely and without Docker.
+We helped to change that; now libraries are updated and fit our multi-user requirements, keeping an eye on simplicity, scalabity, and memory consumption. You are now able to [run the User Agent in multi-user mode](https://github.com/pixelated/pixelated-user-agent/blob/master/README.md#multi-user-mode), without Docker.
 
 #### Simplified setup
 
-Simplifying the setup had multiple goals: Contributor onboarding, easy deployment, and support for multiple OS.
+Simplifying the setup had multiple goals: making contributor onboarding easier, deployment easier, and supporting multiple OSes.
 
-During [the most recent hacknight](https://cryptohack.net/post/10th-feb-hacknight-welcome.html) in Down Under, we came across a bunch of difficulties with Windows, which we're solving right now.
+During [the most recent hacknight](https://cryptohack.net/post/10th-feb-hacknight-welcome.html) Down Under, we came across a bunch of difficulties with Windows, which we're solving right now.
 
 #### Homepage redesign
 
-New year, new homepage. In January, we decided to revamp the homepage design. This was done for the sake of a more streamlined onboarding of potential contributors. The new design should answer these questions as fast as possible:
+New year, new homepage. In January, we decided to revamp the homepage design. This was done to streamline onboarding of potential contributors. The new design should answer these questions as fast as possible:
 
 1. Who are you? What is this? Is this legit?
 2. Will this work for me?
@@ -60,7 +60,7 @@ Welcome! We're excited to have them with us and we'll keep you posted with a bio
 
 *tl;dr*
 
-Bigcouch, the database that LEAP platform is based on, is no longer maintained. It is a fork of couchdb which implements clustering support which was merged into couchdb and will be available with couchdb 2.0. We are not able to support replication of user storage with plain couchdb. Hence, the need for a new database. The challenge is distributed database scalability (NB: scalability != replication). We're looking into CouchDB, MongoDB, Postgres, Redis, MariaDB, etc.
+BigCouch, the database that LEAP platform is based on, is no longer maintained. It is a fork of CouchDB which implements clustering support. That support was merged into CouchDB and will be available with CouchDB 2.0. We are not able to support replication of user storage with plain CouchDB, so we needed a new database. The challenge is distributed database scalability (NB: scalability != replication). We're looking into CouchDB, MongoDB, Postgres, Redis, MariaDB, etc.
 
 ## PixelEvents (upcoming)
 
