@@ -6,7 +6,7 @@
   color: $color-white;
   min-height: 100%;
   box-sizing: border-box;
-  padding: $navbar-height $margin-sm 0 $margin-sm;
+  padding: $navbar-height $margin-sm;
 
   @media #{$media-md} {
     padding: $navbar-height $margin-md 0 $margin-md;
