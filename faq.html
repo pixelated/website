@@ -199,7 +199,7 @@ layout: default
     <p>If you have a good idea or if you want to fix your pet peeve, please figure out the component in which your pet peeve is implemented, using the technical architecture sketch below. Browse that component&#39;s Github issues for related bugs.</p>
     <ul>
       <li>If you know JavaScript or HTML/CSS, you can contribute to the front-end portion of the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a>.</li>
-      <li>If you know Python, you can contribute to the server portion of the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a>, or the <a href="#pixelated-dispatcher" target="_self">Pixelated Dispatcher</a>.</li>
+      <li>If you know Python, you can contribute to the server portion of the <a href="#pixelated-user-agent" target="_self">Pixelated User-Agent</a>.</li>
       <li>If you know Puppet, you can contribute to the <a href="#pixelated-puppet-module" target="_self">Pixelated Puppet Module</a>.</li>
     </ul>
     <p>We're standing on the shoulders of giants, so apart from contributing directly, you can also contribute the <a href="#leap-platform" target="_self">LEAP project</a>, which we build upon.</p>
@@ -284,38 +284,28 @@ layout: default
 
     <p>A Pixelated instance consists of these components:</p>
     <ul>
-      <li>Pixelated Dispatcher</li>
       <li>Pixelated User-Agent</li>
       <li>Soledad</li>
       <li>One/Many LEAP instance/-s</li>
     </ul>
     <p>In order to give you a rough idea how Pixelated works, let&#39;s look at how these components play together.</p>
 
-    <h2>Pixelated Dispatcher</h2>
-    <p>Languages: Python, Puppet</p>
-    <p><a target="_blank" href="https://github.com/pixelated/pixelated-dispatcher">Repository on Github</a></p>
-    <p><a target="_blank" href="https://github.com/pixelated/pixelated-dispatcher/issues?q=is%3Aopen+is%3Aissue+label%3ABeginners">Issues to work on for beginners</a></p>
-    <p>When a user accesses the URL for their Pixelated service, the connection is being accepted by the Dispatcher. The Pixelated Dispatcher is used to host Pixelated as a group email solution for more than one user. In order to keep user data and details separated for each user, each logged-in user on Pixelated uses a different instance of the User-Agent in its own virtual container. To ensure that each user communicates properly and securely with the correct instance of the User-Agent, the Dispatcher routes communication between the User-Agent and the further-back parts of the system. In a nutshell: It allows you to run, manage and restrict access (using a login form) to different instances of the User-Agent.</p>
-    <p>The Pixelated Dispatcher is a combination of two daemons: the Proxy and the Manager.</p>
-    <p>The Proxy is the user facing part and the service a user accessed when connecting to their Pixelated service. It handles authentication and acts as a proxy for the agents. The intention is for this daemon to give up on all unnecessary privileges as soon as possible.</p>
-    <p>The Manager is responsible for managing the lifecycle of the user agent instances. It is not accessible from the web, but provides a REST-ful API to create/start/stop/delete agents. It uses docker to isolate the User-Agent&#39;s processes from each other and to provide the necessary runtime environment.</p>
-
-    <h2>Pixelated User-Agent</h2>
+    <h2 id="pixelated-user-agent">Pixelated User-Agent</h2>
     <p>Languages: Python, Javascript/HTML/CSS</p>
     <p><a target="_blank" href="https://github.com/pixelated/pixelated-user-agent">Repository on Github</a></p>
     <p><a target="_blank" href="https://github.com/pixelated/pixelated-user-agent/issues?q=is%3Aopen+no%3Aassignee+label%3ABeginners">Issues to work on for beginners</a></p>
     <p>The User-Agent is the user-facing piece of Pixelated. It consists of a single-page webapp (since users are most accustomed to using webmail as opposed to a locally installed email client) and provides a RESTful API. The User-Agent focuses on high-quality user experience in order to facilitate the use of email encryption. Pixelated uses an opportunistic approach to encryption: it encrypts every email that it can find public keys for. Using the Pixelated User-Agent, the email user does not have to worry about key generation or key management anymore, since it is handled automatically as far as possible. The User-Agent is the mail client of the Pixelated ecosystem. It is composed of two parts, a web interface written in JavaScript (FlightJS) and a Python API that interacts with a LEAP Provider, the e-mail platform that Pixelated is built on.</p>
 
-    <h2>Pixelated Puppet Module</h2>
+    <h2 id="pixelated-puppet-module">Pixelated Puppet Module</h2>
     <p><a target="_blank" href="https://github.com/pixelated/puppet-pixelated">Repository on Github</a></p>
     <p><a target="_blank" href="https://github.com/pixelated/puppet-pixelated/issues?q=is%3Aopen+is%3Aissue+label%3ABeginner">Issues to work on for beginners</a></p>
     <p>Languages: Puppet, Ruby</p>
-    <p>This puppet module provides a simple way to add Pixelated to a running LEAP Platform. It sets up the <a target="_blank" href="https://github.com/pixelated/pixelated-dispatcher">Pixelated Dispatcher</a> and a multi-user instance of the <a target="_blank" href="https://github.com/pixelated/pixelated-user-agent">Pixelated User-Agent</a>.</p>
+    <p>This puppet module provides a simple way to add Pixelated to a running LEAP Platform. It sets up a multi-user instance of the <a target="_blank" href="https://github.com/pixelated/pixelated-user-agent">Pixelated User-Agent</a>.</p>
 
-    <h2>LEAP platform</h2>
+    <h2 id="leap-platform">LEAP platform</h2>
     <p><a target="_blank" href="https://github.com/leapcode/leap_platform">Repository on Github</a></p>
     <p><a target="_blank" href="https://leap.se/code/projects/platform/issues?query_id=172">Issues to work on for beginners</a></p>
-    <p>In a Pixelated server-side setup, the provider is running the Pixelated Platform, which includes a LEAP single node installation and the Pixelated dispatcher that spins up instances of the user agent on every user log-in. LEAP ensures that all data is encrypted at rest, including your meta data, and communicates with other email providers via SMTP/TLS.</p>
+    <p>In a Pixelated server-side setup, the service provider is running the Pixelated Platform, which includes a LEAP installation. LEAP ensures that all data is encrypted at rest, including your meta data, and communicates with other email providers via SMTP/TLS.</p>
 
     <h2>Soledad</h2>
     <p><a target="_blank" href="https://github.com/leapcode/soledad">Repository on Github</a></p>
