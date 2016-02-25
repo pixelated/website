@@ -45,7 +45,6 @@ Team-wise, we will see some fluctuations in the contributor team in the upcoming
 * [Jeff](https://github.com/jeffhsta)
 * [Gil](https://github.com/pereiragislene)
 * [Folker](https://github.com/fbernitt)
-* [Christoph](https://github.com/cz8s)
 
 We thank everyone for their contributions to the project, and hope to see them on our issue tracker every now and then. Plus, you'll probably still be able to get a hold of them in our [IRC and Slack channels](https://pixelated-project.org/faq/#contact-the-project). There will be new members joining over the course of March and April, among them:
 
@@ -82,3 +81,7 @@ BigCouch, the database that LEAP platform is based on, is no longer maintained. 
 * [USENIX Enigma 2016 - NSA TAO Chief on Disrupting Nation State Hackers](https://www.youtube.com/watch?v=bDJb8WOJYdA)
 * [Russell Brandom (The Verge) - The five big lies of the encryption debate](http://www.theverge.com/2016/1/12/10749806/encryption-debate-fbi-terrorism-going-dark)
 * [Jenna McLaughlin (TI) - Apple’s Tim Cook Lashes Out at White House Officials for Being Wishy-Washy on Encryption](https://theintercept.com/2016/01/12/apples-tim-cook-lashes-out-at-white-house-officials-for-being-wishy-washy-on-encryption/)
+
+#### EDIT 2016-02-25
+
+Christoph will not be leaving the project before April 2016.
