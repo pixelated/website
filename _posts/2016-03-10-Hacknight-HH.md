@@ -26,7 +26,7 @@ A part of the Pixelated team will join us. For those going hands-on-the-code, we
 
 * Doors open on March 22 2016 at 18:00. We aim to have everything wrapped up by 22:00. We will provide food and beverages.
 * Venue is the ThoughtWorks office at Großer Burstah 46, 20457 Hamburg
-* If possible, [RSVP to the meetup](#) and join our [Meetup Page](http://www.meetup.com/ThoughtWorks-Hamburg/). If you don't use Meetup, please [drop us an email](mailto:team@pixelated-project.org) to help us to organize a sane amount of snacks and drinks.
+* If possible, [RSVP to the meetup](http://www.meetup.com/ThoughtWorks-Hamburg/events/229579069/) and join our [Meetup Page](http://www.meetup.com/ThoughtWorks-Hamburg/). If you don't use Meetup, please [drop us an email](mailto:team@pixelated-project.org) to help us to organize a sane amount of snacks and drinks.
 * Please note there's a [Code of Conduct](/faq/#code-of-conduct). In short: Be excellent to each other :) 
 
 
