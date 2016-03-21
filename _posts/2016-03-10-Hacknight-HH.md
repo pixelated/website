@@ -10,6 +10,7 @@ excerpt: We'll be hosting another Hacknight about Pixelated, LEAP, and all thing
 We'll be hosting another Hacknight about Pixelated, LEAP, and all things crypto. The free internet needs you! This is for you, whether you're interested in crypto, and/or want to have a cold one with like-minded people, and/or want to get your hands on a privacy-related project.
 
 We intend to have a couple of (moderated) sessions around different subjects to better group interests and achieve a more rewarding experience for everybody. Possible sessions might include, but not limited to:
+
 * How does encryption work? What are the basics about encryption? Why is it a good thing?
 * How do I contribute to open source communities?
 * I know security UX and want to bounce some ideas around, what to I do?
