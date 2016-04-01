@@ -16,7 +16,7 @@
     tracker.discardHashTag(true);
     tracker.trackPageView(window.location.pathname);
 
-    $('#navbar-github, #navbar-twitter, #navbar-email, #navbar-irc, #navbar-slack, #links-video, #links-contribute, #links-try').on('click touchstart', function() {
+    $('#navbar-github, #navbar-twitter, #navbar-email, #navbar-irc, #links-video, #links-contribute, #links-try').on('click touchstart', function() {
         var evt = this.id.split('-');
         tracker.trackEvent(evt[0], evt[1], this.id);
     });
