@@ -26,7 +26,7 @@ For those going hands-on-the-code, you don’t need to be proficient in JavaScri
 
 In order to get started easily, we will work on a virtual machine enviromnet (via vagrant). 
 This contains all the dependencies for the project. Please have the most recent versions of the following software installed:
-If you use a Mac, please consider having [homebrew] (http://brew.sh/ ) installed to make things easier.
+If you use a Mac, please consider having [homebrew](http://brew.sh/ ) installed to make things easier.
 [Virtual Box](https://www.virtualbox.org/wiki/Downloads ) or [libvirt](https://leap.se/en/docs/platform/details/development#using-vagrant-with-libvirtkvm ).
 [Vagrant](https://www.vagrantup.com/ ).
 An editor that can handle HTML, Javascript and Python. We recommend PyCharm, Atom, Sublime, or Vim.
