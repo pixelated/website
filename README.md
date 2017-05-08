@@ -1,5 +1,5 @@
-pixelated-project.github.io
-===========================
+https://pixelated-project.org
+=============================
 
 You can run the Jekyll site locally with the `run_site.sh` script. This requires Jekyll.
 
